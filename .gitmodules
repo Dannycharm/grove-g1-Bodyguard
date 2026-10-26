@@ -1,6 +1,6 @@
 [submodule "workspace/vendor/unitree_mujoco"]
 	path = workspace/vendor/unitree_mujoco
-	url = https://github.com/Adyansh04/unitree_mujoco.git
+	url = https://github.com/Dannycharm/unitree_mujoco.git
 	branch = grove
 	shallow = true
 [submodule "workspace/src/livox_ros_driver2"]
