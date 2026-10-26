@@ -18,6 +18,7 @@
 #include <cmath>
 #include <cstring>
 #include <format>
+#include <g1_msgs/msg/simulator_actor_snapshot.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <map>
@@ -111,6 +112,9 @@ public:
                     name == "head" ? "~/object_poses" : std::format("~/{}/object_poses", name)),
                 rclcpp::SensorDataQoS());
         }
+
+        actor_snapshot_pub_ = create_publisher<g1_msgs::msg::SimulatorActorSnapshot>(
+            "~/actor_ground_truth", rclcpp::SensorDataQoS());
 
         // A topic, not TF: mid360_link already has a parent. Lets a test check cloud geometry
         // before odom -> pelvis exists.
@@ -342,6 +346,9 @@ private:
     /// runs the same code on the robot.
     void publishObjects(const CloudFrame& frame)
     {
+        // Object frames precede the matching sweep on the existing socket. Pair by
+        // native capture time, never arrival or latest TF. No wire-format change.
+        pending_actor_frame_ = frame;
         for (const auto& [name, camera] : cameras_)
         {
             publishObjects(frame, camera);
@@ -577,9 +584,59 @@ private:
         // publishObjects needs the sensor's world pose; object frames carry none of their own.
         sensor_in_world_ = pose.pose;
 
+        if (pending_actor_frame_ && pending_actor_frame_->sim_time_s == frame.sim_time_s)
+        {
+            publishActorSnapshot(*pending_actor_frame_, frame, msg->header.stamp);
+            pending_actor_frame_.reset();
+        }
         cloud_pub_->publish(std::move(msg));
     }
 
+    void publishActorSnapshot(const CloudFrame& objects, const CloudFrame& sweep,
+                              const builtin_interfaces::msg::Time& stamp)
+    {
+        if (last_actor_time_ && sweep.sim_time_s < *last_actor_time_)
+        {
+            ++actor_epoch_;
+        }
+        last_actor_time_ = sweep.sim_time_s;
+        g1_msgs::msg::SimulatorActorSnapshot snapshot;
+        snapshot.header.stamp = stamp;
+        snapshot.header.frame_id = "mujoco_world";  // Descriptive raw coordinates, NOT a new TF root.
+        snapshot.epoch = actor_epoch_;
+        snapshot.simulation_time_s = sweep.sim_time_s;
+        snapshot.sensor_frame_id = frame_id_;
+        snapshot.sensor_pose.position.x = sweep.sensor_pos[0];
+        snapshot.sensor_pose.position.y = sweep.sensor_pos[1];
+        snapshot.sensor_pose.position.z = sweep.sensor_pos[2];
+        snapshot.sensor_pose.orientation.w = sweep.sensor_quat[0];
+        snapshot.sensor_pose.orientation.x = sweep.sensor_quat[1];
+        snapshot.sensor_pose.orientation.y = sweep.sensor_quat[2];
+        snapshot.sensor_pose.orientation.z = sweep.sensor_quat[3];
+        for (const auto& record : objects.objects)
+        {
+            geometry_msgs::msg::Pose pose;
+            pose.position.x = record.pos[0]; pose.position.y = record.pos[1];
+            pose.position.z = record.pos[2];
+            pose.orientation.w = record.quat[0]; pose.orientation.x = record.quat[1];
+            pose.orientation.y = record.quat[2]; pose.orientation.z = record.quat[3];
+            const std::string name = record.name;
+            if (name == "pelvis")
+            {
+                snapshot.pelvis_pose = pose;
+                snapshot.pelvis_valid = true;
+            }
+            if (name.rfind("escort_", 0) != 0) continue;
+            snapshot.body_names.push_back(name);
+            snapshot.body_poses.push_back(pose);
+        }
+        actor_snapshot_pub_->publish(snapshot);
+    }
+
+    rclcpp::Publisher<g1_msgs::msg::SimulatorActorSnapshot>::SharedPtr actor_snapshot_pub_;
+    std::optional<CloudFrame> pending_actor_frame_;
+    std::optional<double> last_actor_time_;
+    std::uint64_t actor_epoch_ = 0;
     std::optional<geometry_msgs::msg::Pose> sensor_in_world_;
 
     tf2_ros::Buffer            tf_buffer_{ get_clock() };

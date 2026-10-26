@@ -1,0 +1,76 @@
+actors:
+- id: client
+  initial_yaw: 0.0
+  position_offset_m:
+  - -0.1060280315049599
+  - 0.18374638447768804
+  role: client
+  speed_scale: 0.7775616952538249
+  waypoints:
+  - dwell_s: 0.0
+    speed_scale: 1.0
+    xy:
+    - -4.10602803150496
+    - 0.18374638447768804
+  - dwell_s: 0.0
+    speed_scale: 1.0
+    xy:
+    - 3.8939719684950402
+    - 0.18374638447768804
+  z_m: 0.0
+- id: pedestrian_1
+  initial_yaw: 1.5707963267948966
+  position_offset_m:
+  - 0.18199721736393726
+  - 0.0620322433275145
+  role: pedestrian
+  speed_scale: 0.9860225042293291
+  waypoints:
+  - dwell_s: 0.0
+    speed_scale: 1.0
+    xy:
+    - 0.18199721736393726
+    - -3.9379677566724856
+  - dwell_s: 0.0
+    speed_scale: 1.0
+    xy:
+    - 0.18199721736393726
+    - 4.062032243327515
+  z_m: 0.0
+- id: pedestrian_2
+  initial_yaw: -1.5707963267948966
+  position_offset_m:
+  - 0.017340341132990378
+  - 0.08103498229736966
+  role: pedestrian
+  speed_scale: 0.9819363685935312
+  waypoints:
+  - dwell_s: 0.0
+    speed_scale: 1.0
+    xy:
+    - 2.01734034113299
+    - 4.0810349822973695
+  - dwell_s: 0.0
+    speed_scale: 1.0
+    xy:
+    - 2.01734034113299
+    - -3.9189650177026305
+  z_m: 0.0
+bounds:
+  x:
+  - -6.0
+  - 6.0
+  y:
+  - -6.0
+  - 6.0
+family: perpendicular_crossing
+frame_id: escort_scenario
+limits:
+  max_acceleration_mps2: 0.8
+  max_speed_mps: 1.4
+  max_turn_rate_rps: 0.7
+pedestrian_count: 2
+sample_dt_s: 0.1
+schema_version: 1
+seed: 42
+time_origin_s: 0.0

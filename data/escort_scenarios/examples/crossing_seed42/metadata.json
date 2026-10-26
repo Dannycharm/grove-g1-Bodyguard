@@ -1,0 +1,23 @@
+{
+  "actor_ids": [
+    "client",
+    "pedestrian_1",
+    "pedestrian_2"
+  ],
+  "coordinate_transform_to_mujoco_or_ros_map": null,
+  "duration_s": 13.779338385217365,
+  "family": "perpendicular_crossing",
+  "frame_id": "escort_scenario",
+  "generator_version": "0.1.0",
+  "interpolation": "quintic_stop_turn_go_v1",
+  "policy_input": false,
+  "provenance": "simulator_ground_truth",
+  "python_version": "3.12.3",
+  "pyyaml_version": "6.0.1",
+  "resolved_config_sha256": "aa909ca1f908e41fba4e98c3b840017c9871ff4cf339521d394f9a048f4b0955",
+  "safety_scope": "kinematic limits and axis-aligned bounds only; no obstacle/collision checks",
+  "schema_version": 1,
+  "seed": 42,
+  "time_basis": "relative simulation seconds + explicit time_origin_s",
+  "units": "metres, seconds, radians"
+}

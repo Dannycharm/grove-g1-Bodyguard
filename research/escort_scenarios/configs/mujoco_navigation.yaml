@@ -1,0 +1,11 @@
+scenario: navigation_actors.yaml
+# Explicit offline transform: [translation_x_m, translation_y_m, yaw_radians].
+# This is scenario -> MuJoCo world, NOT MuJoCo world -> ROS map.
+scenario_to_mujoco: [0.0, 0.0, 0.0]
+scene_bounds:
+  x: [-1.8, 1.8]
+  y: [-1.8, 1.8]
+actor_radius_m: 0.22
+clearance_m: 0.1
+g1_spawn_xy: [0.0, 0.0]
+g1_clearance_radius_m: 0.85

@@ -174,6 +174,15 @@ def _stage_file(source, target):
 
 def _stage_scene(world, sensors, pin_pelvis):
     """Copies the scene and its bases into the model directory; returns the paths for cleanup."""
+    bundle = os.environ.get("GROVE_G1_PEDESTRIAN_BUNDLE")
+    if bundle:
+        if world != "navigation" or not sensors or pin_pelvis:
+            raise RuntimeError("Pedestrian bundle requires world:=navigation sensors:=true pin_pelvis:=false")
+        if not os.path.isabs(bundle) or not all(
+            os.path.isfile(os.path.join(bundle, name)) for name in ("scene.xml", "playback.yaml", "metadata.json", "sensors.yaml")
+        ):
+            raise RuntimeError("GROVE_G1_PEDESTRIAN_BUNDLE must be an absolute prepared bundle path")
+        return []  # Operator-owned isolated files; never stage over or delete baseline scenes.
     mjcf_dir = os.path.join(BRINGUP_SHARE, "mjcf")
     overlay, bases = _scene_files(world, sensors, pin_pelvis)
 
@@ -211,6 +220,8 @@ def _sensor_nodes(sim_env, want_rviz, world, cameras):
     sensor_config = os.path.join(BRINGUP_SHARE, "config", f"sim_sensors_{world}.yaml")
     if not os.path.isfile(sensor_config):
         sensor_config = os.path.join(BRINGUP_SHARE, "config", "sim_sensors.yaml")
+    if sim_env.get("GROVE_G1_PEDESTRIAN_BUNDLE"):
+        sensor_config = os.path.join(sim_env["GROVE_G1_PEDESTRIAN_BUNDLE"], "sensors.yaml")
     sim_env["GROVE_G1_SENSOR_CONFIG"] = sensor_config
     sim_env["GROVE_G1_CAMERA_MOUNTS"] = CAMERA_MOUNTS
     # Unset, the sensor config's `enabled` flags decide which cameras render.
@@ -293,7 +304,9 @@ def _simulator(sim_env, headless, sim_start_delay_s):
         sim_env["DISPLAY"] = XVFB_DISPLAY
 
     sim_process = ExecuteProcess(
-        cmd=[UNITREE_MUJOCO_BIN, "-r", "g1", "-s", STAGED_SCENE_NAME],
+        cmd=[UNITREE_MUJOCO_BIN, "-r", "g1", "-s",
+             os.path.join(sim_env["GROVE_G1_PEDESTRIAN_BUNDLE"], "scene.xml")
+             if sim_env.get("GROVE_G1_PEDESTRIAN_BUNDLE") else STAGED_SCENE_NAME],
         name="unitree_mujoco",
         output="screen",
         env=sim_env,
@@ -346,6 +359,11 @@ def _launch_setup(context, *args, **kwargs):
         )
 
     sim_env = dict(os.environ)
+    bundle = sim_env.get("GROVE_G1_PEDESTRIAN_BUNDLE")
+    if bundle:
+        sim_env["GROVE_G1_PEDESTRIAN_SCENARIO"] = os.path.join(bundle, "playback.yaml")
+    elif sim_env.get("GROVE_G1_PEDESTRIAN_SCENARIO"):
+        raise RuntimeError("Use a prepared GROVE_G1_PEDESTRIAN_BUNDLE, not a standalone playback file")
     sim_env["LD_LIBRARY_PATH"] = UNITREE_ROBOTICS_LIB + ":" + sim_env.get("LD_LIBRARY_PATH", "")
 
     actions = []

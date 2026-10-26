@@ -7,6 +7,7 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/../../cmake/g1_common.cmake)
 
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(g1_msgs REQUIRED)
 find_package(livox_ros_driver2 REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -42,6 +43,7 @@ target_link_libraries(g1_sensor_relay PUBLIC
   tf2_ros::tf2_ros
   tf2_geometry_msgs::tf2_geometry_msgs
   ${geometry_msgs_TARGETS}
+  ${g1_msgs_TARGETS}
   ${nav_msgs_TARGETS}
   ${sensor_msgs_TARGETS}
   ${vision_msgs_TARGETS}

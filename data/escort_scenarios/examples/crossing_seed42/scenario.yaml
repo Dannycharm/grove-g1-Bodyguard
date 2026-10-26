@@ -1,0 +1,23 @@
+bounds:
+  x:
+  - -6.0
+  - 6.0
+  y:
+  - -6.0
+  - 6.0
+family: perpendicular_crossing
+frame_id: escort_scenario
+limits:
+  max_acceleration_mps2: 0.8
+  max_speed_mps: 1.4
+  max_turn_rate_rps: 0.7
+pedestrian_count: 2
+randomization:
+  position_jitter_m: 0.2
+  speed_scale:
+  - 0.75
+  - 1.0
+sample_dt_s: 0.1
+schema_version: 1
+seed: 42
+time_origin_s: 0.0

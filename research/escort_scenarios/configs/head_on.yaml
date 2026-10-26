@@ -1,0 +1,18 @@
+schema_version: 1
+family: head_on
+seed: 42
+# Abstract scenario coordinates; no ROS map or MuJoCo transform is implied.
+frame_id: escort_scenario
+sample_dt_s: 0.1
+time_origin_s: 0.0
+pedestrian_count: 2
+bounds:
+  x: [-6.0, 6.0]
+  y: [-6.0, 6.0]
+limits:
+  max_speed_mps: 1.4
+  max_acceleration_mps2: 0.8
+  max_turn_rate_rps: 0.7
+randomization:
+  position_jitter_m: 0.2
+  speed_scale: [0.75, 1.0]

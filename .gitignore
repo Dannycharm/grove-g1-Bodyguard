@@ -39,3 +39,22 @@ workspace/src/.vscode/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Escort research runtime datasets and prepared MuJoCo scene bundles.
+# These contain run-specific timestamps, absolute paths, and control/status mailboxes.
+/data/escort_logs/
+/data/escort_navigation_*/
+
+# Generated scenario runs; retain the small curated, reproducible example artifacts.
+/data/escort_scenarios/*
+!/data/escort_scenarios/examples/
+
+# Local Python environments, test/lint caches, and standalone package build outputs.
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+/research/escort_scenarios/build/
+/research/escort_scenarios/dist/
+/workspace/src/escort_observation_bridge/build/
+/workspace/src/escort_observation_bridge/dist/

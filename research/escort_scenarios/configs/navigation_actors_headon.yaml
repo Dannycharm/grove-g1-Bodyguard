@@ -1,0 +1,23 @@
+schema_version: 1
+family: head_on
+seed: 42
+frame_id: escort_navigation_local
+sample_dt_s: 0.05
+pedestrian_count: 2
+bounds:
+  x: [-1.8, 1.8]
+  y: [-1.8, 1.8]
+limits:
+  max_speed_mps: 0.7
+  max_acceleration_mps2: 0.5
+  max_turn_rate_rps: 0.6
+actors:
+  - id: client
+    role: client
+    waypoints: [[-1.4, 1.35], [1.4, 1.35]]
+  - id: pedestrian_1
+    role: pedestrian
+    waypoints: [[1.4, 1.35], [-1.4, 1.35]]
+  - id: pedestrian_2
+    role: pedestrian
+    waypoints: [[1.4, -1.35], [-1.4, -1.35]]
