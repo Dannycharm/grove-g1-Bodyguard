@@ -36,6 +36,9 @@ workspace/src/.vscode/
 *.swo
 *~
 
+# Generated local rendering and document QA intermediates.
+/tmp/
+
 # OS files
 .DS_Store
 Thumbs.db

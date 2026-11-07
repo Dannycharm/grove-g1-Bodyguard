@@ -1,0 +1,62 @@
+schema_version: 1
+environment_config: stage1.yaml
+split_config: stage1_splits.json
+device: cpu
+torch_threads: 1
+workers: 1
+ppo:
+  learning_rate: 1.0e-05
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  n_steps: 1024
+  batch_size: 256
+  n_epochs: 10
+  ent_coef: 0.001
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  policy_kwargs:
+    net_arch:
+      pi:
+      - 128
+      - 128
+      vf:
+      - 128
+      - 128
+  target_kl: 0.01
+checkpoint_interval: 2048
+validation_interval: 10000
+promotion:
+  overall_success: 0.9
+  per_family_success: 0.8
+  max_mean_formation_error_m: 0.75
+  min_mean_accompanied_fraction: 0.6
+  consecutive_rounds: 2
+reward_version: tracking_stop_v3
+imitation:
+  protocol: imitation_pretrained_ppo_v1
+  actor_source: research/escort_rl/runs/capacity_exploration_20261106/imitation/diagnostic_imitation_actor.zip
+  actor_sha256: ef80e8d20a589c73140c99d1c532a856d7c3d0bb4fbe20f7228aec791fdba116
+  source_manifest: research/escort_rl/runs/capacity_exploration_20261106/imitation/manifest.json
+  source_manifest_sha256: 95ee89696b2cc775947f91af6c0e73514d11bb976a13f55afea9fc2eb57c6e74
+  source_data: research/escort_rl/runs/capacity_exploration_20261106/imitation/causal_training_data.npz
+  source_data_sha256: ac65cd2de8e4b64d9d75ef8bdf8964b9e1f11f3f9f5408a31c47fac0a7623618
+  noise_sigmas:
+  - 1.0
+  - 0.37
+  - 0.1
+  - 0.05
+  - 0.02
+  noise_cases_per_family: 4
+  noise_seed: 52001
+  noise_min_success: 0.9
+  noise_min_family_success: 0.8
+  noise_max_formation_m: 0.15
+  critic_episodes: 24
+  critic_scenario_seed: 53001
+  critic_action_seed: 54001
+  critic_fit_seed: 55001
+  critic_updates: 6000
+  critic_batch_size: 256
+  critic_learning_rate: 0.0003
+  max_new_ppo_transitions: 5000

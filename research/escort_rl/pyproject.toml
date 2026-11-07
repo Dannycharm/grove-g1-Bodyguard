@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "escort-rl"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy==2.2.6", "mujoco==3.3.6", "onnxruntime==1.20.1"]
+
+[project.optional-dependencies]
+stage1 = ["gymnasium==1.2.2", "PyYAML==6.0.3"]
+ppo = ["gymnasium==1.2.2", "PyYAML==6.0.3", "torch==2.7.1", "stable-baselines3==2.7.0", "tensorboard==2.20.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "../escort_scenarios"]

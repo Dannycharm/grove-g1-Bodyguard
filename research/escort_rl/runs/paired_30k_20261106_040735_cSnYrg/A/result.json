@@ -1,0 +1,20 @@
+{
+  "start_timesteps": 20000,
+  "end_timesteps": 30000,
+  "new_transitions": 10000,
+  "sb3_optimization_epochs": 150,
+  "gradient_steps_total": 1200,
+  "optimizer_updates": 150,
+  "training_wall_s": 154.1727068170003,
+  "transitions_per_second": 64.86232360095867,
+  "active_physics_steps": 1000000,
+  "active_gait_calls": 100000,
+  "training_episode_count": 65,
+  "optimizer_wall_s": 0.6281630609955755,
+  "cpu_seconds": 286.8400000000001,
+  "resident_memory_kib_parent_and_workers": 2466724,
+  "best_validation": "initial",
+  "promotion_round_pass": false,
+  "promotion_approved": false,
+  "promotion_note": "Two consecutive full passing validation rounds required; no curriculum promotion in this milestone."
+}

@@ -1,0 +1,120 @@
+{
+  "result": {
+    "method": "imitation-pretrained PPO",
+    "start_timesteps": 0,
+    "end_timesteps": 5000,
+    "new_transitions": 5000,
+    "training_wall_s": 74.77570650800044,
+    "transitions_per_second": 66.86663668587387,
+    "physics_steps": 500000,
+    "gait_calls": 50000,
+    "training_episodes": 24,
+    "training_successes": 24,
+    "optimizer_wall_s": 0.3160187630019209,
+    "gradient_steps_total": 194,
+    "actor_mean_drift_mse": 3.16105033562053e-05,
+    "std_before": [
+      0.04999999701976776,
+      0.04999999701976776,
+      0.04999999701976776
+    ],
+    "std_after": [
+      0.049994323402643204,
+      0.05000276491045952,
+      0.04997604340314865
+    ],
+    "initial_success": 1.0,
+    "final_success": 1.0,
+    "preservation_pass": true,
+    "best_validation": "final",
+    "promotion_approved": false,
+    "cpu_seconds": 480.94000000000005,
+    "rss_kib": 2787388
+  },
+  "initial": {
+    "episodes": 60,
+    "success_rate": 1.0,
+    "per_family": {
+      "straight": {
+        "episodes": 20,
+        "success_rate": 1.0
+      },
+      "gentle_turn": {
+        "episodes": 20,
+        "success_rate": 1.0
+      },
+      "stop_start": {
+        "episodes": 20,
+        "success_rate": 1.0
+      }
+    },
+    "failures": {
+      "success": 60
+    },
+    "formation_mean_m": 0.0590601953602175,
+    "mean_return": 30.022889852036606,
+    "reward_version": "tracking_stop_v3",
+    "terminal_signed_error_mean": [
+      -0.011453137986375202,
+      0.002401939297892104
+    ],
+    "terminal_error_norm_mean": 0.02014948072788831,
+    "stop_hold_mean_s": 1.0000000000000002,
+    "terminal_planar_body_speed_mean": 0.003393403093587591
+  },
+  "final": {
+    "episodes": 60,
+    "success_rate": 1.0,
+    "per_family": {
+      "straight": {
+        "episodes": 20,
+        "success_rate": 1.0
+      },
+      "gentle_turn": {
+        "episodes": 20,
+        "success_rate": 1.0
+      },
+      "stop_start": {
+        "episodes": 20,
+        "success_rate": 1.0
+      }
+    },
+    "failures": {
+      "success": 60
+    },
+    "formation_mean_m": 0.05630953682860855,
+    "mean_return": 30.14156301203694,
+    "reward_version": "tracking_stop_v3",
+    "terminal_signed_error_mean": [
+      -0.015553159254941424,
+      0.006889785093245866
+    ],
+    "terminal_error_norm_mean": 0.024423403235748663,
+    "stop_hold_mean_s": 1.0000000000000002,
+    "terminal_planar_body_speed_mean": 0.002655398183028875
+  },
+  "workers": [
+    {
+      "worker": 0,
+      "resets": 13,
+      "unique_seeds": 13,
+      "families": {
+        "straight": 8,
+        "stop_start": 2,
+        "gentle_turn": 3
+      }
+    },
+    {
+      "worker": 1,
+      "resets": 13,
+      "unique_seeds": 13,
+      "families": {
+        "straight": 8,
+        "stop_start": 3,
+        "gentle_turn": 2
+      }
+    }
+  ],
+  "resume_sidecar_timesteps": 5000,
+  "training_seed_overlap_between_workers": false
+}

@@ -1,0 +1,35 @@
+/joint_states:
+  history: keep_last
+  depth: 1000
+  reliability: reliable
+  durability: transient_local
+/cmd_vel:
+  history: keep_last
+  depth: 100
+  reliability: reliable
+  durability: volatile
+/g1_sensor_relay/actor_ground_truth:
+  history: keep_last
+  depth: 100
+  reliability: best_effort
+  durability: volatile
+/g1_sensor_relay/base_state:
+  history: keep_last
+  depth: 1000
+  reliability: reliable
+  durability: volatile
+/agile_controller/inferring:
+  history: keep_last
+  depth: 1
+  reliability: reliable
+  durability: transient_local
+/locomotion_safety_controller/transition_event:
+  history: keep_last
+  depth: 100
+  reliability: reliable
+  durability: volatile
+/diagnostics:
+  history: keep_last
+  depth: 100
+  reliability: reliable
+  durability: volatile

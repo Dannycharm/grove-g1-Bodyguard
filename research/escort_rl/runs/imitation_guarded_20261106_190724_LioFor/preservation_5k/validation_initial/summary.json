@@ -1,0 +1,2186 @@
+{
+  "episodes": 60,
+  "success_rate": 1.0,
+  "per_family": {
+    "straight": {
+      "episodes": 20,
+      "success_rate": 1.0
+    },
+    "gentle_turn": {
+      "episodes": 20,
+      "success_rate": 1.0
+    },
+    "stop_start": {
+      "episodes": 20,
+      "success_rate": 1.0
+    }
+  },
+  "failures": {
+    "success": 60
+  },
+  "formation_mean_m": 0.0590601953602175,
+  "mean_return": 30.022889852036606,
+  "episodes_detail": [
+    {
+      "family": "straight",
+      "episode_seed": 1000001,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.316100834918764,
+      "steps": 145,
+      "duration_s": 29.0,
+      "formation_mean_m": 0.061442082516712626,
+      "formation_p95_m": 0.10701889942631372,
+      "accompanied_progress_m": 3.225986318298423,
+      "robot_progress_m": 3.714269513749324,
+      "mean_body_velocity": [
+        0.1255150719492064,
+        -0.0002719007594895261,
+        -0.0011424617924078598
+      ],
+      "mean_abs_command": [
+        0.17816137795884499,
+        0.021101491555876643,
+        0.013524072656294047
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.24822212689456905,
+        "progress": 12.903945273193692,
+        "command_change": -0.00417956342375737,
+        "torso_stability": -3.975534796687526e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.335402992608627
+      },
+      "accompanied_fraction": 0.876497738771666
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000005,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.78225920534632,
+      "steps": 236,
+      "duration_s": 47.2,
+      "formation_mean_m": 0.05299941637750925,
+      "formation_p95_m": 0.1028837918510477,
+      "accompanied_progress_m": 3.8916588002916646,
+      "robot_progress_m": 4.6069498755631315,
+      "mean_body_velocity": [
+        0.09776279111528471,
+        0.0010696308081323458,
+        -0.00016554293833675237
+      ],
+      "mean_abs_command": [
+        0.1605250242134651,
+        0.01781771115208157,
+        0.013994838851030474
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3106288463063697,
+        "progress": 15.566635201166658,
+        "command_change": -0.006972895114618479,
+        "torso_stability": -7.953243186099092e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.466694721967497
+      },
+      "accompanied_fraction": 0.8278378770524579
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000009,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.112872634726905,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.06502533356771203,
+      "formation_p95_m": 0.11316806066006475,
+      "accompanied_progress_m": 3.4492031071288185,
+      "robot_progress_m": 4.108405177846497,
+      "mean_body_velocity": [
+        0.11063789530779426,
+        0.002527013809280486,
+        0.014374793383936034
+      ],
+      "mean_abs_command": [
+        0.1711841294383432,
+        0.03389966577146589,
+        0.013918772970971483
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.35011149147138665,
+        "progress": 13.796812428515274,
+        "command_change": -0.007162780227765047,
+        "torso_stability": -4.6892573821152084e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.3266186295153872
+      },
+      "accompanied_fraction": 0.85844369088633
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000013,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.88849608647204,
+      "steps": 189,
+      "duration_s": 37.800000000000004,
+      "formation_mean_m": 0.05496402957025947,
+      "formation_p95_m": 0.11145967405458324,
+      "accompanied_progress_m": 3.0500620745691656,
+      "robot_progress_m": 3.7066911704357457,
+      "mean_body_velocity": [
+        0.09822582070050223,
+        0.0005642125512508237,
+        -0.004839596250893611
+      ],
+      "mean_abs_command": [
+        0.15709992499637698,
+        0.02114630223941132,
+        0.013330690902423744
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2636698046149512,
+        "progress": 12.200248298276662,
+        "command_change": -0.00592290973440636,
+        "torso_stability": -5.588029087298363e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.0421036171643996
+      },
+      "accompanied_fraction": 0.8445174133079336
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000017,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.094517909501988,
+      "steps": 149,
+      "duration_s": 29.8,
+      "formation_mean_m": 0.058512688717330986,
+      "formation_p95_m": 0.11352460235720259,
+      "accompanied_progress_m": 3.0155252177916454,
+      "robot_progress_m": 3.579904232583826,
+      "mean_body_velocity": [
+        0.11964302193686559,
+        -0.003299951981591523,
+        -0.009681984186706306
+      ],
+      "mean_abs_command": [
+        0.17347115001699032,
+        0.021713760358378315,
+        0.02137068253503323
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2517799773304759,
+        "progress": 12.062100871166582,
+        "command_change": -0.006564214228253398,
+        "torso_stability": -4.558355355303066e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.70919318655232
+      },
+      "accompanied_fraction": 0.8558312892081963
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000021,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.09834425534762,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.06448019321631449,
+      "formation_p95_m": 0.11436315743742381,
+      "accompanied_progress_m": 3.760636140525538,
+      "robot_progress_m": 4.415198485593297,
+      "mean_body_velocity": [
+        0.11742160437387612,
+        -0.003096362220468553,
+        -0.0008746800192005629
+      ],
+      "mean_abs_command": [
+        0.1776913752224534,
+        0.024364985046942938,
+        0.01652280186909651
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.37629961621286345,
+        "progress": 15.042544562102153,
+        "command_change": -0.008506543680989373,
+        "torso_stability": -5.0742899182098174e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.559343403961502
+      },
+      "accompanied_fraction": 0.8705252651050756
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000025,
+      "reason": "success",
+      "success": true,
+      "return_total": 32.18414710253764,
+      "steps": 212,
+      "duration_s": 42.4,
+      "formation_mean_m": 0.05307650521291838,
+      "formation_p95_m": 0.10644743502922407,
+      "accompanied_progress_m": 3.9989942611412106,
+      "robot_progress_m": 4.664296021028717,
+      "mean_body_velocity": [
+        0.11089265397020454,
+        0.0009691149692734089,
+        -0.0012836505734407893
+      ],
+      "mean_abs_command": [
+        0.17129178929476524,
+        0.01826644713603529,
+        0.01201643523997415
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.298475306186828,
+        "progress": 15.995977044564842,
+        "command_change": -0.006774508283496099,
+        "torso_stability": -5.610691744091987e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.5065240206394277
+      },
+      "accompanied_fraction": 0.8629875856715
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000033,
+      "reason": "success",
+      "success": true,
+      "return_total": 27.479008758572874,
+      "steps": 189,
+      "duration_s": 37.800000000000004,
+      "formation_mean_m": 0.05711697642354463,
+      "formation_p95_m": 0.10733926914308829,
+      "accompanied_progress_m": 2.7914858583374285,
+      "robot_progress_m": 3.482311962126147,
+      "mean_body_velocity": [
+        0.09176103035831444,
+        0.003404237867296607,
+        0.008978593022511666
+      ],
+      "mean_abs_command": [
+        0.15622732165471587,
+        0.02701587969800154,
+        0.014786569337254616
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.27112729243531947,
+        "progress": 11.165943433349714,
+        "command_change": -0.0066814528628822215,
+        "torso_stability": -6.729972463486029e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.4090586297540053
+      },
+      "accompanied_fraction": 0.8011567444617385
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000041,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.767806061081345,
+      "steps": 167,
+      "duration_s": 33.4,
+      "formation_mean_m": 0.06727246322854973,
+      "formation_p95_m": 0.11071608981026144,
+      "accompanied_progress_m": 3.703239692985089,
+      "robot_progress_m": 4.17346486753649,
+      "mean_body_velocity": [
+        0.1248538483418726,
+        -0.0028481220009227834,
+        -0.004227327008822101
+      ],
+      "mean_abs_command": [
+        0.18685220944845748,
+        0.030852664887701567,
+        0.014099856909339367
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.32813450510364156,
+        "progress": 14.812958771940355,
+        "command_change": -0.006939770109518428,
+        "torso_stability": -5.252894096487901e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.7100259067048893
+      },
+      "accompanied_fraction": 0.8980693055521247
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000045,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.91571083895012,
+      "steps": 181,
+      "duration_s": 36.2,
+      "formation_mean_m": 0.05855430339565679,
+      "formation_p95_m": 0.10479488159481046,
+      "accompanied_progress_m": 3.3179567071297815,
+      "robot_progress_m": 3.9164885778075273,
+      "mean_body_velocity": [
+        0.10803556850499785,
+        -0.001985598036770559,
+        -0.0012257315540122658
+      ],
+      "mean_abs_command": [
+        0.16515237390248938,
+        0.020810278685852238,
+        0.01468497615836423
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2901534972103636,
+        "progress": 13.271826828519126,
+        "command_change": -0.006389472247108662,
+        "torso_stability": -6.891915432753135e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.059504100957216
+      },
+      "accompanied_fraction": 0.8336092403647839
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000049,
+      "reason": "success",
+      "success": true,
+      "return_total": 26.924427468512153,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.049516165263634455,
+      "formation_p95_m": 0.10342443795497568,
+      "accompanied_progress_m": 2.5539918920596065,
+      "robot_progress_m": 3.1916876559497602,
+      "mean_body_velocity": [
+        0.08535652287625278,
+        0.000628382845748192,
+        0.00034442028516633733
+      ],
+      "mean_abs_command": [
+        0.1437996309492093,
+        0.02096186680106218,
+        0.01780447290435946
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.24143045902989163,
+        "progress": 10.215967568238426,
+        "command_change": -0.006881130399952078,
+        "torso_stability": -5.328769090257701e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.0431752226055155
+      },
+      "accompanied_fraction": 0.7913259108844903
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000053,
+      "reason": "success",
+      "success": true,
+      "return_total": 26.772070046060076,
+      "steps": 210,
+      "duration_s": 42.0,
+      "formation_mean_m": 0.05520187676442399,
+      "formation_p95_m": 0.10258269523680667,
+      "accompanied_progress_m": 2.7101281520748115,
+      "robot_progress_m": 3.510528345237874,
+      "mean_body_velocity": [
+        0.0838825335836596,
+        0.0032543092374729098,
+        -0.00012880783097300868
+      ],
+      "mean_abs_command": [
+        0.1491047717808258,
+        0.035135053167773767,
+        0.0148974310889441
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2732167843418531,
+        "progress": 10.840512608299246,
+        "command_change": -0.007915266772815236,
+        "torso_stability": -6.394108635135386e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.787246570038159
+      },
+      "accompanied_fraction": 0.7833277565012778
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000057,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.888901444068097,
+      "steps": 169,
+      "duration_s": 33.8,
+      "formation_mean_m": 0.06575225762759165,
+      "formation_p95_m": 0.13393779313533802,
+      "accompanied_progress_m": 3.5513418101432777,
+      "robot_progress_m": 4.28192890274884,
+      "mean_body_velocity": [
+        0.12593507689805583,
+        0.0004601544492795792,
+        -0.01427055895352794
+      ],
+      "mean_abs_command": [
+        0.18090307095347072,
+        0.027099522343320862,
+        0.020781201994621842
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3569744521674644,
+        "progress": 14.20536724057311,
+        "command_change": -0.009595055841071457,
+        "torso_stability": -5.716885211637025e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.949839119644366
+      },
+      "accompanied_fraction": 0.8545807036941265
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000061,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.54459483459322,
+      "steps": 182,
+      "duration_s": 36.4,
+      "formation_mean_m": 0.06141506709071113,
+      "formation_p95_m": 0.10785504954592111,
+      "accompanied_progress_m": 3.5408525382185703,
+      "robot_progress_m": 4.182322607269319,
+      "mean_body_velocity": [
+        0.1148430615041159,
+        0.0010952058996549238,
+        0.0025797551148471665
+      ],
+      "mean_abs_command": [
+        0.1777996372503157,
+        0.02517009088638428,
+        0.012423081161139654
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.30536787719826086,
+        "progress": 14.163410152874281,
+        "command_change": -0.006031648810490827,
+        "torso_stability": -5.7247013679484916e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.3073585452586283
+      },
+      "accompanied_fraction": 0.8283564735714979
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000065,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.594402741584982,
+      "steps": 307,
+      "duration_s": 61.4,
+      "formation_mean_m": 0.05161089750086353,
+      "formation_p95_m": 0.09800717726166709,
+      "accompanied_progress_m": 3.8315087735731654,
+      "robot_progress_m": 4.802844777466497,
+      "mean_body_velocity": [
+        0.07881228006744394,
+        0.0014931098466090397,
+        -0.0005675267622802058
+      ],
+      "mean_abs_command": [
+        0.1369004920799989,
+        0.024391272454949153,
+        0.010674179582304854
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.36855098926016133,
+        "progress": 15.326035094292662,
+        "command_change": -0.007860099388889243,
+        "torso_stability": -9.908615888867758e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -4.355122177899746
+      },
+      "accompanied_fraction": 0.7812109470578409
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000069,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.347689492674725,
+      "steps": 229,
+      "duration_s": 45.800000000000004,
+      "formation_mean_m": 0.048445139789945996,
+      "formation_p95_m": 0.09500133992609759,
+      "accompanied_progress_m": 2.9817339834420653,
+      "robot_progress_m": 3.6854387587741213,
+      "mean_body_velocity": [
+        0.07925822724429543,
+        0.000434169302938738,
+        -0.0009781041733021142
+      ],
+      "mean_abs_command": [
+        0.14152189576693336,
+        0.015992508127989094,
+        0.009609989009291242
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.24701652900679075,
+        "progress": 11.926935933768261,
+        "command_change": -0.006297993488610648,
+        "torso_stability": -5.2818961749805386e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.3258790996363796
+      },
+      "accompanied_fraction": 0.788400289492116
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000073,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.59210611640098,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.057546956286742085,
+      "formation_p95_m": 0.12814984803968402,
+      "accompanied_progress_m": 3.81861035171345,
+      "robot_progress_m": 4.390650819888102,
+      "mean_body_velocity": [
+        0.11544265174864958,
+        0.001179097383911613,
+        -0.00024669136768771995
+      ],
+      "mean_abs_command": [
+        0.17883047849891034,
+        0.015873799223977296,
+        0.01678884158246411
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.32277534874365643,
+        "progress": 15.2744414068538,
+        "command_change": -0.007119962731838596,
+        "torso_stability": -6.675251224343628e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.3523732264650814
+      },
+      "accompanied_fraction": 0.8771178607383121
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000077,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.558067395753522,
+      "steps": 218,
+      "duration_s": 43.6,
+      "formation_mean_m": 0.0589136328902415,
+      "formation_p95_m": 0.11436101241725642,
+      "accompanied_progress_m": 3.9996055917414504,
+      "robot_progress_m": 4.8276856081164725,
+      "mean_body_velocity": [
+        0.11004774446372224,
+        -0.0010030175129962457,
+        -0.0015168181317367366
+      ],
+      "mean_abs_command": [
+        0.17224104376082575,
+        0.019505261246303477,
+        0.013428942775319079
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3622056322538259,
+        "progress": 15.998422366965801,
+        "command_change": -0.00773083685700275,
+        "torso_stability": -5.81617139710051e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -4.070360340387491
+      },
+      "accompanied_fraction": 0.8465152142777512
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000081,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.83496207410888,
+      "steps": 201,
+      "duration_s": 40.2,
+      "formation_mean_m": 0.054062736080639766,
+      "formation_p95_m": 0.10047884210100227,
+      "accompanied_progress_m": 3.3082035961004963,
+      "robot_progress_m": 3.940746293743774,
+      "mean_body_velocity": [
+        0.09828483014509778,
+        0.0024166045819082375,
+        -0.014367717999406008
+      ],
+      "mean_abs_command": [
+        0.16195445128748961,
+        0.02346310780934737,
+        0.01918644294246903
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2695858357917832,
+        "progress": 13.232814384401985,
+        "command_change": -0.006897966240968301,
+        "torso_stability": -5.559051967471308e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.1213129177406738
+      },
+      "accompanied_fraction": 0.8351778795916934
+    },
+    {
+      "family": "straight",
+      "episode_seed": 1000085,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.250500774164834,
+      "steps": 163,
+      "duration_s": 32.6,
+      "formation_mean_m": 0.05677064237516103,
+      "formation_p95_m": 0.10829252985785869,
+      "accompanied_progress_m": 3.2965157909372698,
+      "robot_progress_m": 3.7692674307153347,
+      "mean_body_velocity": [
+        0.11537323408192236,
+        0.0007764487223353989,
+        0.0016341919291905272
+      ],
+      "mean_abs_command": [
+        0.1777022365549225,
+        0.014597794229676804,
+        0.016852981966571666
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.26188262459455197,
+        "progress": 13.186063163749079,
+        "command_change": -0.006163374818918071,
+        "torso_stability": -5.639818534581531e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.66745999198542
+      },
+      "accompanied_fraction": 0.8798656861486026
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000001,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.196174115493285,
+      "steps": 145,
+      "duration_s": 29.0,
+      "formation_mean_m": 0.07087600013436618,
+      "formation_p95_m": 0.1287085895404904,
+      "accompanied_progress_m": 3.2310409263798836,
+      "robot_progress_m": 3.6631190965198535,
+      "mean_body_velocity": [
+        0.1275039866122297,
+        -0.01920361481050103,
+        0.02018935734261961
+      ],
+      "mean_abs_command": [
+        0.1814536059467957,
+        0.05200308649158426,
+        0.0179834460756332
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.33549966431810946,
+        "progress": 12.924163705519534,
+        "command_change": -0.006198430678006121,
+        "torso_stability": -3.793750873320479e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.3862535575214108
+      },
+      "accompanied_fraction": 0.8778710714881278
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000005,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.064886534060065,
+      "steps": 236,
+      "duration_s": 47.2,
+      "formation_mean_m": 0.06136352950756788,
+      "formation_p95_m": 0.11460852750412825,
+      "accompanied_progress_m": 3.9096565770893705,
+      "robot_progress_m": 4.7093173749637645,
+      "mean_body_velocity": [
+        0.0996857911395476,
+        0.009520357259000516,
+        -0.0017535707652241506
+      ],
+      "mean_abs_command": [
+        0.158120075951062,
+        0.03943309771766199,
+        0.022516155964417445
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.4136898268854147,
+        "progress": 15.638626308357482,
+        "command_change": -0.010133663887519647,
+        "torso_stability": -8.859514745235321e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -4.149827688377046
+      },
+      "accompanied_fraction": 0.8316663836355017
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000009,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.11598773340814,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.06705515752566504,
+      "formation_p95_m": 0.11424755567362913,
+      "accompanied_progress_m": 3.420842210981147,
+      "robot_progress_m": 4.060325944666728,
+      "mean_body_velocity": [
+        0.10662580514512071,
+        0.01200392721069003,
+        -0.007464843059747637
+      ],
+      "mean_abs_command": [
+        0.16378140733688773,
+        0.03896014829831287,
+        0.01590915386474235
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.35880522028852035,
+        "progress": 13.683368843924589,
+        "command_change": -0.007165479609444185,
+        "torso_stability": -4.458107564863089e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.2013658295428415
+      },
+      "accompanied_fraction": 0.8513851815409301
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000013,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.83695734976487,
+      "steps": 189,
+      "duration_s": 37.800000000000004,
+      "formation_mean_m": 0.0640222658600655,
+      "formation_p95_m": 0.10408961004711624,
+      "accompanied_progress_m": 2.981129689753061,
+      "robot_progress_m": 3.5315734397890433,
+      "mean_body_velocity": [
+        0.09395990883696051,
+        -0.009531204248524886,
+        0.010533207434042777
+      ],
+      "mean_abs_command": [
+        0.1491362799855846,
+        0.04553236437314091,
+        0.014632123549485445
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3139450247623523,
+        "progress": 11.924518759012244,
+        "command_change": -0.006734947655775589,
+        "torso_stability": -5.153982146559198e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.7668298970077725
+      },
+      "accompanied_fraction": 0.8254310478849392
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000017,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.458062206641067,
+      "steps": 149,
+      "duration_s": 29.8,
+      "formation_mean_m": 0.08359787333479553,
+      "formation_p95_m": 0.15228834253895535,
+      "accompanied_progress_m": 2.912755559942773,
+      "robot_progress_m": 3.3942228338046485,
+      "mean_body_velocity": [
+        0.11357217794343896,
+        0.014105527558986647,
+        -0.0036910478015774167
+      ],
+      "mean_abs_command": [
+        0.1766433849236959,
+        0.06109238669570011,
+        0.019786192638637037
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.45713636392337104,
+        "progress": 11.651022239771091,
+        "command_change": -0.006796638356087041,
+        "torso_stability": -6.382138975592298e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.728963209460815
+      },
+      "accompanied_fraction": 0.8266644003858582
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000021,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.279523368502687,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.06472496042071703,
+      "formation_p95_m": 0.11269132877923041,
+      "accompanied_progress_m": 3.681416641450929,
+      "robot_progress_m": 4.25569129671883,
+      "mean_body_velocity": [
+        0.11323509075157946,
+        -0.020643795570565802,
+        0.0046512584945642655
+      ],
+      "mean_abs_command": [
+        0.17640147000759285,
+        0.04865175449943289,
+        0.022651608453862594
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.33561260556468114,
+        "progress": 14.725666565803715,
+        "command_change": -0.0072081105758137545,
+        "torso_stability": -6.862717237928174e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.1032538539881656
+      },
+      "accompanied_fraction": 0.8521872571573621
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000025,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.32930022472322,
+      "steps": 212,
+      "duration_s": 42.4,
+      "formation_mean_m": 0.056502814651182086,
+      "formation_p95_m": 0.1183991581213453,
+      "accompanied_progress_m": 3.8773130849917345,
+      "robot_progress_m": 4.649631576722548,
+      "mean_body_velocity": [
+        0.109939210615304,
+        -0.012217645365078925,
+        0.0237461856132462
+      ],
+      "mean_abs_command": [
+        0.16672190680291574,
+        0.027468739797494084,
+        0.015541048595003062
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3494175179669672,
+        "progress": 15.509252339966938,
+        "command_change": -0.006323255349693151,
+        "torso_stability": -6.865739958477682e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.8241426845274717
+      },
+      "accompanied_fraction": 0.8367286471560599
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000033,
+      "reason": "success",
+      "success": true,
+      "return_total": 27.84967668964248,
+      "steps": 189,
+      "duration_s": 37.800000000000004,
+      "formation_mean_m": 0.059989165166091464,
+      "formation_p95_m": 0.1153740809938149,
+      "accompanied_progress_m": 2.81931591924379,
+      "robot_progress_m": 3.481453951540534,
+      "mean_body_velocity": [
+        0.09242469883710742,
+        -0.010552102996470168,
+        -0.001342857613569004
+      ],
+      "mean_abs_command": [
+        0.15400626938469786,
+        0.035712475993066276,
+        0.018625536636189464
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3089894339358761,
+        "progress": 11.27726367697516,
+        "command_change": -0.006430168354801716,
+        "torso_stability": -5.606877943344866e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.112111316262577
+      },
+      "accompanied_fraction": 0.8091439749638453
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000041,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.403171166168647,
+      "steps": 167,
+      "duration_s": 33.4,
+      "formation_mean_m": 0.08315377884215021,
+      "formation_p95_m": 0.14203394298840782,
+      "accompanied_progress_m": 3.7483695672926762,
+      "robot_progress_m": 4.214675602261336,
+      "mean_body_velocity": [
+        0.12628590344167023,
+        0.028144228554771653,
+        -0.02782632628332555
+      ],
+      "mean_abs_command": [
+        0.1911927234537587,
+        0.06440249007351384,
+        0.01906861831496113
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.5040594390425907,
+        "progress": 14.993478269170705,
+        "command_change": -0.008877929321858585,
+        "torso_stability": -5.160619160578019e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.077318128446009
+      },
+      "accompanied_fraction": 0.9090137105162008
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000045,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.022498486292527,
+      "steps": 181,
+      "duration_s": 36.2,
+      "formation_mean_m": 0.0684959582099131,
+      "formation_p95_m": 0.1192586445507972,
+      "accompanied_progress_m": 3.431611968481045,
+      "robot_progress_m": 4.012379538123171,
+      "mean_body_velocity": [
+        0.1112032496777834,
+        -0.01582255414260542,
+        0.016044520779127904
+      ],
+      "mean_abs_command": [
+        0.1759395416393794,
+        0.04729144349411253,
+        0.021583157888831035
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3702328211311791,
+        "progress": 13.72644787392418,
+        "command_change": -0.009288469623063927,
+        "torso_stability": -6.542326801712802e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.324362673609391
+      },
+      "accompanied_fraction": 0.8621641868096538
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000049,
+      "reason": "success",
+      "success": true,
+      "return_total": 27.489379487202257,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.054752955165956574,
+      "formation_p95_m": 0.10931168691197206,
+      "accompanied_progress_m": 2.7157978225223856,
+      "robot_progress_m": 3.342482052220456,
+      "mean_body_velocity": [
+        0.08863764803719446,
+        0.010754443936850419,
+        -0.008313794905847566
+      ],
+      "mean_abs_command": [
+        0.14756272488491648,
+        0.024110872917709514,
+        0.017657480394421887
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2727658867643801,
+        "progress": 10.863191290089542,
+        "command_change": -0.0071343329069007,
+        "torso_stability": -6.233563879648726e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.0938492475772144
+      },
+      "accompanied_fraction": 0.8414596743110905
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000053,
+      "reason": "success",
+      "success": true,
+      "return_total": 27.823660382000284,
+      "steps": 210,
+      "duration_s": 42.0,
+      "formation_mean_m": 0.052361126582545124,
+      "formation_p95_m": 0.09001540721590721,
+      "accompanied_progress_m": 2.8323330749773676,
+      "robot_progress_m": 3.484899942459667,
+      "mean_body_velocity": [
+        0.08318592091327623,
+        -0.0091156045375862,
+        -0.0009044047434490312
+      ],
+      "mean_abs_command": [
+        0.14331370522046372,
+        0.03550383771597851,
+        0.010199007868678087
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2531848514115493,
+        "progress": 11.32933229990947,
+        "command_change": -0.00703449306765926,
+        "torso_stability": -5.1309253268498004e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.2454012641767114
+      },
+      "accompanied_fraction": 0.8186495209047009
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000057,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.58342020178066,
+      "steps": 169,
+      "duration_s": 33.8,
+      "formation_mean_m": 0.06856696407534052,
+      "formation_p95_m": 0.11302082624695664,
+      "accompanied_progress_m": 3.4924462911454937,
+      "robot_progress_m": 4.040142735321628,
+      "mean_body_velocity": [
+        0.11963564534043752,
+        0.017287919984690904,
+        -0.017660791648232976
+      ],
+      "mean_abs_command": [
+        0.18304061252877293,
+        0.030573374854218897,
+        0.021054864003110855
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.35198271324041386,
+        "progress": 13.969785164581975,
+        "command_change": -0.0065022635112259135,
+        "torso_stability": -7.126766153646227e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.027808718388143
+      },
+      "accompanied_fraction": 0.8404083213214124
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000061,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.384471429415743,
+      "steps": 182,
+      "duration_s": 36.4,
+      "formation_mean_m": 0.06225814182498222,
+      "formation_p95_m": 0.11448552813832429,
+      "accompanied_progress_m": 3.57001523438928,
+      "robot_progress_m": 4.264339059210901,
+      "mean_body_velocity": [
+        0.1158106945864121,
+        0.015128914642752397,
+        -0.0006285638586705392
+      ],
+      "mean_abs_command": [
+        0.17226570581756329,
+        0.03436932147011688,
+        0.01594311753862817
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.33164892348866276,
+        "progress": 14.28006093755712,
+        "command_change": -0.0061300528896098055,
+        "torso_stability": -4.807457689376094e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.5577624571862154
+      },
+      "accompanied_fraction": 0.8351788723862081
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000065,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.01587340103843,
+      "steps": 307,
+      "duration_s": 61.4,
+      "formation_mean_m": 0.05390331633003213,
+      "formation_p95_m": 0.11083192492639744,
+      "accompanied_progress_m": 3.7945083231768226,
+      "robot_progress_m": 4.8823225753702335,
+      "mean_body_velocity": [
+        0.07923699971363707,
+        0.011215820362823715,
+        -0.009166007393074785
+      ],
+      "mean_abs_command": [
+        0.13407572025811626,
+        0.03664491405363228,
+        0.015697084527346306
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.421299341356298,
+        "progress": 15.17803329270729,
+        "command_change": -0.009114262830709947,
+        "torso_stability": -8.357586602620993e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -4.731662711615825
+      },
+      "accompanied_fraction": 0.7736668805806715
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000069,
+      "reason": "success",
+      "success": true,
+      "return_total": 27.88162753752286,
+      "steps": 229,
+      "duration_s": 45.800000000000004,
+      "formation_mean_m": 0.05561828873224417,
+      "formation_p95_m": 0.11975102544326169,
+      "accompanied_progress_m": 2.989547085557111,
+      "robot_progress_m": 3.7912608805748924,
+      "mean_body_velocity": [
+        0.08246794401322025,
+        0.010806780134159625,
+        -0.0090352558865527
+      ],
+      "mean_abs_command": [
+        0.14537872055211962,
+        0.02760031439856307,
+        0.01544799451560256
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3467823948805102,
+        "progress": 11.958188342228445,
+        "command_change": -0.006229625300512026,
+        "torso_stability": -6.297361104481606e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.723485810913516
+      },
+      "accompanied_fraction": 0.7904661518405146
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000073,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.521075151931512,
+      "steps": 188,
+      "duration_s": 37.6,
+      "formation_mean_m": 0.06985929219412092,
+      "formation_p95_m": 0.1167063412604247,
+      "accompanied_progress_m": 3.696242527174753,
+      "robot_progress_m": 4.416051097317991,
+      "mean_body_velocity": [
+        0.11756708314239042,
+        -0.01356465063352581,
+        0.017778980279395222
+      ],
+      "mean_abs_command": [
+        0.1838430657071319,
+        0.043747605462719566,
+        0.0193709798268367
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3866434331643685,
+        "progress": 14.784970108699012,
+        "command_change": -0.007098741619611563,
+        "torso_stability": -5.189201732242706e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.8701008899662037
+      },
+      "accompanied_fraction": 0.8490105141915709
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000077,
+      "reason": "success",
+      "success": true,
+      "return_total": 32.28459316200164,
+      "steps": 218,
+      "duration_s": 43.6,
+      "formation_mean_m": 0.06104799995473863,
+      "formation_p95_m": 0.11396384404941112,
+      "accompanied_progress_m": 4.0787577062027776,
+      "robot_progress_m": 4.78013204502286,
+      "mean_body_velocity": [
+        0.10919886024922851,
+        -0.014606261841556127,
+        0.011972309860490924
+      ],
+      "mean_abs_command": [
+        0.1719294255086725,
+        0.03822386995988039,
+        0.01601864954216647
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.37726993727705926,
+        "progress": 16.31503082481111,
+        "command_change": -0.008679192647217322,
+        "torso_stability": -5.387629194728215e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.6444346565932544
+      },
+      "accompanied_fraction": 0.8632677333941658
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000081,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.658380559198314,
+      "steps": 201,
+      "duration_s": 40.2,
+      "formation_mean_m": 0.05985944866626695,
+      "formation_p95_m": 0.10151503379514591,
+      "accompanied_progress_m": 3.272625760535768,
+      "robot_progress_m": 3.890638816361462,
+      "mean_body_velocity": [
+        0.09602420558581488,
+        -0.015322295537154211,
+        0.00869563762994922
+      ],
+      "mean_abs_command": [
+        0.1557808798779525,
+        0.04122355739778343,
+        0.015970469427572166
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3125032977688106,
+        "progress": 13.090503042143071,
+        "command_change": -0.007222163304182961,
+        "torso_stability": -5.717327761668756e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.112339848594154
+      },
+      "accompanied_fraction": 0.826196019677619
+    },
+    {
+      "family": "gentle_turn",
+      "episode_seed": 1000085,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.13222570458739,
+      "steps": 163,
+      "duration_s": 32.6,
+      "formation_mean_m": 0.06374327858450198,
+      "formation_p95_m": 0.11814322921385899,
+      "accompanied_progress_m": 3.3281937033983238,
+      "robot_progress_m": 3.857523881762279,
+      "mean_body_velocity": [
+        0.11876767652532565,
+        -0.01694215980540274,
+        0.017580857545517192
+      ],
+      "mean_abs_command": [
+        0.1754535173117383,
+        0.0326480209292484,
+        0.018487168295559634
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.31535162173759684,
+        "progress": 13.312774813593295,
+        "command_change": -0.00740001611737798,
+        "torso_stability": -5.134084971771194e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.8577461303012153
+      },
+      "accompanied_fraction": 0.8883207671950598
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000001,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.751424946145548,
+      "steps": 155,
+      "duration_s": 31.0,
+      "formation_mean_m": 0.062040125891220675,
+      "formation_p95_m": 0.11305073272457596,
+      "accompanied_progress_m": 3.185697923950861,
+      "robot_progress_m": 3.7028491832992145,
+      "mean_body_velocity": [
+        0.11938484036222786,
+        0.002133164128604382,
+        -0.01458557927282884
+      ],
+      "mean_abs_command": [
+        0.17137162898096345,
+        0.0349404785603251,
+        0.020498129090711085
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2741657314936634,
+        "progress": 12.742791695803444,
+        "command_change": -0.006748256692378933,
+        "torso_stability": -5.932284512289556e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.710393438626725
+      },
+      "accompanied_fraction": 0.8655514162953186
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000005,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.664178322944853,
+      "steps": 251,
+      "duration_s": 50.2,
+      "formation_mean_m": 0.05678366275221445,
+      "formation_p95_m": 0.10271680090038725,
+      "accompanied_progress_m": 3.9425300388957,
+      "robot_progress_m": 4.751159836944448,
+      "mean_body_velocity": [
+        0.09412987979726181,
+        -0.001897662780314128,
+        0.00221395895527715
+      ],
+      "mean_abs_command": [
+        0.1540691252673977,
+        0.03299003170382981,
+        0.01591391353489946
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3630202369375354,
+        "progress": 15.7701201555828,
+        "command_change": -0.008884754295244159,
+        "torso_stability": -7.588056182598725e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.733960960843341
+      },
+      "accompanied_fraction": 0.8386592620530745
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000009,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.6999111734383,
+      "steps": 195,
+      "duration_s": 39.0,
+      "formation_mean_m": 0.057833246424144336,
+      "formation_p95_m": 0.12157730641092733,
+      "accompanied_progress_m": 3.3171679121413598,
+      "robot_progress_m": 4.0129445129636,
+      "mean_body_velocity": [
+        0.10256549340558137,
+        0.0006275995777285807,
+        0.002740828357848207
+      ],
+      "mean_abs_command": [
+        0.15454276172803919,
+        0.024500414527816854,
+        0.018511047128525276
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.33479142320660027,
+        "progress": 13.268671648565439,
+        "command_change": -0.007019543521366972,
+        "torso_stability": -6.873757097007302e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.2268807708282075
+      },
+      "accompanied_fraction": 0.8255825410521351
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000013,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.640925392531898,
+      "steps": 196,
+      "duration_s": 39.2,
+      "formation_mean_m": 0.05428600162195662,
+      "formation_p95_m": 0.0987714532778568,
+      "accompanied_progress_m": 2.9777730527649307,
+      "robot_progress_m": 3.587135149188086,
+      "mean_body_velocity": [
+        0.09099356267204455,
+        0.002589666832489643,
+        -0.0022291709594167526
+      ],
+      "mean_abs_command": [
+        0.14288618122105728,
+        0.02803204956135418,
+        0.014424176350632702
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.26104433475861283,
+        "progress": 11.911092211059723,
+        "command_change": -0.007032774000771206,
+        "torso_stability": -5.752829720753904e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.0020321814712276
+      },
+      "accompanied_fraction": 0.8245016443786088
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000017,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.857883825471745,
+      "steps": 158,
+      "duration_s": 31.6,
+      "formation_mean_m": 0.06445207838384817,
+      "formation_p95_m": 0.1290212676608906,
+      "accompanied_progress_m": 2.957235168415053,
+      "robot_progress_m": 3.4702044797886544,
+      "mean_body_velocity": [
+        0.11017422036624654,
+        -0.0025804666799508925,
+        0.004112208680582875
+      ],
+      "mean_abs_command": [
+        0.1622508027522841,
+        0.030425445473593767,
+        0.016492053375167175
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.30614914208358146,
+        "progress": 11.828940673660211,
+        "command_change": -0.0073057543531021805,
+        "torso_stability": -5.043031488339265e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.6575515214369143
+      },
+      "accompanied_fraction": 0.8392880854532923
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000021,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.882006694506025,
+      "steps": 194,
+      "duration_s": 38.800000000000004,
+      "formation_mean_m": 0.05492776651674663,
+      "formation_p95_m": 0.10165171319462933,
+      "accompanied_progress_m": 3.7067093385143663,
+      "robot_progress_m": 4.246704673651495,
+      "mean_body_velocity": [
+        0.10923619770789465,
+        -0.0006212446275188949,
+        -0.008405785744673445
+      ],
+      "mean_abs_command": [
+        0.1656601773010874,
+        0.016740150015449245,
+        0.018123636894106124
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2750935375888749,
+        "progress": 14.826837354057465,
+        "command_change": -0.006620369814517351,
+        "torso_stability": -6.405522975395208e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.6630526969182897
+      },
+      "accompanied_fraction": 0.8580420995280719
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000025,
+      "reason": "success",
+      "success": true,
+      "return_total": 32.04844916576902,
+      "steps": 222,
+      "duration_s": 44.4,
+      "formation_mean_m": 0.0524663678130007,
+      "formation_p95_m": 0.10990620283597821,
+      "accompanied_progress_m": 3.9795228267331892,
+      "robot_progress_m": 4.645397653320101,
+      "mean_body_velocity": [
+        0.10408346140310992,
+        -0.000355577721823887,
+        0.002283652400940378
+      ],
+      "mean_abs_command": [
+        0.16125697348013032,
+        0.017323914284215872,
+        0.013251434215006255
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3281751032642701,
+        "progress": 15.918091306932757,
+        "command_change": -0.006456967587094335,
+        "torso_stability": -6.986061312706047e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.5349402096992537
+      },
+      "accompanied_fraction": 0.858785627611039
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000033,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.1075150148327,
+      "steps": 199,
+      "duration_s": 39.800000000000004,
+      "formation_mean_m": 0.05785940483695447,
+      "formation_p95_m": 0.11308813845176237,
+      "accompanied_progress_m": 2.8777275991601323,
+      "robot_progress_m": 3.4970415262712686,
+      "mean_body_velocity": [
+        0.08708748388057565,
+        -0.0011400315037537025,
+        0.00038002820376472523
+      ],
+      "mean_abs_command": [
+        0.1402204982437961,
+        0.039227588407446085,
+        0.015693128877962897
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2883956735796231,
+        "progress": 11.51091039664053,
+        "command_change": -0.006921456295507596,
+        "torso_stability": -4.499228731969486e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.1080332596453712
+      },
+      "accompanied_fraction": 0.8259081334425808
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000041,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.14148368274084,
+      "steps": 175,
+      "duration_s": 35.0,
+      "formation_mean_m": 0.05813414309501656,
+      "formation_p95_m": 0.11133688603884363,
+      "accompanied_progress_m": 3.679075099190909,
+      "robot_progress_m": 4.267781893072688,
+      "mean_body_velocity": [
+        0.12073205100667296,
+        0.0016076702784632421,
+        -0.004591891182581129
+      ],
+      "mean_abs_command": [
+        0.18112378780796592,
+        0.02627511896924781,
+        0.018689087598385022
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.269328195413634,
+        "progress": 14.716300396763636,
+        "command_change": -0.008624799735778491,
+        "torso_stability": -5.8645338959528724e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.2968050735344154
+      },
+      "accompanied_fraction": 0.8922091717863313
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000045,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.45026685931994,
+      "steps": 194,
+      "duration_s": 38.800000000000004,
+      "formation_mean_m": 0.062269245420195365,
+      "formation_p95_m": 0.11123031367411748,
+      "accompanied_progress_m": 3.534222678255605,
+      "robot_progress_m": 4.125345647488835,
+      "mean_body_velocity": [
+        0.10609278211201233,
+        0.0008032877010766105,
+        0.004635103674753246
+      ],
+      "mean_abs_command": [
+        0.16490800686411022,
+        0.02447443263042363,
+        0.016267942368564766
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.34045121802464334,
+        "progress": 14.13689071302242,
+        "command_change": -0.009418634113828641,
+        "torso_stability": -6.153164195274563e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.3366924699220593
+      },
+      "accompanied_fraction": 0.8879442808189144
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000049,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.151728511270797,
+      "steps": 199,
+      "duration_s": 39.800000000000004,
+      "formation_mean_m": 0.04947907625327829,
+      "formation_p95_m": 0.09540169856141319,
+      "accompanied_progress_m": 2.803747300451235,
+      "robot_progress_m": 3.35000502782704,
+      "mean_body_velocity": [
+        0.08457784477326935,
+        0.0009555568900252355,
+        0.0019197384763248843
+      ],
+      "mean_abs_command": [
+        0.14642547600757536,
+        0.019919034557268737,
+        0.014240024449390692
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.22760426163022465,
+        "progress": 11.21498920180494,
+        "command_change": -0.006484203563501881,
+        "torso_stability": -5.729837309396225e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.829114926967318
+      },
+      "accompanied_fraction": 0.8687098394154665
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000053,
+      "reason": "success",
+      "success": true,
+      "return_total": 27.58978418203329,
+      "steps": 218,
+      "duration_s": 43.6,
+      "formation_mean_m": 0.04594900317419591,
+      "formation_p95_m": 0.0927283939605677,
+      "accompanied_progress_m": 2.7776227158712796,
+      "robot_progress_m": 3.479831118825301,
+      "mean_body_velocity": [
+        0.08023969839109041,
+        -0.002022125988167594,
+        0.007794392512188094
+      ],
+      "mean_abs_command": [
+        0.13544117378288995,
+        0.02365610684467631,
+        0.015385905443550538
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.226132450144227,
+        "progress": 11.110490863485118,
+        "command_change": -0.007160875886335136,
+        "torso_stability": -5.581184491032065e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.2873575435763494
+      },
+      "accompanied_fraction": 0.8028361938400226
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000057,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.59697122590631,
+      "steps": 174,
+      "duration_s": 34.800000000000004,
+      "formation_mean_m": 0.05747454972601469,
+      "formation_p95_m": 0.1025688023232388,
+      "accompanied_progress_m": 3.57728153608331,
+      "robot_progress_m": 4.0495163457350465,
+      "mean_body_velocity": [
+        0.11678665577958451,
+        -0.0010647424194551555,
+        0.000625517407923781
+      ],
+      "mean_abs_command": [
+        0.17781259906083485,
+        0.015062738091916704,
+        0.009242100964639711
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2681107178950922,
+        "progress": 14.30912614433324,
+        "command_change": -0.0058567590189999375,
+        "torso_stability": -5.4476707349133685e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.4381329648054844
+      },
+      "accompanied_fraction": 0.8608227357013387
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000061,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.914793838128784,
+      "steps": 195,
+      "duration_s": 39.0,
+      "formation_mean_m": 0.0577298565716085,
+      "formation_p95_m": 0.10535326343721785,
+      "accompanied_progress_m": 3.6082413817286483,
+      "robot_progress_m": 4.252631940557234,
+      "mean_body_velocity": [
+        0.1095708559827717,
+        0.0012564516850558092,
+        0.00033099547712120837
+      ],
+      "mean_abs_command": [
+        0.16779333817808387,
+        0.02847868508901089,
+        0.01468723504192148
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.2971826965518771,
+        "progress": 14.432965526914593,
+        "command_change": -0.00605365439296686,
+        "torso_stability": -7.64779477040407e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.214858859893267
+      },
+      "accompanied_fraction": 0.8441215991070996
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000065,
+      "reason": "success",
+      "success": true,
+      "return_total": 31.11726659592948,
+      "steps": 321,
+      "duration_s": 64.2,
+      "formation_mean_m": 0.045347288538994425,
+      "formation_p95_m": 0.09652020783102737,
+      "accompanied_progress_m": 3.917936624913913,
+      "robot_progress_m": 4.872348575074613,
+      "mean_body_velocity": [
+        0.07616981234643269,
+        0.0015803829506398721,
+        -0.00379521025463632
+      ],
+      "mean_abs_command": [
+        0.13425468491982215,
+        0.023815572707570374,
+        0.012792688091544832
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3204675187753983,
+        "progress": 15.671746499655653,
+        "command_change": -0.008260826117603771,
+        "torso_stability": -9.258927012970738e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -4.22565896956304
+      },
+      "accompanied_fraction": 0.7988328259541572
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000069,
+      "reason": "success",
+      "success": true,
+      "return_total": 28.623387409484973,
+      "steps": 244,
+      "duration_s": 48.800000000000004,
+      "formation_mean_m": 0.048424976048815675,
+      "formation_p95_m": 0.10000501639464678,
+      "accompanied_progress_m": 3.0811985944229807,
+      "robot_progress_m": 3.7994611744449744,
+      "mean_body_velocity": [
+        0.0773322535740669,
+        -0.0013081267288060521,
+        -0.002209435689514831
+      ],
+      "mean_abs_command": [
+        0.14180337074289068,
+        0.021490517474070596,
+        0.012789009407287432
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.26291658740022755,
+        "progress": 12.324794377691923,
+        "command_change": -0.005983177147856568,
+        "torso_stability": -9.080489069455078e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.4324163987681713
+      },
+      "accompanied_fraction": 0.8146997275127573
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000073,
+      "reason": "success",
+      "success": true,
+      "return_total": 32.06975169251476,
+      "steps": 197,
+      "duration_s": 39.4,
+      "formation_mean_m": 0.0575517340953219,
+      "formation_p95_m": 0.10958009533651966,
+      "accompanied_progress_m": 3.878784247051652,
+      "robot_progress_m": 4.476900971571348,
+      "mean_body_velocity": [
+        0.11332148541948958,
+        0.0006912707214452226,
+        0.0001986986727227446
+      ],
+      "mean_abs_command": [
+        0.16520491309066865,
+        0.018927428146486684,
+        0.01558751589245592
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3177825059304257,
+        "progress": 15.515136988206608,
+        "command_change": -0.0069634575240166505,
+        "torso_stability": -5.884340750058926e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.120580488829924
+      },
+      "accompanied_fraction": 0.8909395376024237
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000077,
+      "reason": "success",
+      "success": true,
+      "return_total": 32.849094858675635,
+      "steps": 224,
+      "duration_s": 44.800000000000004,
+      "formation_mean_m": 0.05862857122914405,
+      "formation_p95_m": 0.10817801769670554,
+      "accompanied_progress_m": 4.155549496258459,
+      "robot_progress_m": 4.800019692752325,
+      "mean_body_velocity": [
+        0.10731849342035416,
+        0.0028402150141070017,
+        -0.007386978314610046
+      ],
+      "mean_abs_command": [
+        0.16883690057355644,
+        0.02608974821227353,
+        0.013098059753791145
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.3426949409666239,
+        "progress": 16.622197985033836,
+        "command_change": -0.008236051842843718,
+        "torso_stability": -8.733992799091123e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.422084793620731
+      },
+      "accompanied_fraction": 0.8795206906227444
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000081,
+      "reason": "success",
+      "success": true,
+      "return_total": 30.075254244137568,
+      "steps": 211,
+      "duration_s": 42.2,
+      "formation_mean_m": 0.054123238388215186,
+      "formation_p95_m": 0.10074204985283175,
+      "accompanied_progress_m": 3.3184282997132866,
+      "robot_progress_m": 3.881934039070166,
+      "mean_body_velocity": [
+        0.09206295827847018,
+        -0.0012894081813377392,
+        -0.006090062708216247
+      ],
+      "mean_abs_command": [
+        0.15580605852783996,
+        0.021368600273360988,
+        0.015351323455200046
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.28437274228632287,
+        "progress": 13.273713198853146,
+        "command_change": -0.006678252064180074,
+        "torso_stability": -8.767274470213376e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -2.907320287620376
+      },
+      "accompanied_fraction": 0.8377591736489424
+    },
+    {
+      "family": "stop_start",
+      "episode_seed": 1000085,
+      "reason": "success",
+      "success": true,
+      "return_total": 29.86338251966076,
+      "steps": 172,
+      "duration_s": 34.4,
+      "formation_mean_m": 0.05341970517245689,
+      "formation_p95_m": 0.10936181149140266,
+      "accompanied_progress_m": 3.2831791115523696,
+      "robot_progress_m": 3.8816019572628884,
+      "mean_body_velocity": [
+        0.11330839651559244,
+        0.002239147428801443,
+        0.006030963160038287
+      ],
+      "mean_abs_command": [
+        0.16855451233615978,
+        0.021678335972124884,
+        0.01961443161594933
+      ],
+      "action_clipped_fraction": 0.0,
+      "command_saturation_fraction": 0.0,
+      "observation_clipped_features": 0,
+      "reward_components": {
+        "formation": -0.23690089290014965,
+        "progress": 13.132716446209479,
+        "command_change": -0.007249328185786466,
+        "torso_stability": -5.976003915355311e-05,
+        "terminal_success": 20.0,
+        "terminal_failure": 0.0,
+        "velocity_tracking": -3.025123945423634
+      },
+      "accompanied_fraction": 0.8763060227639468
+    }
+  ],
+  "reward_version": "tracking_stop_v3"
+}

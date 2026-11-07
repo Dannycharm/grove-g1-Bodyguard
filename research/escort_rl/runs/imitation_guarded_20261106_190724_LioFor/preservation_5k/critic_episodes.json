@@ -1,0 +1,3186 @@
+[
+  {
+    "family": "stop_start",
+    "episode_seed": 3671041980745769800,
+    "reason": "success",
+    "success": true,
+    "return_total": 26.83528199843633,
+    "steps": 211,
+    "duration_s": 42.2,
+    "formation_mean_m": 0.050298898244446916,
+    "formation_p95_m": 0.11262714507423893,
+    "accompanied_progress_m": 2.736966695206668,
+    "robot_progress_m": 3.4113893113001383,
+    "mean_body_velocity": [
+      0.08045754532963585,
+      -0.0015252678515195604,
+      0.002034825132686122
+    ],
+    "mean_abs_command": [
+      0.14150441998960142,
+      0.03483080072093962,
+      0.04452774079320114
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.2776187195158871,
+      "progress": 10.947866780826672,
+      "command_change": -0.07600519649710893,
+      "torso_stability": -7.123239891522507e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.7588896339784315
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 3671041980745769800,
+      "route_length_m": 3.3685113721827484,
+      "peak_speed_limit_m_s": 0.16271046119572494,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.14122920454309051,
+        0.2595096613347392
+      ],
+      "heading_rad": 0.1596935203078429,
+      "curvature_m_inv": 0.0,
+      "pause_s": 2.2491863178500955,
+      "stop_fraction": 0.5238298469199157,
+      "robot_spawn_xy_yaw": [
+        -1.6805178717665399,
+        0.12010898610216392,
+        0.17879429576340578
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 3671041980745769800,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.368511372182748
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.16271046119572494,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.7645267964384845,
+                  0.0
+                ],
+                "dwell_s": 2.2491863178500955,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.3685113721827484,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 41.06635133863611,
+      "mean_route_speed_m_s": 0.0820260690901356,
+      "scenario_id": "899d564a3d612f138bbf88dba4ee131e6155bb261016554ac9977c5ed3a96128",
+      "episode_seed": 3671041980745769800
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 472345985040326500,
+    "reason": "success",
+    "success": true,
+    "return_total": 29.26535341466521,
+    "steps": 200,
+    "duration_s": 40.0,
+    "formation_mean_m": 0.060781910551641456,
+    "formation_p95_m": 0.11094716480388014,
+    "accompanied_progress_m": 3.240044254804467,
+    "robot_progress_m": 3.828516029127158,
+    "mean_body_velocity": [
+      0.09590208655050554,
+      -0.002827089282177647,
+      0.005841287421273449
+    ],
+    "mean_abs_command": [
+      0.15664955922591617,
+      0.040049261080275754,
+      0.045001948032331714
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.33450292438509394,
+      "progress": 12.960177019217868,
+      "command_change": -0.08215255894986206,
+      "torso_stability": -5.639425364856533e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.278111726964053
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 472345985040326500,
+      "route_length_m": 3.921256539392684,
+      "peak_speed_limit_m_s": 0.1888520397200738,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.046715279659411246,
+        -0.07597070423323948
+      ],
+      "heading_rad": 0.4404099120816807,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.2566734533546031,
+        -0.5754185159271015,
+        0.35791658396057713
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 472345985040326500,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.921256539392684
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1888520397200738,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.921256539392684,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 38.93183267842551,
+      "mean_route_speed_m_s": 0.10072108785070605,
+      "scenario_id": "3cfb6380a3fdb019347bc088acc284dcd9c5985f33a1368d9fc52fa6434ef70e",
+      "episode_seed": 472345985040326500
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 4572971108904237528,
+    "reason": "success",
+    "success": true,
+    "return_total": 30.826226304375165,
+    "steps": 194,
+    "duration_s": 38.800000000000004,
+    "formation_mean_m": 0.056438432897729,
+    "formation_p95_m": 0.10690230263035189,
+    "accompanied_progress_m": 3.666811850873884,
+    "robot_progress_m": 4.310718281112991,
+    "mean_body_velocity": [
+      0.11077729728589851,
+      -0.00015567814448624843,
+      0.00043119709730589937
+    ],
+    "mean_abs_command": [
+      0.16720446769733788,
+      0.03290215022585921,
+      0.04498262516314106
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.30412390371659165,
+      "progress": 14.667247403495535,
+      "command_change": -0.07082571772487042,
+      "torso_stability": -6.127759357128817e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.466010200085338
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 4572971108904237528,
+      "route_length_m": 4.293027210695318,
+      "peak_speed_limit_m_s": 0.22399058228119986,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.11100175680642355,
+        -0.39887591794924304
+      ],
+      "heading_rad": 2.6921718877397565,
+      "curvature_m_inv": 0.0,
+      "pause_s": 1.7952620279341984,
+      "stop_fraction": 0.3716591786653301,
+      "robot_spawn_xy_yaw": [
+        1.2219201539251308,
+        -1.0249339652282934,
+        2.6646800391702508
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 4572971108904237528,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.293027210695318
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.22399058228119986,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.5955429671149348,
+                  0.0
+                ],
+                "dwell_s": 1.7952620279341984,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.293027210695318,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 37.73171050748856,
+      "mean_route_speed_m_s": 0.11377769926023594,
+      "scenario_id": "849fe69a38b899eaaea3d709557a3829e7dd91419397ce0257e47617a4136896",
+      "episode_seed": 4572971108904237528
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 2345789756965565588,
+    "reason": "success",
+    "success": true,
+    "return_total": 30.64599584202193,
+    "steps": 213,
+    "duration_s": 42.6,
+    "formation_mean_m": 0.06576530854093686,
+    "formation_p95_m": 0.12639228765606117,
+    "accompanied_progress_m": 3.7901358874057767,
+    "robot_progress_m": 4.481507824568441,
+    "mean_body_velocity": [
+      0.10565549720335121,
+      0.022600524085998924,
+      -0.008714162618010515
+    ],
+    "mean_abs_command": [
+      0.16258918243009998,
+      0.04994944295684147,
+      0.04328292732184672
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.4600490707948155,
+      "progress": 15.160543549623107,
+      "command_change": -0.07681195757738696,
+      "torso_stability": -6.972338288610835e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.97761695584609
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 2345789756965565588,
+      "route_length_m": 4.406776843578059,
+      "peak_speed_limit_m_s": 0.19919054912420608,
+      "tangential_acceleration_limit_m_s2": 0.15987868643916342,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.006295034788883602,
+        0.002636374166230082
+      ],
+      "heading_rad": -0.03480984380033725,
+      "curvature_m_inv": -0.15700369357528882,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.5532308100301835,
+        0.0645225277506138,
+        0.012447935919152386
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 2345789756965565588,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.406776843578059
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.19919054912420608,
+          "max_acceleration_mps2": 0.15987868643916342,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.406776843578059,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 41.481418762275794,
+      "mean_route_speed_m_s": 0.1062349595329099,
+      "scenario_id": "da7b7cd2ff47208c7ff93b1cd537ea2dab50add50804033ae4950e4178b181d2",
+      "episode_seed": 2345789756965565588
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 4241845578714266272,
+    "reason": "success",
+    "success": true,
+    "return_total": 31.30614820479809,
+    "steps": 197,
+    "duration_s": 39.4,
+    "formation_mean_m": 0.06674702822071168,
+    "formation_p95_m": 0.1170060388123998,
+    "accompanied_progress_m": 3.8480951004680546,
+    "robot_progress_m": 4.45814809904287,
+    "mean_body_velocity": [
+      0.11374626763884071,
+      -0.014878867448764706,
+      0.011996319572407248
+    ],
+    "mean_abs_command": [
+      0.1694824202978974,
+      0.04455574428890761,
+      0.04201701221095876
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.3805652115887282,
+      "progress": 15.392380401872218,
+      "command_change": -0.078100435013669,
+      "torso_stability": -5.393085428993105e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.627512619617445
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 4241845578714266272,
+      "route_length_m": 4.381839795657067,
+      "peak_speed_limit_m_s": 0.21424178905811592,
+      "tangential_acceleration_limit_m_s2": 0.15994856772157123,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.2844526145140782,
+        0.020397900780111833
+      ],
+      "heading_rad": -0.8787832607066739,
+      "curvature_m_inv": 0.08837910402551366,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -0.6448122807550543,
+        1.2796890049010041,
+        -0.9088048748334705
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 4241845578714266272,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.381839795657067
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.21424178905811592,
+          "max_acceleration_mps2": 0.15994856772157123,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.381839795657067,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 38.34895915020722,
+      "mean_route_speed_m_s": 0.11426228749766183,
+      "scenario_id": "1f2fc57efd01628cc66287a5c5f0a4fce40d08965567a344bd83a58f1902ff72",
+      "episode_seed": 4241845578714266272
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 2537972651172028356,
+    "reason": "success",
+    "success": true,
+    "return_total": 28.105867342411784,
+    "steps": 226,
+    "duration_s": 45.2,
+    "formation_mean_m": 0.05910886779215052,
+    "formation_p95_m": 0.10874621825818413,
+    "accompanied_progress_m": 3.1910101070463344,
+    "robot_progress_m": 3.939899992940994,
+    "mean_body_velocity": [
+      0.0877334157106368,
+      -0.0032780829398560175,
+      0.0012513620052022167
+    ],
+    "mean_abs_command": [
+      0.14535839784147622,
+      0.04558184273969547,
+      0.04504171423988447
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.3466268838176729,
+      "progress": 12.764040428185337,
+      "command_change": -0.09095098836642024,
+      "torso_stability": -5.9656665090172626e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -4.220535556924362
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 2537972651172028356,
+      "route_length_m": 3.980117149840927,
+      "peak_speed_limit_m_s": 0.16920559261702278,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.2561050713030585,
+        0.29409954954130924
+      ],
+      "heading_rad": -3.0893331000624147,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.708169164943937,
+        0.2504926716079175,
+        -3.187984733211482
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 2537972651172028356,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.980117149840927
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.16920559261702278,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.980117149840927,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 44.104450334822786,
+      "mean_route_speed_m_s": 0.09024298272907881,
+      "scenario_id": "a58423dd48e4bcf212f2f48879c99c74f3596e976b460a0e2177df5b00662b3a",
+      "episode_seed": 2537972651172028356
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 2062592061546489040,
+    "reason": "success",
+    "success": true,
+    "return_total": 27.871572629159164,
+    "steps": 169,
+    "duration_s": 33.8,
+    "formation_mean_m": 0.06485535852528719,
+    "formation_p95_m": 0.1314725256343259,
+    "accompanied_progress_m": 2.8899231125434044,
+    "robot_progress_m": 3.4307205617302396,
+    "mean_body_velocity": [
+      0.09834767376124436,
+      0.010284480023201434,
+      -0.010738503967790003
+    ],
+    "mean_abs_command": [
+      0.16181772488538596,
+      0.03970785736812061,
+      0.04761046942078216
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.33725781845005687,
+      "progress": 11.559692450173618,
+      "command_change": -0.0712948626238944,
+      "torso_stability": -5.323729086681882e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.2795139026496156
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 2062592061546489040,
+      "route_length_m": 3.2776280832693274,
+      "peak_speed_limit_m_s": 0.18769299685419574,
+      "tangential_acceleration_limit_m_s2": 0.15997319884688785,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.15719233899394625,
+        0.11057370707642544
+      ],
+      "heading_rad": 2.1134132868188846,
+      "curvature_m_inv": -0.08312609977216115,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.7144834898241895,
+        -1.241886328859056,
+        2.224388151911008
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 2062592061546489040,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.277628083269327
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.18769299685419574,
+          "max_acceleration_mps2": 0.15997319884688785,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.2776280832693274,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 32.74257835471611,
+      "mean_route_speed_m_s": 0.10010293165557108,
+      "scenario_id": "eb8d235cac4011063ce7ced78ce5c5315a58a8e1942415fc3f64478e522edd32",
+      "episode_seed": 2062592061546489040
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 737390576959672400,
+    "reason": "success",
+    "success": true,
+    "return_total": 28.04429056844889,
+    "steps": 201,
+    "duration_s": 40.2,
+    "formation_mean_m": 0.06389247625842218,
+    "formation_p95_m": 0.11471766186393345,
+    "accompanied_progress_m": 3.0679055196711245,
+    "robot_progress_m": 3.699809320320066,
+    "mean_body_velocity": [
+      0.09346077766188433,
+      -0.014032221264260814,
+      0.011497071529093239
+    ],
+    "mean_abs_command": [
+      0.15705042824019394,
+      0.05144290618378517,
+      0.04765267548961009
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.35850769896312634,
+      "progress": 12.271622078684498,
+      "command_change": -0.08109164774944737,
+      "torso_stability": -5.98485505534896e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.787672314972479
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 737390576959672400,
+      "route_length_m": 3.62139741075913,
+      "peak_speed_limit_m_s": 0.1752423147519431,
+      "tangential_acceleration_limit_m_s2": 0.1599529243296083,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.11020350535661128,
+        -0.08691818345362257
+      ],
+      "heading_rad": 0.7169099061185857,
+      "curvature_m_inv": 0.1263756308370449,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.076872261840282,
+        -1.1550083205468873,
+        0.7587830557401979
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 737390576959672400,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.62139741075913
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1752423147519431,
+          "max_acceleration_mps2": 0.1599529243296083,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.62139741075913,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 38.747035239661365,
+      "mean_route_speed_m_s": 0.09346256786770299,
+      "scenario_id": "7623662fe5d894344f225c17fb744e7c817d8e35108e7f920f452a78e37fbb07",
+      "episode_seed": 737390576959672400
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 2635952051210245528,
+    "reason": "success",
+    "success": true,
+    "return_total": 29.25332967696564,
+    "steps": 163,
+    "duration_s": 32.6,
+    "formation_mean_m": 0.06021176231857589,
+    "formation_p95_m": 0.1188572214839935,
+    "accompanied_progress_m": 3.149086384737807,
+    "robot_progress_m": 3.640443583632782,
+    "mean_body_velocity": [
+      0.11158611377090077,
+      -0.0008697356550997608,
+      -0.0011231388480456347
+    ],
+    "mean_abs_command": [
+      0.1708510250111676,
+      0.0335738938733449,
+      0.04293194206771112
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.288750871464641,
+      "progress": 12.596345538951228,
+      "command_change": -0.05577303343756547,
+      "torso_stability": -5.245065808844186e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -2.9984395064252816
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 2635952051210245528,
+      "route_length_m": 3.623727903856566,
+      "peak_speed_limit_m_s": 0.21593817488905287,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.1574956246238498,
+        0.2014197825102163
+      ],
+      "heading_rad": 0.8692256372779212,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.14783074133704,
+        -0.927809903906763,
+        0.7968199917081495
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 2635952051210245528,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.623727903856566
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.21593817488905287,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.623727903856566,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 31.46497752526625,
+      "mean_route_speed_m_s": 0.11516702660749487,
+      "scenario_id": "21aab35e35a0fd4279882396f8b50bb1b302f3f1d7e7a5b00eed072abced6d23",
+      "episode_seed": 2635952051210245528
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 564991024642850540,
+    "reason": "success",
+    "success": true,
+    "return_total": 27.83798685740715,
+    "steps": 210,
+    "duration_s": 42.0,
+    "formation_mean_m": 0.04875271756324676,
+    "formation_p95_m": 0.11711595659727261,
+    "accompanied_progress_m": 3.0254630146981474,
+    "robot_progress_m": 3.7120136520801523,
+    "mean_body_velocity": [
+      0.08953159088747235,
+      0.0037789484644415766,
+      0.001735014823959549
+    ],
+    "mean_abs_command": [
+      0.1507256575017458,
+      0.030861622531093806,
+      0.03953733276714393
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.2773389891244631,
+      "progress": 12.10185205879259,
+      "command_change": -0.07654693697808941,
+      "torso_stability": -6.28353394106429e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.909916439943481
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 564991024642850540,
+      "route_length_m": 3.8068921237434745,
+      "peak_speed_limit_m_s": 0.18518936099464214,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.024750362925755498,
+        -0.46101783923891493
+      ],
+      "heading_rad": 1.3891066057776928,
+      "curvature_m_inv": 0.0,
+      "pause_s": 2.383103741614653,
+      "stop_fraction": 0.3644127601361415,
+      "robot_spawn_xy_yaw": [
+        -0.12008883165545997,
+        -1.849577525066691,
+        1.2984040286092147
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 564991024642850540,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.8068921237434745
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.18518936099464214,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.3872800663538971,
+                  0.0
+                ],
+                "dwell_s": 2.383103741614653,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.8068921237434745,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 40.9270173535069,
+      "mean_route_speed_m_s": 0.0930166029657491,
+      "scenario_id": "105028af3836301659e3c9b6fee303e52921f777c5de940945e4838bac9a7c03",
+      "episode_seed": 564991024642850540
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 1377770866657682272,
+    "reason": "success",
+    "success": true,
+    "return_total": 30.295100710466677,
+    "steps": 169,
+    "duration_s": 33.8,
+    "formation_mean_m": 0.06805575745991387,
+    "formation_p95_m": 0.1210949738718695,
+    "accompanied_progress_m": 3.51878009195765,
+    "robot_progress_m": 4.043055690285645,
+    "mean_body_velocity": [
+      0.11835754942787742,
+      0.002773362538918985,
+      0.005661146117267012
+    ],
+    "mean_abs_command": [
+      0.17467829072572424,
+      0.04079231218305367,
+      0.04691614139240963
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.33754599305360516,
+      "progress": 14.0751203678306,
+      "command_change": -0.06933528069369545,
+      "torso_stability": -6.105184193308368e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.3730773317746854
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 1377770866657682272,
+      "route_length_m": 4.083811324524111,
+      "peak_speed_limit_m_s": 0.23387753463971295,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.396480092339764,
+        0.2090548190388114
+      ],
+      "heading_rad": 0.2864478973062865,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -0.9617724093491018,
+        -0.3009801400505919,
+        0.16705300931763223
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 1377770866657682272,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.083811324524111
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.23387753463971295,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.083811324524111,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 32.739981825439116,
+      "mean_route_speed_m_s": 0.12473468514118023,
+      "scenario_id": "2c00d83abf575f1ab4a0f74e25dc62683c81bc22b2e1b84a82f264c43fc7537e",
+      "episode_seed": 1377770866657682272
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 1592817328869621280,
+    "reason": "success",
+    "success": true,
+    "return_total": 28.679760035901943,
+    "steps": 158,
+    "duration_s": 31.6,
+    "formation_mean_m": 0.05977516739577683,
+    "formation_p95_m": 0.12003605834859296,
+    "accompanied_progress_m": 3.0084169244981243,
+    "robot_progress_m": 3.52079575162144,
+    "mean_body_velocity": [
+      0.11183848353653826,
+      0.0006112682272155318,
+      -0.004095223908724858
+    ],
+    "mean_abs_command": [
+      0.16137955256861553,
+      0.03148814194461425,
+      0.043348218614045426
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.28051550274320664,
+      "progress": 12.033667697992497,
+      "command_change": -0.06427970683623405,
+      "torso_stability": -4.97112992196418e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.0090627412118907
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 1592817328869621280,
+      "route_length_m": 3.3845453649668533,
+      "peak_speed_limit_m_s": 0.22445363681922198,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.037508425845333204,
+        -0.005964729973771843
+      ],
+      "heading_rad": 0.8290523081708812,
+      "curvature_m_inv": 0.0,
+      "pause_s": 2.2537121231087918,
+      "stop_fraction": 0.3833128175311038,
+      "robot_spawn_xy_yaw": [
+        -1.0922046879236125,
+        -1.2073762238609844,
+        0.9227515967988833
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 1592817328869621280,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.384545364966853
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.22445363681922198,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.2973396199072826,
+                  0.0
+                ],
+                "dwell_s": 2.2537121231087918,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.3845453649668533,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 30.526912099921923,
+      "mean_route_speed_m_s": 0.11087087203214077,
+      "scenario_id": "5f457ff390e4b9756d94f2223f53bd11d37adbc1df8911563cf020a2b2f7adc6",
+      "episode_seed": 1592817328869621280
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 2975931198696195988,
+    "reason": "success",
+    "success": true,
+    "return_total": 27.677704569775173,
+    "steps": 137,
+    "duration_s": 27.400000000000002,
+    "formation_mean_m": 0.06153530279619428,
+    "formation_p95_m": 0.1200702437562905,
+    "accompanied_progress_m": 2.6977876673980266,
+    "robot_progress_m": 3.190220680944816,
+    "mean_body_velocity": [
+      0.11716264566069413,
+      -0.0006913080940595689,
+      -0.004536581264607196
+    ],
+    "mean_abs_command": [
+      0.17106727934204533,
+      0.036320580983616034,
+      0.04820706999952477
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.24867070435966393,
+      "progress": 10.791150669592106,
+      "command_change": -0.048418185264479746,
+      "torso_stability": -4.38434874041649e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -2.8163133667053764
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 2975931198696195988,
+      "route_length_m": 3.1121800620206153,
+      "peak_speed_limit_m_s": 0.22232828341459604,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.3930352571808967,
+        0.15905003996813005
+      ],
+      "heading_rad": -0.09365795290509737,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.9311685084536756,
+        0.3367523885332584,
+        0.011674877225230779
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 2975931198696195988,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.112180062020615
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.22232828341459604,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.1121800620206153,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 26.246492469007922,
+      "mean_route_speed_m_s": 0.11857508448778455,
+      "scenario_id": "936a23887cdfb88cd52382e3399936d7414292eefeacaf8930a65e687985cff1",
+      "episode_seed": 2975931198696195988
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 1362491495885399480,
+    "reason": "success",
+    "success": true,
+    "return_total": 29.453985302673622,
+    "steps": 151,
+    "duration_s": 30.2,
+    "formation_mean_m": 0.05798542528725362,
+    "formation_p95_m": 0.1025020957906786,
+    "accompanied_progress_m": 3.0295884057399833,
+    "robot_progress_m": 3.426862360336627,
+    "mean_body_velocity": [
+      0.11289731960854041,
+      0.0009082425397108785,
+      -0.003824216321380451
+    ],
+    "mean_abs_command": [
+      0.1719304401144564,
+      0.025531420012741713,
+      0.038872339601616145
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.23535477552455225,
+      "progress": 12.118353622959933,
+      "command_change": -0.049387427575531634,
+      "torso_stability": -4.091762061321712e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -2.3795851995656205
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 1362491495885399480,
+      "route_length_m": 3.3773058154264577,
+      "peak_speed_limit_m_s": 0.2269408305213302,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.10167282344672768,
+        0.3782207021659306
+      ],
+      "heading_rad": -2.1977610460860286,
+      "curvature_m_inv": 0.0,
+      "pause_s": 1.2534012895517137,
+      "stop_fraction": 0.35669772972163777,
+      "robot_spawn_xy_yaw": [
+        0.9851475727026995,
+        1.6484858099418047,
+        -2.2023937033846606
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 1362491495885399480,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.377305815426458
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.2269408305213302,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.204677316938302,
+                  0.0
+                ],
+                "dwell_s": 1.2534012895517137,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.3773058154264577,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 29.156923055016566,
+      "mean_route_speed_m_s": 0.11583203786811717,
+      "scenario_id": "0704c570f59cf4153f87f8b404fb15a6b5c9497eabe29b853aa72043d66ccfa7",
+      "episode_seed": 1362491495885399480
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 1629074814664017716,
+    "reason": "success",
+    "success": true,
+    "return_total": 29.154978706223915,
+    "steps": 175,
+    "duration_s": 35.0,
+    "formation_mean_m": 0.05584510659182587,
+    "formation_p95_m": 0.10378140730001674,
+    "accompanied_progress_m": 3.1990832604852404,
+    "robot_progress_m": 3.797555270401996,
+    "mean_body_velocity": [
+      0.10814723781447934,
+      -0.0016523189543251483,
+      -0.0031857341479440463
+    ],
+    "mean_abs_command": [
+      0.16778441271661515,
+      0.03202692565543527,
+      0.0417839957112197
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.25453767953923734,
+      "progress": 12.796333041940962,
+      "command_change": -0.06457985843454214,
+      "torso_stability": -5.398799096433084e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.322182809752315
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 1629074814664017716,
+      "route_length_m": 3.8721103701735173,
+      "peak_speed_limit_m_s": 0.2142842495636637,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.4177584528353927,
+        0.46861930350886105
+      ],
+      "heading_rad": 2.2418746019129374,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.289527566968201,
+        -0.6409702518659885,
+        2.1603012587991315
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 1629074814664017716,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.872110370173518
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.2142842495636637,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.8721103701735173,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 33.881197329523474,
+      "mean_route_speed_m_s": 0.11428493310062066,
+      "scenario_id": "c18079439b0e6f3e3741f25594ea1b84e7d1dbc2bf71b8fe1023915e4b024521",
+      "episode_seed": 1629074814664017716
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 1959193805667386812,
+    "reason": "success",
+    "success": true,
+    "return_total": 30.56337588845704,
+    "steps": 165,
+    "duration_s": 33.0,
+    "formation_mean_m": 0.0636895094987839,
+    "formation_p95_m": 0.11032939841457558,
+    "accompanied_progress_m": 3.6105641496690266,
+    "robot_progress_m": 4.165499711707195,
+    "mean_body_velocity": [
+      0.12613652041577256,
+      -0.0015173774336867097,
+      -0.0002057751926505776
+    ],
+    "mean_abs_command": [
+      0.18500443107702516,
+      0.034968944753663064,
+      0.0419028369124245
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.3001639058431883,
+      "progress": 14.442256598676106,
+      "command_change": -0.06744843798292317,
+      "torso_stability": -4.8941325634557226e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.5112194250673294
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 1959193805667386812,
+      "route_length_m": 4.0993492963773015,
+      "peak_speed_limit_m_s": 0.24072540257358713,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.1895411934231802,
+        0.45246259760223284
+      ],
+      "heading_rad": 1.7497030248553305,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.4001708249982462,
+        -1.094431492579849,
+        1.8376454150637684
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 1959193805667386812,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.0993492963773015
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.24072540257358713,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.0993492963773015,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 31.929658642310624,
+      "mean_route_speed_m_s": 0.1283868813725798,
+      "scenario_id": "caeb4184817b9c859d9a1462e76c0b723563fd537aa5302221c819ad11bec506",
+      "episode_seed": 1959193805667386812
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 1778787953198770284,
+    "reason": "success",
+    "success": true,
+    "return_total": 30.692475579912983,
+    "steps": 248,
+    "duration_s": 49.6,
+    "formation_mean_m": 0.06698748908398945,
+    "formation_p95_m": 0.12848183496914597,
+    "accompanied_progress_m": 3.9847206283206367,
+    "robot_progress_m": 4.817369574386746,
+    "mean_body_velocity": [
+      0.0975960644955773,
+      -0.018128608885426743,
+      0.0051860340981438255
+    ],
+    "mean_abs_command": [
+      0.15348930256215915,
+      0.05209092766134774,
+      0.044601250216087907
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.5030600010405285,
+      "progress": 15.938882513282547,
+      "command_change": -0.0913466313709837,
+      "torso_stability": -6.35675505322553e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -4.651936733407514
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 1778787953198770284,
+      "route_length_m": 4.843600723769963,
+      "peak_speed_limit_m_s": 0.1874204409327113,
+      "tangential_acceleration_limit_m_s2": 0.15991836311453062,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.015206461233720936,
+        -0.17243758676321808
+      ],
+      "heading_rad": -1.7479816988927168,
+      "curvature_m_inv": 0.14548857418805528,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.15661913894503798,
+        1.3218403186260943,
+        -1.7288599165812237
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 1778787953198770284,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.843600723769963
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1874204409327113,
+          "max_acceleration_mps2": 0.15991836311453062,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.843600723769963,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 48.4565680876253,
+      "mean_route_speed_m_s": 0.09995756849744604,
+      "scenario_id": "d5ab327461494d9c8493d1d71674fa377b9f283ad30138a8b3b3df4ef5cf248c",
+      "episode_seed": 1778787953198770284
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 1915950882106989700,
+    "reason": "success",
+    "success": true,
+    "return_total": 28.44951749606369,
+    "steps": 166,
+    "duration_s": 33.2,
+    "formation_mean_m": 0.05955562915547495,
+    "formation_p95_m": 0.1083916259641173,
+    "accompanied_progress_m": 2.8985585063322956,
+    "robot_progress_m": 3.4461144234489276,
+    "mean_body_velocity": [
+      0.10436761751076835,
+      0.00021906141001474478,
+      0.001403876403554694
+    ],
+    "mean_abs_command": [
+      0.15840370913038973,
+      0.02923705105470628,
+      0.03897967605963546
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.26888923348316407,
+      "progress": 11.594234025329182,
+      "command_change": -0.059243116814277075,
+      "torso_stability": -3.8954694254826445e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -2.8165452242737916
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 1915950882106989700,
+      "route_length_m": 3.4588563947724893,
+      "peak_speed_limit_m_s": 0.20177188132412194,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.2784017652199764,
+        0.07569746232952368
+      ],
+      "heading_rad": -0.45907024571835064,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.5551096343604134,
+        0.7351202268273908,
+        -0.4892566959768152
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 1915950882106989700,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.458856394772489
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.20177188132412194,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.4588563947724893,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 32.14201948080409,
+      "mean_route_speed_m_s": 0.10761167003953169,
+      "scenario_id": "71627e915edb1e5f2fb31ec7be979cd2d609c3e4c52ff9e3f1d579d140b9e77a",
+      "episode_seed": 1915950882106989700
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 167402885917157944,
+    "reason": "success",
+    "success": true,
+    "return_total": 29.69565741023497,
+    "steps": 189,
+    "duration_s": 37.800000000000004,
+    "formation_mean_m": 0.052796076536875965,
+    "formation_p95_m": 0.11629354013520006,
+    "accompanied_progress_m": 3.456380129053735,
+    "robot_progress_m": 4.132067164457217,
+    "mean_body_velocity": [
+      0.10898547760609324,
+      0.00023907783723422534,
+      0.001263759176052269
+    ],
+    "mean_abs_command": [
+      0.16905720342041816,
+      0.02943998831932534,
+      0.04652544383126528
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.2721431356712788,
+      "progress": 13.82552051621494,
+      "command_change": -0.07164470028033816,
+      "torso_stability": -5.5697324781607254e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.7860195727035664
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 167402885917157944,
+      "route_length_m": 4.10076468702454,
+      "peak_speed_limit_m_s": 0.2277693135283275,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.3700977569570105,
+        0.22736827801501003
+      ],
+      "heading_rad": 3.019626579827052,
+      "curvature_m_inv": 0.0,
+      "pause_s": 2.9142948313722195,
+      "stop_fraction": 0.6421460769269478,
+      "robot_spawn_xy_yaw": [
+        1.8576077256168388,
+        0.03476625876737913,
+        3.094854361490015
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 167402885917157944,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.10076468702454
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.2277693135283275,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  2.6332899561733716,
+                  0.0
+                ],
+                "dwell_s": 2.9142948313722195,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.10076468702454,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 36.67184394570779,
+      "mean_route_speed_m_s": 0.11182324764186037,
+      "scenario_id": "536dc2e701d7aca6d182cb8be2c8d9e7a074dff16cd44c1af8ac7520dd33095e",
+      "episode_seed": 167402885917157944
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 2088968701036149212,
+    "reason": "success",
+    "success": true,
+    "return_total": 29.78278986726693,
+    "steps": 138,
+    "duration_s": 27.6,
+    "formation_mean_m": 0.06828084597908494,
+    "formation_p95_m": 0.12361897783671219,
+    "accompanied_progress_m": 3.200028624390545,
+    "robot_progress_m": 3.601459837533245,
+    "mean_body_velocity": [
+      0.1298719587931642,
+      0.014787313166138258,
+      -0.009869583544118467
+    ],
+    "mean_abs_command": [
+      0.18665809662796665,
+      0.03864954023131007,
+      0.042331727933386624
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.30136269995058257,
+      "progress": 12.80011449756218,
+      "command_change": -0.049568797328469985,
+      "torso_stability": -3.792565683233873e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -2.6663552073593633
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 2088968701036149212,
+      "route_length_m": 3.498104022524158,
+      "peak_speed_limit_m_s": 0.24705666933505563,
+      "tangential_acceleration_limit_m_s2": 0.1598915523775799,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.4065778011306811,
+        0.28876302458590586
+      ],
+      "heading_rad": -1.3694950581172451,
+      "curvature_m_inv": -0.09649798366637347,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.06820691699127635,
+        1.7980202849650841,
+        -1.387855704716923
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 2088968701036149212,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.498104022524158
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.24705666933505563,
+          "max_acceleration_mps2": 0.1598915523775799,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.498104022524158,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 26.548342369732286,
+      "mean_route_speed_m_s": 0.13176355697869635,
+      "scenario_id": "96037144a0f94c6521ecd51751beac594f72fc370e10f95870d2ef53cea2c512",
+      "episode_seed": 2088968701036149212
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "straight",
+    "episode_seed": 4133935413906400736,
+    "reason": "success",
+    "success": true,
+    "return_total": 28.886266078485455,
+    "steps": 152,
+    "duration_s": 30.400000000000002,
+    "formation_mean_m": 0.05169439336897951,
+    "formation_p95_m": 0.0991884201884062,
+    "accompanied_progress_m": 2.909804741882109,
+    "robot_progress_m": 3.3706980107794022,
+    "mean_body_velocity": [
+      0.110133925098841,
+      0.000998959948599822,
+      0.0084330971005004
+    ],
+    "mean_abs_command": [
+      0.16985180991890192,
+      0.031147834043766028,
+      0.043311021407374174
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.1969375246559565,
+      "progress": 11.639218967528436,
+      "command_change": -0.06472853272700914,
+      "torso_stability": -4.82496951514393e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -2.4912385819648595
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 4133935413906400736,
+      "route_length_m": 3.3544299450284165,
+      "peak_speed_limit_m_s": 0.21507258773932172,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.15351595419461517,
+        0.28570011500053827
+      ],
+      "heading_rad": -0.6155551255175005,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.380424205327087,
+        1.1296098839445392,
+        -0.6557213193088672
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 4133935413906400736,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.354429945028416
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.21507258773932172,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.3544299450284165,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 29.24387627934958,
+      "mean_route_speed_m_s": 0.11470538012763824,
+      "scenario_id": "d37b21f2ff91c055ae3fcd2135a513875cef70278ccc280891d3f70bb7600549",
+      "episode_seed": 4133935413906400736
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 3448354202017250772,
+    "reason": "success",
+    "success": true,
+    "return_total": 29.469102137091987,
+    "steps": 243,
+    "duration_s": 48.6,
+    "formation_mean_m": 0.057691445412377085,
+    "formation_p95_m": 0.11369499496135661,
+    "accompanied_progress_m": 3.4695314606615306,
+    "robot_progress_m": 4.2086942046955365,
+    "mean_body_velocity": [
+      0.08526725459987282,
+      0.015438695494807872,
+      0.0003902397259556914
+    ],
+    "mean_abs_command": [
+      0.14414269843693522,
+      0.04362659710774403,
+      0.045728380592697286
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.38492071013292656,
+      "progress": 13.878125842646122,
+      "command_change": -0.09798349023814863,
+      "torso_stability": -7.711363077113337e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.926042391552289
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 3448354202017250772,
+      "route_length_m": 4.253829008894625,
+      "peak_speed_limit_m_s": 0.16762129625997269,
+      "tangential_acceleration_limit_m_s2": 0.15996731735257624,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.32704822317965276,
+        0.0276365324103931
+      ],
+      "heading_rad": 2.7229904265194484,
+      "curvature_m_inv": -0.1150940929986305,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.0036675540645892,
+        -0.47005164628934254,
+        2.620052004807313
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 3448354202017250772,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.253829008894625
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.16762129625997269,
+          "max_acceleration_mps2": 0.15996731735257624,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.253829008894625,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 47.583031330977974,
+      "mean_route_speed_m_s": 0.08939802467198545,
+      "scenario_id": "e210ade6711a6ca9bcfc48fe6f15ebd2ddf6e2382426eb36a9d28021be7d7d36",
+      "episode_seed": 3448354202017250772
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 4090681207090183148,
+    "reason": "success",
+    "success": true,
+    "return_total": 28.40688427072464,
+    "steps": 204,
+    "duration_s": 40.800000000000004,
+    "formation_mean_m": 0.0560770537408576,
+    "formation_p95_m": 0.11866934274080448,
+    "accompanied_progress_m": 3.136393023593138,
+    "robot_progress_m": 3.8079308701902628,
+    "mean_body_velocity": [
+      0.09361968618682188,
+      0.0028605040369917077,
+      0.0016582308614678763
+    ],
+    "mean_abs_command": [
+      0.15070695531161904,
+      0.03698904096251556,
+      0.041348478240929666
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.3220750406838321,
+      "progress": 12.545572094372552,
+      "command_change": -0.076209094132981,
+      "torso_stability": -5.1674660424796394e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.740352014170672
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 4090681207090183148,
+      "route_length_m": 3.756980925575901,
+      "peak_speed_limit_m_s": 0.18481455635022562,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.1579550109898996,
+        -0.3330585355231833
+      ],
+      "heading_rad": -0.24554603767123862,
+      "curvature_m_inv": 0.0,
+      "pause_s": 1.6567862769643762,
+      "stop_fraction": 0.5427912056091975,
+      "robot_spawn_xy_yaw": [
+        -1.670119394397596,
+        -0.07014850108920839,
+        -0.22306789887288328
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 4090681207090183148,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.756980925575901
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.18481455635022562,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  2.0392562060441017,
+                  0.0
+                ],
+                "dwell_s": 1.6567862769643762,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.756980925575901,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 39.772502779866414,
+      "mean_route_speed_m_s": 0.0944617678794344,
+      "scenario_id": "c4514736ad52e5c6f7f42d15cd92561dd159c948e66fb4806dd909371e31219f",
+      "episode_seed": 4090681207090183148
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 4102567521655521196,
+    "reason": "success",
+    "success": true,
+    "return_total": 32.14237367975032,
+    "steps": 188,
+    "duration_s": 37.6,
+    "formation_mean_m": 0.06178810120734946,
+    "formation_p95_m": 0.12162533124000878,
+    "accompanied_progress_m": 3.963846328847575,
+    "robot_progress_m": 4.548955574434119,
+    "mean_body_velocity": [
+      0.1204518415099577,
+      -4.729752230554154e-08,
+      0.014061665615553488
+    ],
+    "mean_abs_command": [
+      0.1763135324841603,
+      0.028739441740091277,
+      0.04239856673991605
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.34332341457140636,
+      "progress": 15.8553853153903,
+      "command_change": -0.0724797473383291,
+      "torso_stability": -6.150139302900605e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.297146972337203
+    },
+    "scenario": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 4102567521655521196,
+      "route_length_m": 4.3638227371322,
+      "peak_speed_limit_m_s": 0.23425952417297888,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.4183558139170659,
+        -0.26852404625901627
+      ],
+      "heading_rad": 3.134431969651968,
+      "curvature_m_inv": 0.0,
+      "pause_s": 1.5827582061970056,
+      "stop_fraction": 0.6074213381027835,
+      "robot_spawn_xy_yaw": [
+        1.1911333451126458,
+        -0.2733755740245829,
+        3.216299220385583
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 4102567521655521196,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.3638227371322
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.23425952417297888,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  2.650679046232192,
+                  0.0
+                ],
+                "dwell_s": 1.5827582061970056,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.3638227371322,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 36.51054891613247,
+      "mean_route_speed_m_s": 0.11952224402750654,
+      "scenario_id": "7344e684492762970551673219a865a5b1b50f10eedb52d8931a76fc7af38eb5",
+      "episode_seed": 4102567521655521196
+    },
+    "bootstrap": 0.0,
+    "truncated": false
+  }
+]

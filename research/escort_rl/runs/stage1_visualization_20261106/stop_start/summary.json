@@ -1,0 +1,62 @@
+{
+  "status": "success",
+  "full_episode_completed": true,
+  "checkpoint": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/imitation_guarded_20261106_190724_LioFor/preservation_5k/final.zip",
+  "checkpoint_sha256": "470fef05cc1add9ceb1557d863c4b0d5506504d0f915790a5e5271378d323c8d",
+  "checkpoint_ppo_timesteps": 5000,
+  "family": "stop_start",
+  "episode_seed": 320000,
+  "render_frames": 407,
+  "render_mode": "gif",
+  "client_appearance": "human",
+  "human_physics": "none; decorative geometry only",
+  "last_elapsed_s": 40.6,
+  "reset_info": {
+    "scenario_id": "b3e3b4ceba586993fa1e4be4d95bd4c283e5769f01bbe728fcbeb8fd876165b8",
+    "episode_seed": 320000,
+    "elapsed_s": 0.0,
+    "warmup_simulation_s": 2.0000000000000013,
+    "warmup_physics_steps": 1000,
+    "warmup_gait_calls": 99,
+    "startup_weld_released": true,
+    "observation_saturated_features": 0,
+    "data_provenance": "isolated_headless_mujoco_and_scripted_client_pose_proxy",
+    "reward_version": "tracking_stop_v3"
+  },
+  "new_training_updates": 0,
+  "episode_metrics": {
+    "family": "stop_start",
+    "episode_seed": 320000,
+    "reason": "success",
+    "success": true,
+    "return_total": 31.23452559920748,
+    "steps": 203,
+    "duration_s": 40.6,
+    "formation_mean_m": 0.05099701339935703,
+    "formation_p95_m": 0.10110520273816621,
+    "accompanied_progress_m": 3.6263399963871916,
+    "robot_progress_m": 4.146469762248054,
+    "mean_body_velocity": [
+      0.10217798268627715,
+      -0.0008592162450652827,
+      0.004621579038922317
+    ],
+    "mean_abs_command": [
+      0.1640082669852696,
+      0.01934497010389068,
+      0.015571365635192983
+    ],
+    "action_clipped_fraction": 0.0,
+    "command_saturation_fraction": 0.0,
+    "observation_clipped_features": 0,
+    "reward_components": {
+      "formation": -0.2538887411605318,
+      "progress": 14.505359985548766,
+      "command_change": -0.006432381503027669,
+      "torso_stability": -7.752128652602504e-05,
+      "terminal_success": 20.0,
+      "terminal_failure": 0.0,
+      "velocity_tracking": -3.0104357423912065
+    }
+  }
+}

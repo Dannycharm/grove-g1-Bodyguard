@@ -1,0 +1,32 @@
+{
+  "method": "imitation-pretrained PPO",
+  "start_timesteps": 0,
+  "end_timesteps": 5000,
+  "new_transitions": 5000,
+  "training_wall_s": 75.06384945300124,
+  "transitions_per_second": 66.60995987330207,
+  "physics_steps": 500000,
+  "gait_calls": 50000,
+  "training_episodes": 24,
+  "training_successes": 10,
+  "optimizer_wall_s": 0.31676589799826615,
+  "gradient_steps_total": 200,
+  "actor_mean_drift_mse": 0.8285958170890808,
+  "std_before": [
+    0.04999999701976776,
+    0.04999999701976776,
+    0.04999999701976776
+  ],
+  "std_after": [
+    0.051649365574121475,
+    0.0513615645468235,
+    0.05102742090821266
+  ],
+  "initial_success": 1.0,
+  "final_success": 0.0,
+  "preservation_pass": false,
+  "best_validation": "initial",
+  "promotion_approved": false,
+  "cpu_seconds": 515.1999999999998,
+  "rss_kib": 2781472
+}

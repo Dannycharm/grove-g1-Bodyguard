@@ -1,0 +1,13 @@
+{
+  "version": "stage1_split_v1",
+  "seed_modulus": 4,
+  "train_residue": 0,
+  "validation_residue": 1,
+  "final_test_residue": 2,
+  "validation_candidate_start": 1000001,
+  "final_test_candidate_start": 2000002,
+  "episodes_per_family": 20,
+  "final_test_reserved_combination": {"min_speed_m_s": 0.235, "min_route_length_m": 4.6},
+  "final_test_policy": "Reserved high-speed AND long-route combinations; never resolved or run by training/validation. Separate authorization required for final test.",
+  "families": ["straight", "gentle_turn", "stop_start"]
+}

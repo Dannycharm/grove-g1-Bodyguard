@@ -1,0 +1,178 @@
+{
+  "result": {
+    "method": "imitation-pretrained PPO",
+    "start_timesteps": 0,
+    "end_timesteps": 5000,
+    "new_transitions": 5000,
+    "training_wall_s": 75.06384945300124,
+    "transitions_per_second": 66.60995987330207,
+    "physics_steps": 500000,
+    "gait_calls": 50000,
+    "training_episodes": 24,
+    "training_successes": 10,
+    "optimizer_wall_s": 0.31676589799826615,
+    "gradient_steps_total": 200,
+    "actor_mean_drift_mse": 0.8285958170890808,
+    "std_before": [
+      0.04999999701976776,
+      0.04999999701976776,
+      0.04999999701976776
+    ],
+    "std_after": [
+      0.051649365574121475,
+      0.0513615645468235,
+      0.05102742090821266
+    ],
+    "initial_success": 1.0,
+    "final_success": 0.0,
+    "preservation_pass": false,
+    "best_validation": "initial",
+    "promotion_approved": false,
+    "cpu_seconds": 515.1999999999998,
+    "rss_kib": 2781472
+  },
+  "critic_fit": {
+    "initial": {
+      "update": 0,
+      "train_mse": 134.3230438232422,
+      "holdout_mse": 134.06610107421875,
+      "holdout_explained_variance": 0.0018515586853027344
+    },
+    "final": {
+      "train_mse": 9.376703262329102,
+      "holdout_mse": 10.198657035827637,
+      "holdout_explained_variance": 0.13064366579055786
+    },
+    "constant_holdout_mse": 11.712056159973145,
+    "passes": true,
+    "train_episodes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23
+    ],
+    "holdout_episodes": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "train_samples": 3544,
+    "holdout_samples": 923,
+    "actor_unchanged": true,
+    "ppo_optimizer_fresh": true,
+    "bootstrap": "zero at termination; initial critic at time-limit truncation",
+    "selection": "Best whole-training-episode holdout MSE; no validation gradients"
+  },
+  "initial": {
+    "episodes": 60,
+    "success_rate": 1.0,
+    "per_family": {
+      "straight": {
+        "episodes": 20,
+        "success_rate": 1.0
+      },
+      "gentle_turn": {
+        "episodes": 20,
+        "success_rate": 1.0
+      },
+      "stop_start": {
+        "episodes": 20,
+        "success_rate": 1.0
+      }
+    },
+    "failures": {
+      "success": 60
+    },
+    "formation_mean_m": 0.0590601953602175,
+    "mean_return": 30.022889852036606,
+    "reward_version": "tracking_stop_v3",
+    "terminal_signed_error_mean": [
+      -0.011453137986375202,
+      0.002401939297892104
+    ],
+    "terminal_body_velocity_mean": [
+      -0.0007882108752854629,
+      0.0013148823349184962,
+      0.00019336400942857396
+    ],
+    "terminal_command_mean": [
+      0.03466508593604279,
+      -0.0027565159757311146,
+      0.0025162460704450497
+    ],
+    "mean_terminal_error_norm": 0.02014948072788831,
+    "mean_completed_hold_s": 1.0000000000000002
+  },
+  "final": {
+    "episodes": 60,
+    "success_rate": 0.0,
+    "per_family": {
+      "straight": {
+        "episodes": 20,
+        "success_rate": 0.0
+      },
+      "gentle_turn": {
+        "episodes": 20,
+        "success_rate": 0.0
+      },
+      "stop_start": {
+        "episodes": 20,
+        "success_rate": 0.0
+      }
+    },
+    "failures": {
+      "recovery_timeout": 60
+    },
+    "formation_mean_m": 1.030467528678423,
+    "mean_return": -171.7775212689139,
+    "reward_version": "tracking_stop_v3",
+    "terminal_signed_error_mean": [
+      1.0724812363430445,
+      0.0320323713895563
+    ],
+    "terminal_body_velocity_mean": [
+      0.0008773416862407766,
+      0.00037517339269841135,
+      -9.215759529497542e-05
+    ],
+    "terminal_command_mean": [
+      0.057697562873363493,
+      0.0070075255125023736,
+      0.0021853075246326624
+    ],
+    "mean_terminal_error_norm": 1.073112680712184,
+    "mean_completed_hold_s": 0.0
+  },
+  "training": {
+    "scenario_resets": 26,
+    "unique_scenario_seeds": 26,
+    "scenario_families": {
+      "straight": 16,
+      "stop_start": 5,
+      "gentle_turn": 5
+    },
+    "completed_episode_reasons": {
+      "success": 10,
+      "recovery_timeout": 14
+    },
+    "raw_gaussian_vector_clipping_fraction": 0.0086
+  },
+  "sampling_note": "4,467 critic preparation transitions plus noise trials and validation are separate from 5,000 PPO transitions. CPU seconds in trainer result includes final parent-process validation, so it is not training-only CPU cost."
+}

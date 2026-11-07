@@ -1,0 +1,1186 @@
+[
+  {
+    "family": "straight",
+    "episode_seed": 320000,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 320000,
+      "route_length_m": 4.1294455179762535,
+      "peak_speed_limit_m_s": 0.20803438734217836,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.217967540970867,
+        -0.4602409633332081
+      ],
+      "heading_rad": 3.1364399765292195,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.6822061488419815,
+        -0.5263518751564024,
+        3.133137524523202
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 320000,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.1294455179762535
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.20803438734217836,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.1294455179762535,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 37.21841588366898,
+      "mean_route_speed_m_s": 0.11095167324916178,
+      "scenario_id": "d675b8e10fbcab57dd9a788588532665c7fa0f7472e2ce045cf8ba0590fe83dd"
+    }
+  },
+  {
+    "family": "straight",
+    "episode_seed": 320004,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 320004,
+      "route_length_m": 4.763421011160317,
+      "peak_speed_limit_m_s": 0.22109443456899036,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.34375138409274875,
+        -0.4964491683458583
+      ],
+      "heading_rad": 0.48124227342293047,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.5919844333439102,
+        -1.2768285029082538,
+        0.5346876328120339
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 320004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.763421011160317
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.22109443456899036,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.763421011160317,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 40.39637819620753,
+      "mean_route_speed_m_s": 0.1179170317701282,
+      "scenario_id": "2be5156b1aef3b6ad475408cb38a336f3dd4a106c5bbbdb2dd689ff8e4bbb3b1"
+    }
+  },
+  {
+    "family": "straight",
+    "episode_seed": 320008,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 320008,
+      "route_length_m": 3.4166496821538135,
+      "peak_speed_limit_m_s": 0.23708098590872045,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.14509873156589914,
+        -0.16620055711992598
+      ],
+      "heading_rad": 2.6220645782723215,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.0663954863063883,
+        -0.9220369011963019,
+        2.7097460128919733
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 320008,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.416649682153814
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.23708098590872045,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.4166496821538135,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 27.021222851270263,
+      "mean_route_speed_m_s": 0.1264431924846509,
+      "scenario_id": "73d63b234587eabd8a0f791af1da2de239fd8bbdd1337591ad20a2f248d55119"
+    }
+  },
+  {
+    "family": "straight",
+    "episode_seed": 320012,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "straight",
+      "seed": 320012,
+      "route_length_m": 3.2967304863198894,
+      "peak_speed_limit_m_s": 0.17795826157236772,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.1728498462282757,
+        0.4562586639115751
+      ],
+      "heading_rad": 2.9933181288814774,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.7770750077120816,
+        0.2612949717382429,
+        2.876433004304088
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 320012,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.296730486319889
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.17795826157236772,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.2967304863198894,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 34.7349406947095,
+      "mean_route_speed_m_s": 0.09491107283859611,
+      "scenario_id": "e59fe0298ea8b9657fe414d99e75ca528919bd603ce7c3687606b515abe21dda"
+    }
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 324000,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 324000,
+      "route_length_m": 3.5719211138961153,
+      "peak_speed_limit_m_s": 0.17160604223149079,
+      "tangential_acceleration_limit_m_s2": 0.15998552009820843,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.15357315407458172,
+        -0.03766840881547939
+      ],
+      "heading_rad": -2.438671254593615,
+      "curvature_m_inv": -0.07309418376687322,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.3432865461692174,
+        0.9170764131154839,
+        -2.543111894245997
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 324000,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.571921113896115
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.17160604223149079,
+          "max_acceleration_mps2": 0.15998552009820843,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.5719211138961153,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 39.02748412273685,
+      "mean_route_speed_m_s": 0.09152322252346175,
+      "scenario_id": "072c094be85422b8338d3810108a45683c916fec233d5cf04ec7b079650c709a"
+    }
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 324004,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 324004,
+      "route_length_m": 4.894893638009596,
+      "peak_speed_limit_m_s": 0.21309631999901368,
+      "tangential_acceleration_limit_m_s2": 0.15990454031062834,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.1251040323146495,
+        -0.010068727133465294
+      ],
+      "heading_rad": 0.5578879263157752,
+      "curvature_m_inv": 0.1216937602373926,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.071172756499453,
+        -0.8020858785268263,
+        0.6503174071015368
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 324004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.894893638009596
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.21309631999901368,
+          "max_acceleration_mps2": 0.15990454031062834,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.894893638009596,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 43.06937619246767,
+      "mean_route_speed_m_s": 0.11365137066614063,
+      "scenario_id": "920714e206fede8c7f1fa3dcf5451304329c0add00850b12e7fe6c43066a0255"
+    }
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 324008,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 324008,
+      "route_length_m": 3.4816480500384612,
+      "peak_speed_limit_m_s": 0.17686100411726444,
+      "tangential_acceleration_limit_m_s2": 0.15992830147208523,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.24675992154780846,
+        -0.13370665515983027
+      ],
+      "heading_rad": -1.5233082911057296,
+      "curvature_m_inv": 0.15311483719779168,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.15438388157832014,
+        1.4270261909607642,
+        -1.6337977892182436
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 324008,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.481648050038461
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.17686100411726444,
+          "max_acceleration_mps2": 0.15992830147208523,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.4816480500384612,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 36.910850565417945,
+      "mean_route_speed_m_s": 0.09432586886254102,
+      "scenario_id": "5476090f2e2002a7a3d9c2721f3d714379d83b75a3f4815669c3feb5016c9929"
+    }
+  },
+  {
+    "family": "gentle_turn",
+    "episode_seed": 324012,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "gentle_turn",
+      "seed": 324012,
+      "route_length_m": 4.319561402299462,
+      "peak_speed_limit_m_s": 0.16247562378771116,
+      "tangential_acceleration_limit_m_s2": 0.1599906495574947,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.2770625992267355,
+        0.31827811624791347
+      ],
+      "heading_rad": 0.25433913737972436,
+      "curvature_m_inv": 0.06552519167678159,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.790629461637337,
+        -0.18699698521330643,
+        0.2429477994073393
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 324012,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.319561402299462
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.16247562378771116,
+          "max_acceleration_mps2": 0.1599906495574947,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.319561402299462,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 49.84857076095174,
+      "mean_route_speed_m_s": 0.08665366602011261,
+      "scenario_id": "4b416781aa0a164a521f20f3f90ca0205854d4915a53fdbc6b643e5854e5bfcb"
+    }
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 328000,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 328000,
+      "route_length_m": 3.83348380198538,
+      "peak_speed_limit_m_s": 0.1959509520661341,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.33813796241666605,
+        0.24345223539768124
+      ],
+      "heading_rad": 0.8507913475662887,
+      "curvature_m_inv": 0.0,
+      "pause_s": 2.6083128878282285,
+      "stop_fraction": 0.47805082500291207,
+      "robot_spawn_xy_yaw": [
+        -0.6920535712530587,
+        -0.7584343758421918,
+        0.9585560259780447
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 328000,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.8334838019853805
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1959509520661341,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.832600094174411,
+                  0.0
+                ],
+                "dwell_s": 2.6083128878282285,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.83348380198538,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 39.2898500425785,
+      "mean_route_speed_m_s": 0.09756931619313958,
+      "scenario_id": "a61a1a19a1f9e6687e3447941520f31e888dd8e4aa8f736b672f4b1d03144f21"
+    }
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 328004,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 328004,
+      "route_length_m": 3.5467286665311013,
+      "peak_speed_limit_m_s": 0.19645144837390735,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.37230064879120206,
+        -0.2690921470697294
+      ],
+      "heading_rad": 3.038376674497128,
+      "curvature_m_inv": 0.0,
+      "pause_s": 1.3813033784580355,
+      "stop_fraction": 0.3513640220090706,
+      "robot_spawn_xy_yaw": [
+        1.9724805788790318,
+        -0.5327542032144579,
+        3.124600486155111
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 328004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.546728666531101
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.19645144837390735,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.2461928492472354,
+                  0.0
+                ],
+                "dwell_s": 1.3813033784580355,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.5467286665311013,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 35.23249818914024,
+      "mean_route_speed_m_s": 0.10066639746892302,
+      "scenario_id": "f7cbdacf2a068ffdb097e561dfcd8d1fb1f6aa059cdf10168be871b445ff7030"
+    }
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 328008,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 328008,
+      "route_length_m": 4.247989032852715,
+      "peak_speed_limit_m_s": 0.16404438764621979,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.0605845196262198,
+        0.0022175105457895583
+      ],
+      "heading_rad": -1.7671426436488733,
+      "curvature_m_inv": 0.0,
+      "pause_s": 1.9342976601218338,
+      "stop_fraction": 0.47882085111850503,
+      "robot_spawn_xy_yaw": [
+        0.14294789087540116,
+        1.4503299281651347,
+        -1.825483922659916
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 328008,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.247989032852715
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.16404438764621979,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  2.034025724252612,
+                  0.0
+                ],
+                "dwell_s": 1.9342976601218338,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.247989032852715,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 50.48810404681893,
+      "mean_route_speed_m_s": 0.08413841464344639,
+      "scenario_id": "09eb24720b068cbd510b5a0f4184edf0b5de5c218bf5bf0c5b1139a00acb2913"
+    }
+  },
+  {
+    "family": "stop_start",
+    "episode_seed": 328012,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "stop_start",
+      "seed": 328012,
+      "route_length_m": 3.3316112419936754,
+      "peak_speed_limit_m_s": 0.177449837742987,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.46021038762998034,
+        0.44717127327945183
+      ],
+      "heading_rad": -0.4853702030202176,
+      "curvature_m_inv": 0.0,
+      "pause_s": 2.537270986737912,
+      "stop_fraction": 0.4926845504094216,
+      "robot_spawn_xy_yaw": [
+        -0.8595775039993405,
+        1.1397795898242373,
+        -0.4133484573049545
+      ],
+      "pedestrian_count": 0,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 328012,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.331611241993675
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.177449837742987,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  1.6414333869006288,
+                  0.0
+                ],
+                "dwell_s": 2.537270986737912,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.3316112419936754,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 37.74029601167919,
+      "mean_route_speed_m_s": 0.08827729493596627,
+      "scenario_id": "5eb5ea3d14b423e754ff9e3dceecb56e856a2b8614fe0e9dcf2cf46157f8689f"
+    }
+  }
+]

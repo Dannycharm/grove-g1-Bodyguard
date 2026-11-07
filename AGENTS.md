@@ -1,34 +1,68 @@
-# ECE 598 Predictive Social Navigation
+# ECE 598JK — Humanoid Escort RL Research
 
-## Objective and platform
-- Build and evaluate predictive humanoid escort navigation using learned pedestrian motion and uncertainty.
-- Host: Ubuntu 24.04. ROS 2 Jazzy runs in Grove-G1's Docker development container.
-- Platform: MuJoCo, Unitree G1, Grove-G1, Nav2, Python, and PyTorch.
-- Research configurations: A — reactive distance-threshold escort controller; B — constant-velocity predictive planner; C — GRU trajectory predictor with deterministic planning; D — GRU predictor with calibrated uncertainty and risk-aware planning.
-- VLMs, VLAs, RL, and arm gestures are optional extensions, not core deliverables.
+## Mission and current priorities
+- Primary objective: train and evaluate a **high-level PPO escort policy** for the simulated Unitree G1, as defined in *Learning Humanoid Escort Control with Reinforcement Learning* (October 30, 2026).
+- Policy output: bounded body-frame `(vx, vy, yaw_rate)` commands to the **existing frozen learned walking policy**. PPO must never directly control joint torques, motor positions, `rt/lowcmd`, or the humanoid base state.
+- The scientific question is whether learning with full G1 dynamics improves escort formation, pedestrian clearance, task completion, and fall/stop reliability compared with reactive and constant-velocity predictive baselines.
+- The reactive controller and learned-pedestrian-prediction project are **paused**, not deleted. Reactive and predictive baselines remain required later for the comparison; do not claim they are already implemented unless verified.
+- Current development status (2026-11-07): isolated full-G1 headless MuJoCo execution, deterministic resets, the Stage 1 Gymnasium environment, seeded client-only scenarios, reward/termination checks and isolated visualization are implemented. Guarded imitation-pretrained PPO passed two consecutive Stage 1 preservation rounds at 5k and 10k cumulative PPO transitions: 60/60 strict validation successes per round, no recorded critical failures. This is preservation of imitation competence, not demonstrated PPO learning from scratch or a substantial improvement over the imitation baseline.
+- Current next milestone: controlled Stage 2 development with one pedestrian, using the selected Stage 1 model and retaining Stage 1 replay/regression evaluation. The user accepted Stage 2 readiness for this model seed; this does not authorize automatically launching training, implementing later stages, or declaring Stage 2 validated. Replication across additional PPO seeds/development routes remains useful but does not block Stage 2 development. Full numerical live-Grove dynamics parity remains unverified; final-test data remains untouched.
+- Avoid unrelated VLA/VLM, arm gestures, GRU prediction, perception retraining, or gait learning during the RL core.
 
-## Current milestone
-- Original Week 1 robot setup, sensors, TF, odometry, and fixed-goal navigation are working (project-reported progress). Do not repeat completed ROS setup or diagnostics.
-- Revised Week 1 still needs a seeded pedestrian scenario generator and trajectory logging. Inspect existing code and assets before implementing either.
+## Model weights and experiment continuity
+- **Always consult and maintain [docs/bodyguard/MODEL_WEIGHTS.md](docs/bodyguard/MODEL_WEIGHTS.md)** as the authoritative editable registry of useful model-weight locations. Whenever a useful model is created, evaluated, selected, superseded or recommended, update that document in the same milestone with verified repository-relative paths, SHA-256, actual saved timestep count, parent/init method, stage/reward/config/seed, validation evidence, companion files and intended use. Preserve historical entries and original archives; a registry entry alone does not back up binary weights.
+- The registry distinguishes the selected guarded **5k** Stage 1 checkpoint (default evaluation/visualization and candidate Stage 2 source), the latest **10k** checkpoint (latest Stage 1 continuation), the original imitation-only actor (explicit initialization/comparator), and the unchanged AGILE ONNX gait. Do not infer selection or timestep count from a folder name: the 10k run's `best_validation.zip` contains the selected 5k policy. Resolve exact paths from the registry rather than duplicating long paths here.
+- Current successful method: objective C `tracking_stop_v3`, causal 40-float observations, three normalized velocity actions, two 128-unit actor/critic layers, PPO learning rate `1e-5`, `target_kl=0.01`, initial exploration sigma `0.05`, root PPO seed 42 and two independent workers. Preserve the frozen imitation-only baseline and describe results as **imitation-pretrained PPO**. Earlier unguarded, cold-start and faulty-RNG runs are diagnostic controls, not forward-use checkpoints.
+- Preserve matching checkpoint ZIP, manifest and RNG sidecar for training continuation. The scenario RNG resume defect is fixed and the 10k continuation's entire worker scenario sequences were verified against saved RNG states (52 distinct sampled seeds across both chunks). Resume starts new physical episodes; it does not restore partial physics/rollouts. Keep strict source/config/version checks intact.
+- A Stage 2 configuration change requires a documented and tested stage-transition path preserving checkpoint lineage and intended actor/critic/optimizer state. Do not silently bypass Stage 1 resume provenance checks, discard optimizer/RNG state, refit/reinitialize the actor, or call the imitation-only archive a resumable PPO checkpoint.
 
-## Safety and architecture
-- Preserve Grove-G1's existing locomotion, safety, hardware, and DDS architecture; reuse verified navigation and controllers.
-- Do not modify low-level G1 motor control, `rt/lowcmd`, the balance policy, or controller ownership. Do not issue physical robot or motor commands.
-- Do not bypass Nav2's configured collision-monitor path or create competing velocity-command publishers. Avoid simultaneous Nav2 and direct `/cmd_vel` writers.
-- Never automatically launch, start, stop, reset, or reconfigure simulations or controllers. Do not modify running MuJoCo state without explicit approval.
-- Preserve a reproducible original simulation scene and existing working assets and scripts.
-- Never run Docker commands, `sudo`, destructive shell operations, `git reset`, `git clean`, commits, or pushes without explicit approval.
+## Existing foundation — inspect, reuse, verify
+- Host: Ubuntu 24.04; normal Grove-G1 development uses ROS 2 Jazzy in Docker, MuJoCo, Nav2, and the existing G1 locomotion/ros2_control stack.
+- Previous work implemented seeded scripted client/pedestrian scenarios, an opt-in MuJoCo mocap playback adapter, simulator-state observation bridge, `g1_msgs/msg/ActorStateArray`, `/escort/tracks`, and separate observation/evaluation logs.
+- Prior live evidence showed stable IDs, transformed `odom` states, and moving client/pedestrian velocities. Treat this as evidence for the **existing live test**, not proof of a trainable resettable RL environment.
+- Existing adapter initially supports one client and **at most two** scripted pedestrians. Three-pedestrian scenarios need an explicitly scoped extension and are optional until core training works.
+- Existing pedestrian proxies have `contype=0`, `conaffinity=0` and are **not physical collision bodies**. Robot–person clearance/overlap must use well-defined geometry metrics; never report proxy overlap as a MuJoCo physical contact. Robot contacts with physical environment and falls may be measured separately.
+- Existing scripted pedestrians do not respond to the robot. Do not claim learned human social responses or real-person safety from this simulator.
+- Read the existing `AGENTS.md`/nested instructions, `GROVE.md`, adapter/observation documentation, and actual repository source before changes. Use source-verified package names and checkpoints.
 
-## Implementation and research integrity
-- Inspect existing code before implementing anything. Prefer isolated new research modules/packages over invasive changes to upstream Grove-G1 packages.
-- Reuse verified ROS interfaces; confirm actual topics, message types, frame IDs, and installed APIs for new or changed integrations. If inspection requires a restricted action, request approval first.
-- Keep simulator ground truth separate from observations supplied to the robot policy; label ground-truth and perception-derived data explicitly in code, interfaces, logs, and documentation.
-- Never expose future simulator trajectories to prediction or planning modules; keep evaluation truth isolated from their inputs.
-- Maintain explicit coordinate frames, timestamps, track IDs, and observation validity throughout data collection, prediction, planning, and evaluation.
-- Use reproducible scenario seeds and configurations. Compare A–D with consistent scenarios and safety mechanisms.
-- Avoid adding simulation frameworks unless the current MuJoCo environment cannot meet the requirements.
-- Change only files relevant to the requested milestone.
+## Non-negotiable control and physics invariants
+- Freeze the exact installed gait checkpoint, neural network definition, observation normalization, joint ordering, action scaling, gains, previous-action history, supported command envelope, and update frequency. Record hashes and configuration in run manifests.
+- Training rollouts must execute **the frozen gait controller and full G1 MuJoCo dynamics and contacts**. Never substitute direct root `qpos`/`qvel` manipulation, `mocap` robot movement, a point robot, or a simplified kinematic follower as evidence for full-G1 PPO training.
+- Verified isolated runtime: escort actions at 5 Hz, frozen gait inference nominally 50 Hz, MuJoCo physics at 500 Hz / 0.002 s; ordinary high-level steps execute 100 physics steps and 10 gait calls. Preserve the tested scheduling and record actual counters. Deterministic isolated scheduling does not establish timing or full-dynamics parity with asynchronous live ROS/DDS execution.
+- Compare headless execution with the existing G1 reference on fixed command sequences: joint order, scaled actions, observation history, actual base motion, stability, stopping, command latency, and reset state. Declare numerical tolerances and report deviations.
+- Preserve original G1 controller ownership. No second `rt/lowcmd` owner, no competing `/cmd_vel` publishers, and no simultaneous Nav2 and learned local-command controller.
+- For future ROS integration, trace the real configured command topic/chain; do not assume RL's output passes Nav2 collision monitoring just because the topic is named `/cmd_vel`. An independent stop/limits supervisor is required, with a verified command owner.
+- Do not change low-level robot controllers, balance policy, SDK/DDS/network, hardware settings, or original baseline world/assets without separately approved design and justification.
 
-## Verification and reporting
-- Every implementation needs unit tests and documented runtime verification. Report actual results, failures, and checks not run; never claim runtime validation from compilation or unit tests alone.
-- Explain changes and provide manual ROS 2 verification commands appropriate to the milestone. Providing commands does not authorize running restricted actions.
+## Isolated RL training versus operator-controlled live simulation
+- Build a **separate, offline, headless RL environment** that owns its own MuJoCo `MjModel`/`MjData` instances and has no live robot/DDS/ROS command authority. The operator explicitly authorizes launching a training process.
+- **Inside that isolated training process only**, Gymnasium `reset()` may automatically reset its own robot state, contacts, gait history, client/pedestrian states, episode clock, RNG, and reward trackers. This permission does NOT apply to a running Grove-G1 GUI/ROS/DDS simulation.
+- Do not automatically launch, stop, reset, reload, or reconfigure the running Grove-G1 simulator or controllers. Never execute physical robot commands.
+- Never run Docker lifecycle commands, `sudo`, broad deletes, `git reset`, `git clean`, commits, or pushes without explicit user approval. Source-level offline tests and scoped file writes may run in the authorized workspace sandbox.
+- Preserve original scenario bundles and datasets. Create fresh experiment paths rather than overwriting live bundles or prior evaluation logs.
+
+## Environment and observation contract
+- Use an explicit Gymnasium-style API: `reset(seed, options)` and `step(action) -> observation, reward, terminated, truncated, info`. Support independent RNG per environment/episode and deterministic scenario resolution given seeds.
+- High-level action is body-frame forward/lateral velocity and yaw rate. Apply validated bounds and rate limits before the gait. Log raw, clipped, filtered, and executed commands separately.
+- Policy observation may contain current/recent **causal** client-relative state, up to three pedestrian slots with masks (initially support two), compact obstacle geometry, measured robot planar velocity/yaw rate, torso orientation or projected gravity, and previous actions. All positions/velocities must have a clear frame convention and validity.
+- Do not expose future human waypoints, resolved future trajectories, route progress labels, evaluator-only transforms, or reward-only privileged state to the actor policy. A centralized training critic, if later considered, must be reported as a changed experimental condition; the initial design uses the same causal observation contract.
+- Use scenario route progress and geometric truth only inside reward/evaluation. Data provenance must distinguish live ROS proxy observations, headless simulation state observations, and actual camera perception.
+- Define and log termination separately from truncation: falls, verified geometric intrusions/physical contacts, client loss, success, and time limit. No silent early termination to improve reward.
+- Formation: initial preferred offset 1.5 m behind client, expressed in client heading frame; retain last valid client heading while stopped. Starting evaluation thresholds from proposal: 3 m client-distance limit with 3 s continuous grace, final formation error <=0.75 m within 5 s of client reaching endpoint; validate feasibility before freezing.
+- Avoid standing-still rewards, racing ahead of client, wrong-side following, reward farming, and repeated route progress. Always log reward components and failure causes.
+
+## Curriculum, splits and checkpointing
+- Use one continuing PPO actor across stages: (1) client-only basics, (2) one-pedestrian interactions, (3) two pedestrians/corridors/recovery, (4) weighted mixed robustness. Preserve a nonzero sampling rate for mastered easy families.
+- Stage 4 reference probabilities: basic 15%, stops/turns 20%, perpendicular 20%, head-on/diagonal 10%, two-person 10%, constrained corridor 10%, formation recovery 10%, three-person crowding 5%. The last family must be disabled/redistributed until three actors are supported; log effective normalized probabilities.
+- Stage-specific sampling weights, randomization ranges, gates, time budgets, and thresholds live in version-controlled **training YAML**, not hardcoded or solely in this file.
+- Use disjoint training/validation/final-test seeds and route configurations. Never promote stages or select checkpoints based on final-test episodes. Advance with repeatable held-out **validation**, not training reward alone; guard against regressions, falls, and excessive overrides.
+- Checkpoint actor/critic, optimizer, observation normalizer, curriculum stage and sampler state, RNG, model and gait hashes, environment/config hashes, and training step. Resume without silently resetting the learned policy or changing stage probabilities.
+- Log wall-clock rollout throughput and total sample budget before proposing large training runs. Report actual executed full-G1 steps; no guessed FPS/GPU gains.
+
+## Evaluation and reporting
+- Keep common reward-independent metrics: task success, formation mean/p95 and time in tolerance, geometric pedestrian clearance/overlap, falls and physical contacts where available, measured gait velocity tracking, stop overrides, and formation recovery time.
+- Compare learned PPO, reactive, and predictive baselines using the **same gait, observation access, command limits, safety supervisor, and matched held-out scenarios**, once each baseline actually exists.
+- Prefer a small reproducible pilot before long runs; keep at least one short, difficult scenario as a smoke test. Evaluate across policy training seeds when compute allows; never cherry-pick a seed or claim confidence from one episode.
+- Every milestone requires deterministic unit tests and documented manual integration checks. Distinguish compilation, mocked gait, live-G1, isolated headless-MuJoCo, and actual hardware evidence.
+- Report specific changed files, commands/tests run, evidence, failure modes, and commands requiring operator approval. Never claim that an unrun environment, rollout, or robot command works.
+- Stop at the requested milestone. Propose the next task separately instead of silently implementing all future phases.

@@ -1,0 +1,489 @@
+{
+  "stages": [
+    {
+      "updates": 4000,
+      "wall_s": 3.273865976999332,
+      "train_rows": 2341,
+      "holdout_rows": 1491,
+      "train_episodes": 11,
+      "holdout_episodes": 7,
+      "train_mse": 0.002317479345947504,
+      "holdout_mse": 0.0023593860678374767,
+      "holdout_rmse_per_axis": [
+        0.04999872297048569,
+        0.06765922904014587,
+        0.000716815295163542
+      ],
+      "history": [
+        {
+          "update": 1,
+          "train_mse": 0.03088511899113655,
+          "holdout_mse": 0.031599439680576324
+        },
+        {
+          "update": 501,
+          "train_mse": 0.0034219431690871716,
+          "holdout_mse": 0.0031337516847997904
+        },
+        {
+          "update": 1001,
+          "train_mse": 0.0030339008662849665,
+          "holdout_mse": 0.0028384311590343714
+        },
+        {
+          "update": 1501,
+          "train_mse": 0.0027804970741271973,
+          "holdout_mse": 0.002648701425641775
+        },
+        {
+          "update": 2001,
+          "train_mse": 0.0026381874922662973,
+          "holdout_mse": 0.002540992572903633
+        },
+        {
+          "update": 2501,
+          "train_mse": 0.0025062067434191704,
+          "holdout_mse": 0.0024674986489117146
+        },
+        {
+          "update": 3001,
+          "train_mse": 0.0024397040251642466,
+          "holdout_mse": 0.00241383770480752
+        },
+        {
+          "update": 3501,
+          "train_mse": 0.0023913828190416098,
+          "holdout_mse": 0.0023839541245251894
+        },
+        {
+          "update": 4000,
+          "train_mse": 0.002317479345947504,
+          "holdout_mse": 0.0023593863006681204
+        }
+      ]
+    },
+    {
+      "updates": 4000,
+      "wall_s": 3.480771423999613,
+      "train_rows": 4421,
+      "holdout_rows": 1736,
+      "train_episodes": 22,
+      "holdout_episodes": 8,
+      "train_mse": 0.002290557837113738,
+      "holdout_mse": 0.00225424999371171,
+      "holdout_rmse_per_axis": [
+        0.04406978189945221,
+        0.06942535191774368,
+        0.0008524763979949057
+      ],
+      "history": [
+        {
+          "update": 1,
+          "train_mse": 0.012639003805816174,
+          "holdout_mse": 0.007485687732696533
+        },
+        {
+          "update": 501,
+          "train_mse": 0.00999782606959343,
+          "holdout_mse": 0.007952465675771236
+        },
+        {
+          "update": 1001,
+          "train_mse": 0.007205905858427286,
+          "holdout_mse": 0.006749664433300495
+        },
+        {
+          "update": 1501,
+          "train_mse": 0.0026834746822714806,
+          "holdout_mse": 0.0025498003233224154
+        },
+        {
+          "update": 2001,
+          "train_mse": 0.0024035463575273752,
+          "holdout_mse": 0.002411954803392291
+        },
+        {
+          "update": 2501,
+          "train_mse": 0.0023105929140001535,
+          "holdout_mse": 0.0023477652575820684
+        },
+        {
+          "update": 3001,
+          "train_mse": 0.002318871207535267,
+          "holdout_mse": 0.00228005344979465
+        },
+        {
+          "update": 3501,
+          "train_mse": 0.002391248941421509,
+          "holdout_mse": 0.002329165581613779
+        },
+        {
+          "update": 4000,
+          "train_mse": 0.002290557837113738,
+          "holdout_mse": 0.0022542497608810663
+        }
+      ]
+    },
+    {
+      "updates": 4000,
+      "wall_s": 3.3916075569995883,
+      "train_rows": 6023,
+      "holdout_rows": 2073,
+      "train_episodes": 32,
+      "holdout_episodes": 10,
+      "train_mse": 0.001953923376277089,
+      "holdout_mse": 0.002098661847412586,
+      "holdout_rmse_per_axis": [
+        0.04283516854047775,
+        0.06677855551242828,
+        0.0013269544579088688
+      ],
+      "history": [
+        {
+          "update": 1,
+          "train_mse": 0.015462465584278107,
+          "holdout_mse": 0.016381410881876945
+        },
+        {
+          "update": 501,
+          "train_mse": 0.0021943480242043734,
+          "holdout_mse": 0.0022509933914989233
+        },
+        {
+          "update": 1001,
+          "train_mse": 0.00196973723359406,
+          "holdout_mse": 0.0021633312571793795
+        },
+        {
+          "update": 1501,
+          "train_mse": 0.0020002492237836123,
+          "holdout_mse": 0.002230943413451314
+        },
+        {
+          "update": 2001,
+          "train_mse": 0.0019231654005125165,
+          "holdout_mse": 0.0021335093770176172
+        },
+        {
+          "update": 2501,
+          "train_mse": 0.0019421555334702134,
+          "holdout_mse": 0.0021591198164969683
+        },
+        {
+          "update": 3001,
+          "train_mse": 0.0019517054315656424,
+          "holdout_mse": 0.002085826126858592
+        },
+        {
+          "update": 3501,
+          "train_mse": 0.0019001051550731063,
+          "holdout_mse": 0.002110981149598956
+        },
+        {
+          "update": 4000,
+          "train_mse": 0.001953923376277089,
+          "holdout_mse": 0.002098661847412586
+        }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 4296725405617514500,
+      "steps": 225,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 4392855387276052764,
+      "steps": 253,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 1872269103388788232,
+      "steps": 269,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 3626405844010316960,
+      "steps": 202,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "stop_start",
+      "episode_seed": 1253536867542178784,
+      "steps": 151,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 424532993151764020,
+      "steps": 135,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 2838344227115179612,
+      "steps": 276,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 583617040180096652,
+      "steps": 153,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 1595518537812941840,
+      "steps": 246,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 2307998494567558380,
+      "steps": 241,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 1632587677201663028,
+      "steps": 183,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 1866761286146549316,
+      "steps": 267,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 1405469017866535296,
+      "steps": 209,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 2123722500951723648,
+      "steps": 253,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 156360594559079200,
+      "steps": 248,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 3810303664834083212,
+      "steps": 171,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "straight",
+      "episode_seed": 4176691692892143700,
+      "steps": 194,
+      "reason": "success"
+    },
+    {
+      "stage": 0,
+      "family": "gentle_turn",
+      "episode_seed": 845111909071607164,
+      "steps": 156,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "gentle_turn",
+      "episode_seed": 1783599510068294056,
+      "steps": 211,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "gentle_turn",
+      "episode_seed": 3077436136490021980,
+      "steps": 245,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "stop_start",
+      "episode_seed": 4579751954622322904,
+      "steps": 230,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 4313714259247861716,
+      "steps": 171,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 1382003130334384708,
+      "steps": 165,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 3203802580720342416,
+      "steps": 197,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 4147420927004284808,
+      "steps": 142,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "gentle_turn",
+      "episode_seed": 4386455192078599552,
+      "steps": 146,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 2712040817150585168,
+      "steps": 248,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 379331108792398744,
+      "steps": 208,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 3491853542610916996,
+      "steps": 222,
+      "reason": "success"
+    },
+    {
+      "stage": 1,
+      "family": "straight",
+      "episode_seed": 764593821366988616,
+      "steps": 140,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "stop_start",
+      "episode_seed": 4434874446947969408,
+      "steps": 167,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "gentle_turn",
+      "episode_seed": 4593103595210773760,
+      "steps": 197,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "stop_start",
+      "episode_seed": 1725704691002170172,
+      "steps": 136,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 1171702422632229328,
+      "steps": 141,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 1293089756424759084,
+      "steps": 169,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "stop_start",
+      "episode_seed": 391343352659073360,
+      "steps": 140,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 3854869337259136032,
+      "steps": 140,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 4599746801465579256,
+      "steps": 235,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 921967257236203268,
+      "steps": 167,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 812353783198543332,
+      "steps": 129,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 658663998476804044,
+      "steps": 133,
+      "reason": "success"
+    },
+    {
+      "stage": 2,
+      "family": "straight",
+      "episode_seed": 2895490030099666912,
+      "steps": 185,
+      "reason": "success"
+    }
+  ],
+  "critic_and_log_std_unchanged": true,
+  "trained_actor_parameters": 22147,
+  "ppo_transitions": 0
+}

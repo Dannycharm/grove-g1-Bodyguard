@@ -1,0 +1,14 @@
+schema_version: 1
+version: tracking_stop_v3
+# Experimental defaults derived from Stage 1 task scales; not claimed optimal.
+formation_scale_m: 0.75
+formation_cost_cap: 10.0
+velocity_scale_m_s: 0.25
+velocity_weight: 1.0
+velocity_cost_cap: 4.0
+# Net drift over the whole hold window, bounded excursion, and native speed ceiling.
+stop_linear_speed_m_s: 0.05
+stop_instantaneous_speed_cap_m_s: 0.15
+stop_max_excursion_m: 0.10
+stop_yaw_rate_rad_s: 0.1
+stop_hold_s: 1.0

@@ -1,0 +1,624 @@
+{
+  "schema_version": 1,
+  "checkpoint": "workspace/src/g1_controllers/policy/unitree_g1_velocity_e2e.onnx",
+  "checkpoint_sha256": "8995f2462ba2d0d83afe08905148f6373990d50018610663a539225d268ef33b",
+  "files": {
+    "workspace/src/g1_bringup/mjcf/g1_flat_scene.xml": "a0ab4639e6e91363418805d5657deec96937798848d4a4919ea7589a622d1419",
+    "workspace/src/g1_bringup/mjcf/g1_navigation_scene.xml": "6f991e97873849caed50ae9a66353a1f02eaab0b7e184452182af14cd34b35fe",
+    "workspace/src/g1_bringup/mjcf/g1_walk_scene.xml": "1e92acd36f430bd71714553a768a9702da91c369f2cc03b2112ded5a4309d02b",
+    "workspace/src/g1_controllers/config/lowcmd_controllers.yaml": "e3cbf63228cfbec9122cecc94a265b48bff6b2ab3e6a8056e5220979346985c5",
+    "workspace/src/g1_controllers/include/g1_controllers/agile_policy.hpp": "d40f239fd4396c8184864e4281156adfd42f26dc5422717df870487d53b3695a",
+    "workspace/src/g1_controllers/policy/unitree_g1_velocity_e2e.onnx": "8995f2462ba2d0d83afe08905148f6373990d50018610663a539225d268ef33b",
+    "workspace/src/g1_controllers/policy/unitree_g1_velocity_e2e.yaml": "2c3a80db2d2f5a1222992fcb57757ec5c3adff21e5cc561b3cf167b553bb310d",
+    "workspace/src/g1_controllers/src/agile_policy.cpp": "76576609e26cca5b13062e848a9763e515334fd64aa1a6c0b13bbe0ad65a69bc",
+    "workspace/src/g1_controllers/src/g1_agile_controller.cpp": "d27d0399c33c3df1e6423edc70c06614766e8b2779209d3e7915f19b26e7e112",
+    "workspace/src/g1_controllers/src/g1_freeze_controller.cpp": "6274fbe1125c472b8817c8bac1647bd0851099a207627339b514266bd45f77b8",
+    "workspace/src/g1_controllers/src/g1_safety_controller.cpp": "394e02fc9411515fbd8948c5948e9fa6d5e0863eb907a9c6cbc1e2cde2061ea7",
+    "workspace/vendor/unitree_mujoco/simulate/src/dex3_handler.cc": "39b29081175c55a9b26a64f5b37179e227538efe22bba11b0171a00543f10dbf",
+    "workspace/vendor/unitree_mujoco/simulate/src/startup_pose.cc": "f6d3920c5bbe9eb7449bd2254d83cb7022c3cc5f51c0ca0a661d89160f1fccdb",
+    "workspace/vendor/unitree_mujoco/simulate/src/unitree_sdk2_bridge.h": "a94d866dfc0b387cedc8dfdb61b0ce767673d718c742412ed9061d78add8551a",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/g1_29dof.xml": "a4296f5ec1f890ae6721f0d23722968c10c93d5bcd5d3085230025ae9c884b68",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/head_link.STL": "d297328b3569fc85074355e76cba6c889d19de5361224bcd3c5b8ce82e13b9b6",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_ankle_pitch_link.STL": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_ankle_roll_link.STL": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_elbow_link.STL": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_index_0_link.STL": "efaabe6a8c850f628c55ab5ed8402757d5263262e8c32943f9bfbec4329d9a8a",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_index_1_link.STL": "926e5fc790ddbabf222e7b7ee5b790a45b090d27a4a87e558a5ba57516b6a805",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_middle_0_link.STL": "efaabe6a8c850f628c55ab5ed8402757d5263262e8c32943f9bfbec4329d9a8a",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_middle_1_link.STL": "926e5fc790ddbabf222e7b7ee5b790a45b090d27a4a87e558a5ba57516b6a805",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_palm_link.STL": "d48b0b1dbd2def01867de0840ed643e6ae8f4882fe81368540830448e2fba58f",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_thumb_0_link.STL": "c63f6a2e8d700940c172cfa8a5fab2d8c2785abc43bc258d3adf315ceb1fa653",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_thumb_1_link.STL": "ba3d13e21e8ed1e4885bdbf562326abdae41964c0fee63eceeebebdcf5fff935",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hand_thumb_2_link.STL": "9985783981720896e54347dbcf9d8cbfb991a264ac4fa44cfc017dae1b83fdcd",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hip_pitch_link.STL": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hip_roll_link.STL": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_hip_yaw_link.STL": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_knee_link.STL": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_rubber_hand.STL": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_shoulder_pitch_link.STL": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_shoulder_roll_link.STL": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_shoulder_yaw_link.STL": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_wrist_pitch_link.STL": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_wrist_roll_link.STL": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_wrist_roll_rubber_hand.STL": "e81030abd023bd9e4a308ef376d814a2c12d684d8a7670c335bbd5cd7809c909",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/left_wrist_yaw_link.STL": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/logo_link.STL": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/pelvis.STL": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/pelvis_contour_link.STL": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_ankle_pitch_link.STL": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_ankle_roll_link.STL": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_elbow_link.STL": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_index_0_link.STL": "8bac717a5ff4c5a6f4ca839091ad935392859795a68a5a547bc5ecb3f196f40d",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_index_1_link.STL": "06a5f46b5705a1e54205fc01ed437d475e194a205b72ba78d00c8f26481237bb",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_middle_0_link.STL": "a02dd3c5b6747e76016f3a1cab27173fa218b0eb271570847be64d8a390022d1",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_middle_1_link.STL": "60ca1810b7b1371733556660e9e2167790355a83cad9ba55dbd236f2020a228a",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_palm_link.STL": "5e95f19c4daa3ed7f765d465ba763153d7a76e4c02cbe6d8c567cd67f89f1c1b",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_thumb_0_link.STL": "30f91ca9cccda42065c98cbe635ff87cd1e004b82d38888fd7e741cf0998d01d",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_thumb_1_link.STL": "acdd00f613ea4253229461e1367be5331e6631df49e1d40fe283c2bd4c66469f",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hand_thumb_2_link.STL": "36256d0253ae42e0652fbe3e3992b6ac9b5aefd839694ad39b4af143d4efa85f",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hip_pitch_link.STL": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hip_roll_link.STL": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_hip_yaw_link.STL": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_knee_link.STL": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_rubber_hand.STL": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_shoulder_pitch_link.STL": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_shoulder_roll_link.STL": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_shoulder_yaw_link.STL": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_wrist_pitch_link.STL": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_wrist_roll_link.STL": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_wrist_roll_rubber_hand.STL": "0729aff1ac4356f9314de13a46906267642e58bc47f0d8a7f17f6590a6242ccf",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/right_wrist_yaw_link.STL": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/torso_constraint_L_link.STL": "82be7f93e85b3d303a1d1e1847e2c916939bd61c424ed1ebd28691ec33909dd1",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/torso_constraint_L_rod_link.STL": "c10de1effa7ea797ac268006aa2a739036c7e1f326b2012d711ee2c20c5a6e96",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/torso_constraint_R_link.STL": "54ded433a3a0c76027365856fdbd55215643de88846f7d436598a4071e682725",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/torso_constraint_R_rod_link.STL": "cb83fd38a9f06c99e3f301c70f12d94ae770a8f0cf9501f83580a27f908990b4",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/torso_link.STL": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/waist_constraint_L.STL": "8ebafdcb4de6871113f0ca2c356618d6e46b1d50f6c0bf9e37f47b9d8e100d99",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/waist_constraint_R.STL": "791902a291ffbd35ab97383b7b44ea5d975de7c80eef838797c970790b382ca9",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/waist_roll_link.STL": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/waist_support_link.STL": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a",
+    "workspace/vendor/unitree_mujoco/unitree_robots/g1/meshes/waist_yaw_link.STL": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb"
+  },
+  "inputs": [
+    {
+      "name": "root_link_quat_w",
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "root_ang_vel_b",
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "velocity_commands",
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "joint_pos",
+      "shape": [
+        1,
+        29
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "joint_vel",
+      "shape": [
+        1,
+        29
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "last_actions",
+      "shape": [
+        1,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "base_ang_vel_history",
+      "shape": [
+        1,
+        5,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "projected_gravity_history",
+      "shape": [
+        1,
+        5,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "velocity_commands_history",
+      "shape": [
+        1,
+        5,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "controlled_joint_pos_history",
+      "shape": [
+        1,
+        5,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "controlled_joint_vel_history",
+      "shape": [
+        1,
+        5,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "actions_history",
+      "shape": [
+        1,
+        5,
+        14
+      ],
+      "dtype": "float32"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "action_joint_pos",
+      "shape": [
+        1,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "action_joint_pos_kp_gains",
+      "shape": [
+        1,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "action_joint_pos_kd_gains",
+      "shape": [
+        1,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "last_actions_out",
+      "shape": [
+        1,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "base_ang_vel_history_out",
+      "shape": [
+        1,
+        5,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "projected_gravity_history_out",
+      "shape": [
+        1,
+        5,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "velocity_commands_history_out",
+      "shape": [
+        1,
+        5,
+        3
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "controlled_joint_pos_history_out",
+      "shape": [
+        1,
+        5,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "controlled_joint_vel_history_out",
+      "shape": [
+        1,
+        5,
+        14
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "actions_history_out",
+      "shape": [
+        1,
+        5,
+        14
+      ],
+      "dtype": "float32"
+    }
+  ],
+  "observation_joints": [
+    "left_hip_pitch_joint",
+    "right_hip_pitch_joint",
+    "waist_yaw_joint",
+    "left_hip_roll_joint",
+    "right_hip_roll_joint",
+    "waist_roll_joint",
+    "left_hip_yaw_joint",
+    "right_hip_yaw_joint",
+    "waist_pitch_joint",
+    "left_knee_joint",
+    "right_knee_joint",
+    "left_shoulder_pitch_joint",
+    "right_shoulder_pitch_joint",
+    "left_ankle_pitch_joint",
+    "right_ankle_pitch_joint",
+    "left_shoulder_roll_joint",
+    "right_shoulder_roll_joint",
+    "left_ankle_roll_joint",
+    "right_ankle_roll_joint",
+    "left_shoulder_yaw_joint",
+    "right_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "right_elbow_joint",
+    "left_wrist_roll_joint",
+    "right_wrist_roll_joint",
+    "left_wrist_pitch_joint",
+    "right_wrist_pitch_joint",
+    "left_wrist_yaw_joint",
+    "right_wrist_yaw_joint"
+  ],
+  "action_joints": [
+    "left_hip_pitch_joint",
+    "right_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "right_hip_roll_joint",
+    "waist_roll_joint",
+    "left_hip_yaw_joint",
+    "right_hip_yaw_joint",
+    "waist_pitch_joint",
+    "left_knee_joint",
+    "right_knee_joint",
+    "left_ankle_pitch_joint",
+    "right_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_ankle_roll_joint"
+  ],
+  "nominal": [
+    -0.1,
+    -0.1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.3,
+    0.3,
+    -0.2,
+    -0.2,
+    0,
+    0
+  ],
+  "kp": [
+    100,
+    100,
+    100,
+    100,
+    300,
+    100,
+    100,
+    300,
+    200,
+    200,
+    20,
+    20,
+    20,
+    20
+  ],
+  "kd": [
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    5,
+    2.5,
+    2.5,
+    5,
+    5,
+    5,
+    0.2,
+    0.2,
+    0.1,
+    0.1
+  ],
+  "normalization": {
+    "external": "none",
+    "embedded_angular_velocity_scale": 0.2,
+    "embedded_joint_velocity_scale": 0.05,
+    "embedded_action_scale": 0.5,
+    "embedded_action_target_clip": [
+      -10,
+      10
+    ],
+    "quaternion": "wxyz; pelvis body to world",
+    "gravity": "world [0,0,-1] projected into pelvis",
+    "history": "seven feedback tensors; 269 float32 values, zero on reset",
+    "source": "prior read-only graph audit; export signature verified here; graph execution pending"
+  },
+  "command": {
+    "frame": "pelvis/body",
+    "units": [
+      "m/s",
+      "m/s",
+      "rad/s"
+    ],
+    "caps": [
+      0.6,
+      0.6,
+      0.9
+    ],
+    "timeout_s": 0.5,
+    "acceleration_limiter": false
+  },
+  "timing": {
+    "physics_timestep_s_expected": 0.002,
+    "engine_version": "3.3.6",
+    "controller_period_s": 0.005,
+    "decimation": 4,
+    "gait_period_s": 0.02,
+    "bridge_period_s": 0.001,
+    "training_metadata_physics_dt_NOT_USED": 0.005,
+    "synchronous_rule": "ceil event time to physics boundary; controller before bridge on ties; sample latest boundary state; first controller 5ms, first gait 20ms; bridge 0ms",
+    "wall_clock_reference_parity": "unverified"
+  },
+  "safety": {
+    "blend_target": 1,
+    "blend_speed_per_s": 20,
+    "joint_slew_limit": -1,
+    "fallback_kp": 100,
+    "fallback_kd": 2,
+    "mean_speed_limit": 10,
+    "peak_speed_limit": 35,
+    "emergency": "latch last integrated target, fallback gains; runner retains this hold and flags failure, does not emulate asynchronous ROS freeze-controller switch"
+  },
+  "holds": {
+    "arms": [
+      300,
+      4
+    ],
+    "waist_yaw": [
+      10,
+      1
+    ],
+    "startup": [
+      200,
+      5
+    ],
+    "finger": [
+      1.5,
+      0.2
+    ],
+    "finger_effort_limits": [
+      2.45,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4
+    ],
+    "startup_release": "500 bridge ticks with every motor driven; pending release drained at physics boundary"
+  },
+  "assets": {
+    "robot": "workspace/vendor/unitree_mujoco/unitree_robots/g1/g1_29dof.xml",
+    "flat_scene": "workspace/src/g1_bringup/mjcf/g1_flat_scene.xml",
+    "navigation_scene": "workspace/src/g1_bringup/mjcf/g1_navigation_scene.xml",
+    "overlay": "workspace/src/g1_bringup/mjcf/g1_walk_scene.xml",
+    "actuators": [
+      {
+        "name": "left_hip_pitch",
+        "joint": "left_hip_pitch_joint",
+        "ctrlrange": "-88 88"
+      },
+      {
+        "name": "left_hip_roll",
+        "joint": "left_hip_roll_joint",
+        "ctrlrange": "-88 88"
+      },
+      {
+        "name": "left_hip_yaw",
+        "joint": "left_hip_yaw_joint",
+        "ctrlrange": "-88 88"
+      },
+      {
+        "name": "left_knee",
+        "joint": "left_knee_joint",
+        "ctrlrange": "-139 139"
+      },
+      {
+        "name": "left_ankle_pitch",
+        "joint": "left_ankle_pitch_joint",
+        "ctrlrange": "-50 50"
+      },
+      {
+        "name": "left_ankle_roll",
+        "joint": "left_ankle_roll_joint",
+        "ctrlrange": "-50 50"
+      },
+      {
+        "name": "right_hip_pitch",
+        "joint": "right_hip_pitch_joint",
+        "ctrlrange": "-88 88"
+      },
+      {
+        "name": "right_hip_roll",
+        "joint": "right_hip_roll_joint",
+        "ctrlrange": "-88 88"
+      },
+      {
+        "name": "right_hip_yaw",
+        "joint": "right_hip_yaw_joint",
+        "ctrlrange": "-88 88"
+      },
+      {
+        "name": "right_knee",
+        "joint": "right_knee_joint",
+        "ctrlrange": "-139 139"
+      },
+      {
+        "name": "right_ankle_pitch",
+        "joint": "right_ankle_pitch_joint",
+        "ctrlrange": "-50 50"
+      },
+      {
+        "name": "right_ankle_roll",
+        "joint": "right_ankle_roll_joint",
+        "ctrlrange": "-50 50"
+      },
+      {
+        "name": "waist_yaw",
+        "joint": "waist_yaw_joint",
+        "ctrlrange": "-88 88"
+      },
+      {
+        "name": "waist_roll",
+        "joint": "waist_roll_joint",
+        "ctrlrange": "-50 50"
+      },
+      {
+        "name": "waist_pitch",
+        "joint": "waist_pitch_joint",
+        "ctrlrange": "-50 50"
+      },
+      {
+        "name": "left_shoulder_pitch",
+        "joint": "left_shoulder_pitch_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "left_shoulder_roll",
+        "joint": "left_shoulder_roll_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "left_shoulder_yaw",
+        "joint": "left_shoulder_yaw_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "left_elbow",
+        "joint": "left_elbow_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "left_wrist_roll",
+        "joint": "left_wrist_roll_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "left_wrist_pitch",
+        "joint": "left_wrist_pitch_joint",
+        "ctrlrange": "-5 5"
+      },
+      {
+        "name": "left_wrist_yaw",
+        "joint": "left_wrist_yaw_joint",
+        "ctrlrange": "-5 5"
+      },
+      {
+        "name": "right_shoulder_pitch",
+        "joint": "right_shoulder_pitch_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "right_shoulder_roll",
+        "joint": "right_shoulder_roll_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "right_shoulder_yaw",
+        "joint": "right_shoulder_yaw_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "right_elbow",
+        "joint": "right_elbow_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "right_wrist_roll",
+        "joint": "right_wrist_roll_joint",
+        "ctrlrange": "-25 25"
+      },
+      {
+        "name": "right_wrist_pitch",
+        "joint": "right_wrist_pitch_joint",
+        "ctrlrange": "-5 5"
+      },
+      {
+        "name": "right_wrist_yaw",
+        "joint": "right_wrist_yaw_joint",
+        "ctrlrange": "-5 5"
+      }
+    ],
+    "joint_defaults": "<default>\n    <default class=\"torso_motor\">\n      <joint damping=\"0.05\" armature=\"0.01\" frictionloss=\"0.2\" />\n    </default>\n    <default class=\"leg_motor\">\n      <joint damping=\"0.05\" armature=\"0.01\" frictionloss=\"0.2\" />\n    </default>\n    <default class=\"ankle_motor\">\n      <joint damping=\"0.05\" armature=\"0.01\" frictionloss=\"0.2\" />\n    </default>\n    <default class=\"arm_motor\">\n      <joint damping=\"0.05\" armature=\"0.01\" frictionloss=\"0.2\" />\n    </default>\n    <default class=\"wrist_motor\">\n      <joint damping=\"0.05\" armature=\"0.01\" frictionloss=\"0.1\" />\n    </default>\n    \n    \n    <default class=\"dex3_motor\">\n      <joint damping=\"0.01\" armature=\"0.001\" frictionloss=\"0.01\" />\n    </default>\n    \n    <default class=\"dex3_visual\">\n      <geom type=\"mesh\" contype=\"0\" conaffinity=\"0\" group=\"1\" density=\"0\" rgba=\"0.7 0.7 0.7 1\" />\n    </default>\n    \n    <default class=\"dex3_collision\">\n      <geom type=\"capsule\" contype=\"2\" conaffinity=\"2\" group=\"3\" density=\"0\" condim=\"4\" priority=\"1\" friction=\"1 0.02 0.0001\" solref=\"0.006 1\" solimp=\"0.95 0.99 0.001\" />\n    </default>\n  </default>\n\n  ",
+    "solver": "no XML option override; compiled defaults must be recorded from MuJoCo 3.3.6"
+  },
+  "tolerances": {
+    "tensor_atol": 1e-05,
+    "tensor_rtol": 1e-05,
+    "controller_atol": 1e-05,
+    "joint_rms_rad": 0.02,
+    "velocity_rms_m_s": 0.05,
+    "endpoint_10s_m": 0.1,
+    "yaw_10s_rad": 0.1,
+    "additional_falls": 0
+  },
+  "installed_runtime_identity": "checkout bytes only; running container model_path override and loaded bytes unverified",
+  "neural_core": {
+    "layers": [
+      255,
+      256,
+      256,
+      128,
+      14
+    ],
+    "activation": "ELU alpha=1",
+    "source": "previous read-only ONNX audit; checkpoint identity verified, execution pending"
+  }
+}
