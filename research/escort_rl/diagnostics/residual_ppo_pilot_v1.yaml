@@ -1,0 +1,28 @@
+protocol: residual_latent_ppo_pilot_v1
+source: research/escort_rl/runs/residual_variation_v3_20261109/residual_coverage_1.pt
+source_sha256: a8bbd73a5a6aee06f23384822f8b7350e148dfc95fdc22f6cdf863b431ff79da
+seed: 923001
+workers: 1
+max_total_ppo_transitions: 5000
+latent_sigma: 0.01
+ppo:
+  learning_rate: 0.000003
+  n_steps: 512
+  batch_size: 128
+  n_epochs: 5
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.1
+  ent_coef: 0.0
+  vf_coef: 0.5
+  max_grad_norm: 0.25
+  target_kl: 0.005
+critic:
+  episodes: 24
+  scenario_seed_start: 1020000
+  action_seed: 923101
+  fit_seed: 923201
+  updates: 6000
+  batch_size: 256
+  learning_rate: 0.0003
+checkpoint_interval: 1024

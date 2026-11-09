@@ -1,0 +1,44 @@
+schema_version: 1
+version: stage2_single_pedestrian_v1
+stage1_config: ../configs/stage1.yaml
+stage1_ppo_config: ../configs/ppo_stage1_imitation_guarded_v1.yaml
+families:
+  straight: 0.15
+  gentle_turn: 0.125
+  stop_start: 0.125
+  crossing: 0.35
+  head_on: 0.125
+  diagonal: 0.125
+pedestrian:
+  peak_speed_m_s: [0.25, 0.45]
+  max_acceleration_m_s2: 0.4
+  encounter_duration_fraction: [0.35, 0.55]
+  timing_jitter_s: [-0.5, 0.5]
+  half_path_length_m: [1.2, 1.7]
+  diagonal_angle_degrees: [110.0, 145.0]
+  head_on_lane_offset_m: [0.6, 0.8]
+  initial_robot_distance_m: 1.0
+  minimum_client_surface_clearance_m: 0.05
+  radius_m: 0.25
+  max_attempts: 80
+clearance:
+  robot_pelvis_footprint_radius_m: 0.30
+  preferred_surface_margin_m: 0.30
+  shaping_weight: 2.0
+  intrusion_threshold_m: 0.0
+validation:
+  episodes_per_encounter: 20
+  candidate_seed_start: 3000001
+  seed_modulus: 4
+  train_residue: 0
+  validation_residue: 1
+  final_test_residue: 2
+  pedestrian_success: 0.8
+  each_encounter_success: 0.8
+  stage1_success: 0.95
+  stage1_each_family_success: 0.9
+  stage1_max_formation_mean_m: 0.15
+  stage1_max_mean_error_increase_m: 0.05
+  maximum_critical_failures: 0
+  maximum_geometric_intrusions: 0
+  consecutive_rounds: 2

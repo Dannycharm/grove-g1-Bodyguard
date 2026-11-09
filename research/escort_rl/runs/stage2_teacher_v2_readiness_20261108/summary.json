@@ -1,0 +1,38 @@
+{
+  "protocol": "stage2_causal_teacher_bootstrap_v2",
+  "teacher_ready": true,
+  "reasons": [],
+  "per_family": {
+    "straight": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "gentle_turn": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "stop_start": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "crossing": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "head_on": {
+      "episodes": 10,
+      "successes": 10
+    },
+    "diagonal": {
+      "episodes": 10,
+      "successes": 10
+    }
+  },
+  "demonstration_transitions": 10878,
+  "all_outcomes": {
+    "success": 60
+  },
+  "final_tests_used": false,
+  "data_sha256": "f0f426e5f8652e97f9e35729c6b819208abb26ac39d4d73ddb7896e4bf681d26",
+  "episodes_sha256": "34289671782e8141d1513bb185c1e767653ecbc1532bda3da0ce665851134c6e"
+}

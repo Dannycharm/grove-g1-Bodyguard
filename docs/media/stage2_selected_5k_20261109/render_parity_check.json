@@ -1,0 +1,26 @@
+[
+  {
+    "family": "crossing",
+    "final_info_exact": true
+  },
+  {
+    "family": "head_on",
+    "final_info_exact": true
+  },
+  {
+    "family": "diagonal",
+    "final_info_exact": true
+  },
+  {
+    "family": "straight",
+    "final_info_exact": true
+  },
+  {
+    "family": "gentle_turn",
+    "final_info_exact": true
+  },
+  {
+    "family": "stop_start",
+    "final_info_exact": true
+  }
+]

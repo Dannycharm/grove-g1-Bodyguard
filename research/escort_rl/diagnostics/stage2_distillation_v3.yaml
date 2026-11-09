@@ -1,0 +1,13 @@
+protocol: stage2_intervention_balanced_distillation_v3
+fit_seed: 886001
+updates: 3000
+learning_rate: 0.0001
+samples_per_family: 32
+stage1_replay_fraction: 0.5
+intervention_fraction: 0.5
+intervention_action_l2_threshold: 0.15
+score_interval: 100
+max_grad_norm: 0.5
+dagger_seed: 880000
+dagger_episodes_per_family: 3
+dagger_teacher_probability: 0.0

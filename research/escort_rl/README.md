@@ -1,5 +1,7 @@
 # Isolated frozen G1 runner and Stage 1 escort environment
 
+**Current Stage 2 result (2026-11-09):** frozen-base residual imitation followed by 5k guarded residual PPO passed two full fixed-suite paired rounds: 60/60 pedestrian and 60/60 Stage 1, zero geometric intrusions or critical failures. This is repeatability for one selected model seed, not independent new-route or multi-seed generalization. See [measured results](RESIDUAL_PPO_5K_RESULTS_2026-11-09.md), [pilot protocol](RESIDUAL_PPO_PILOT_V1.md), [archive scope](STAGE2_GIT_ARCHIVE.md), and [the explanatory guide](../../docs/bodyguard/STAGE2_RL_TRAINING_EXPLAINED.md). No additional training or Stage 3 is automatically authorized.
+
 **Latest diagnostic results:** the unchanged 128×128 actor achieved 60/60 held-out
 successes through diagnostic imitation; lower initial PPO noise alone achieved 0/60
 at 20k. See [CAPACITY_EXPLORATION_2026-11-06.md](CAPACITY_EXPLORATION_2026-11-06.md)

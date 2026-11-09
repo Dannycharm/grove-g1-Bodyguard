@@ -1,0 +1,3114 @@
+[
+  {
+    "family": "crossing",
+    "episode_seed": 904000,
+    "side": -1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "crossing",
+      "seed": 904000,
+      "route_length_m": 3.0689725399865013,
+      "peak_speed_limit_m_s": 0.22215992034711277,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.253715308996448,
+        0.28886714269413194
+      ],
+      "heading_rad": -0.7868420553428863,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -0.7965655668289836,
+        1.3350310834475896,
+        -0.7314847060956927
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 904000,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.068972539986501
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.22215992034711277,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.0689725399865013,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 25.901717571215695,
+      "mean_route_speed_m_s": 0.11848529085179348,
+      "scenario_id": "455bc24f3cdee490a7357f272598360a1d19662992f082b357e8cbedf1edb9ae",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.37491264280363235,
+        "encounter_fraction": 0.4883901135570523,
+        "target_time_s": 12.65014278592873,
+        "actual_midpoint_time_s": 12.463689882369694,
+        "timing_jitter_s": -0.18645290355903632,
+        "approach_angle_rad": -1.5707963267948966,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 4.784191078196012,
+        "pedestrian_duration_s": 15.358997608347364,
+        "start_xy": [
+          1.3182698202081116,
+          1.3959605951547878
+        ],
+        "end_xy": [
+          -0.8564477263731822,
+          -0.7724858875089416
+        ],
+        "side": -1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.7514485241165432,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.7365217100377746,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 904000,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.37491264280363235,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -0.7868420553428863,
+              "waypoints": [
+                [
+                  0.253715308996448,
+                  0.28886714269413194
+                ],
+                [
+                  0.253715308996448,
+                  0.28886714269413194
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": -2.357638382137783,
+              "waypoints": [
+                {
+                  "xy": [
+                    1.3182698202081116,
+                    1.3959605951547878
+                  ],
+                  "dwell_s": 4.784191078196012
+                },
+                [
+                  -0.8564477263731822,
+                  -0.7724858875089416
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "diagonal",
+    "episode_seed": 904004,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "diagonal",
+      "seed": 904004,
+      "route_length_m": 4.141097327322789,
+      "peak_speed_limit_m_s": 0.22782564903942815,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.4828636907857161,
+        0.14586335598439548
+      ],
+      "heading_rad": -1.2911364521661945,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -0.8023552600910637,
+        1.5560475953279314,
+        -1.3358269522523076
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 904004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.141097327322789
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.22782564903942815,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.141097327322789,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 34.081138455953536,
+      "mean_route_speed_m_s": 0.12150701282102835,
+      "scenario_id": "9a340f015bd0bd6bdd085ca62619b7031900ada934d36c3ac58778fd6b0533cb",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.4448411205367082,
+        "encounter_fraction": 0.46365613213323065,
+        "target_time_s": 15.80192883518452,
+        "actual_midpoint_time_s": 16.232817972388506,
+        "timing_jitter_s": 0.4308891372039846,
+        "approach_angle_rad": 2.0303735181057143,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 9.33952936923859,
+        "pedestrian_duration_s": 13.786577206299832,
+        "start_xy": [
+          -1.6115450703006133,
+          -1.234066624930027
+        ],
+        "end_xy": [
+          0.8055538828533084,
+          0.9695819210010963
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.5806345295071604,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.563817860267757,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 904004,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.4448411205367082,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -1.2911364521661945,
+              "waypoints": [
+                [
+                  -0.4828636907857161,
+                  0.14586335598439548
+                ],
+                [
+                  -0.4828636907857161,
+                  0.14586335598439548
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 0.7392370659395198,
+              "waypoints": [
+                {
+                  "xy": [
+                    -1.6115450703006133,
+                    -1.234066624930027
+                  ],
+                  "dwell_s": 9.33952936923859
+                },
+                [
+                  0.8055538828533084,
+                  0.9695819210010963
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "crossing",
+    "episode_seed": 920000,
+    "side": -1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "crossing",
+      "seed": 920000,
+      "route_length_m": 4.086546793583709,
+      "peak_speed_limit_m_s": 0.23806683815466617,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.417500887582573,
+        -0.015319186157664033
+      ],
+      "heading_rad": -0.7085600192248802,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -0.71508932051766,
+        1.0431560002249853,
+        -0.6639627589200094
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 920000,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.086546793583709
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.23806683815466617,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.086546793583709,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 32.185395065361696,
+      "mean_route_speed_m_s": 0.1269689803491553,
+      "scenario_id": "0429569f23a6e0e61be9bcfbef1ba8a6f0f48b6824b33569b35cecff96920e7b",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.39736073345708844,
+        "encounter_fraction": 0.3801714652982287,
+        "target_time_s": 12.235968803200935,
+        "actual_midpoint_time_s": 12.22597396728315,
+        "timing_jitter_s": -0.009994835917784717,
+        "approach_angle_rad": -1.5707963267948966,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 4.868781809621625,
+        "pedestrian_duration_s": 14.714384315323048,
+        "start_xy": [
+          1.17370598826917,
+          1.3900343759446678
+        ],
+        "end_xy": [
+          -0.8555366912237075,
+          -0.9777328767113587
+        ],
+        "side": -1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.8300592298696798,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.814173540579386,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 920000,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.39736073345708844,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -0.7085600192248802,
+              "waypoints": [
+                [
+                  0.417500887582573,
+                  -0.015319186157664033
+                ],
+                [
+                  0.417500887582573,
+                  -0.015319186157664033
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": -2.2793563460197768,
+              "waypoints": [
+                {
+                  "xy": [
+                    1.17370598826917,
+                    1.3900343759446678
+                  ],
+                  "dwell_s": 4.868781809621625
+                },
+                [
+                  -0.8555366912237075,
+                  -0.9777328767113587
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "crossing",
+    "episode_seed": 920016,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "crossing",
+      "seed": 920016,
+      "route_length_m": 4.793130909411078,
+      "peak_speed_limit_m_s": 0.18778294382780417,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.10273858815473458,
+        -0.4529346611621581
+      ],
+      "heading_rad": -2.4224907062263803,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.2036997332921122,
+        0.5126801340210844,
+        -2.4722922728271284
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 920016,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.793130909411078
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.18778294382780417,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.793130909411078,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 47.85908811498294,
+      "mean_route_speed_m_s": 0.10015090337482889,
+      "scenario_id": "136a9c647b1ca469e2bc3dc0d283149975bf39f9ab47e40a3e3debb1b38b85f2",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.41636174128210995,
+        "encounter_fraction": 0.4730345312296465,
+        "target_time_s": 22.6390013115493,
+        "actual_midpoint_time_s": 22.56191224540268,
+        "timing_jitter_s": -0.07708906614661826,
+        "approach_angle_rad": 1.5707963267948966,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 14.980375855070744,
+        "pedestrian_duration_s": 15.163072780663876,
+        "start_xy": [
+          -1.498822735598482,
+          0.3825141261490177
+        ],
+        "end_xy": [
+          0.7191209878335008,
+          -2.150888160916529
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.8526239646586065,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.8375203475308586,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 920016,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.41636174128210995,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -2.4224907062263803,
+              "waypoints": [
+                [
+                  0.10273858815473458,
+                  -0.4529346611621581
+                ],
+                [
+                  0.10273858815473458,
+                  -0.4529346611621581
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": -0.8516943794314837,
+              "waypoints": [
+                {
+                  "xy": [
+                    -1.498822735598482,
+                    0.3825141261490177
+                  ],
+                  "dwell_s": 14.980375855070744
+                },
+                [
+                  0.7191209878335008,
+                  -2.150888160916529
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "head_on",
+    "episode_seed": 930004,
+    "side": -1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "head_on",
+      "seed": 930004,
+      "route_length_m": 4.7168900852583935,
+      "peak_speed_limit_m_s": 0.21603268182415514,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.4761688018204049,
+        -0.13589389012030217
+      ],
+      "heading_rad": 2.868453588151402,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.8553889313363117,
+        -0.46874290614926195,
+        2.90127763104949
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 930004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.7168900852583935
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.21603268182415514,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.7168900852583935,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 40.93903216485738,
+      "mean_route_speed_m_s": 0.11521743030621608,
+      "scenario_id": "3f7c7a9a2ed69aa5e56660dd879e186940c1bc935f09656caecf038b556b2901",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.40587366560196925,
+        "encounter_fraction": 0.49531994015612046,
+        "target_time_s": 20.27791896194665,
+        "actual_midpoint_time_s": 19.853079117696122,
+        "timing_jitter_s": -0.424839844250529,
+        "approach_angle_rad": 3.141592653589793,
+        "head_on_lane_offset_m": -0.6456586862258265,
+        "pedestrian_delay_s": 12.374178382300308,
+        "pedestrian_duration_s": 14.957801470791628,
+        "start_xy": [
+          -1.6953401694896322,
+          1.1429493670312394
+        ],
+        "end_xy": [
+          1.422483648840424,
+          0.26952036961898057
+        ],
+        "side": -1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.14576683770102528,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.13021917901537217,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 930004,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.40587366560196925,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": 2.868453588151402,
+              "waypoints": [
+                [
+                  0.4761688018204049,
+                  -0.13589389012030217
+                ],
+                [
+                  0.4761688018204049,
+                  -0.13589389012030217
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 6.010046241741195,
+              "waypoints": [
+                {
+                  "xy": [
+                    -1.6953401694896322,
+                    1.1429493670312394
+                  ],
+                  "dwell_s": 12.374178382300308
+                },
+                [
+                  1.422483648840424,
+                  0.26952036961898057
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "head_on",
+    "episode_seed": 930020,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "head_on",
+      "seed": 930020,
+      "route_length_m": 3.52980342873161,
+      "peak_speed_limit_m_s": 0.15309540009296058,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.2509746688964397,
+        -0.2675405606955156
+      ],
+      "heading_rad": 2.9025997110977304,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.11958562026493,
+        -0.5048401527707171,
+        2.859645276210864
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 930020,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.52980342873161
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.15309540009296058,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.52980342873161,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 43.230439483178735,
+      "mean_route_speed_m_s": 0.08165088004957897,
+      "scenario_id": "d12170a724edc0dbca0e22737cb7785518a1ecf16a0c44547bb35a5488e77488",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.4204762224685269,
+        "encounter_fraction": 0.5361154706848192,
+        "target_time_s": 23.17650741143596,
+        "actual_midpoint_time_s": 23.237176333959262,
+        "timing_jitter_s": 0.06066892252330325,
+        "approach_angle_rad": 3.141592653589793,
+        "head_on_lane_offset_m": 0.7766981596855379,
+        "pedestrian_delay_s": 15.734603978255858,
+        "pedestrian_duration_s": 15.005144711406807,
+        "start_xy": [
+          -2.5582963302360806,
+          -0.504782753018006
+        ],
+        "end_xy": [
+          0.7110243511800299,
+          -1.3013514257679895
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.2767389448138291,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.2623996542497919,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 930020,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.4204762224685269,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": 2.9025997110977304,
+              "waypoints": [
+                [
+                  -0.2509746688964397,
+                  -0.2675405606955156
+                ],
+                [
+                  -0.2509746688964397,
+                  -0.2675405606955156
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 6.0441923646875235,
+              "waypoints": [
+                {
+                  "xy": [
+                    -2.5582963302360806,
+                    -0.504782753018006
+                  ],
+                  "dwell_s": 15.734603978255858
+                },
+                [
+                  0.7110243511800299,
+                  -1.3013514257679895
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "diagonal",
+    "episode_seed": 940000,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "diagonal",
+      "seed": 940000,
+      "route_length_m": 3.2917324153073326,
+      "peak_speed_limit_m_s": 0.1871261968685621,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.06492809309463987,
+        0.24219428700814793
+      ],
+      "heading_rad": -2.015221970471039,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.5846426632139274,
+        1.5451698327606027,
+        -1.9237509297508795
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 940000,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.291732415307333
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1871261968685621,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.2917324153073326,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 32.983079771756785,
+      "mean_route_speed_m_s": 0.09980063832989979,
+      "scenario_id": "379f59aabb901fac4c71513d6ab95dbea400cb89a180df2d316b649b902291d7",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.38926029990389005,
+        "encounter_fraction": 0.5037277497571209,
+        "target_time_s": 16.614492553486656,
+        "actual_midpoint_time_s": 16.461766468886694,
+        "timing_jitter_s": -0.1527260845999613,
+        "approach_angle_rad": 2.4760016364881676,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 8.421259549117694,
+        "pedestrian_duration_s": 16.081013839538,
+        "start_xy": [
+          -1.6326937037472415,
+          -0.6525018690798531
+        ],
+        "end_xy": [
+          1.3576271912720026,
+          0.8319538121229485
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.13435654737415137,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.11994688495484007,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 940000,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.38926029990389005,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -2.015221970471039,
+              "waypoints": [
+                [
+                  -0.06492809309463987,
+                  0.24219428700814793
+                ],
+                [
+                  -0.06492809309463987,
+                  0.24219428700814793
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 0.4607796660171286,
+              "waypoints": [
+                {
+                  "xy": [
+                    -1.6326937037472415,
+                    -0.6525018690798531
+                  ],
+                  "dwell_s": 8.421259549117694
+                },
+                [
+                  1.3576271912720026,
+                  0.8319538121229485
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "diagonal",
+    "episode_seed": 940004,
+    "side": -1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "diagonal",
+      "seed": 940004,
+      "route_length_m": 3.9129659120949185,
+      "peak_speed_limit_m_s": 0.2498637357135695,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.28819361187826076,
+        -0.1412018264490863
+      ],
+      "heading_rad": -2.853038577826003,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.6357978400201336,
+        0.17890164590286417,
+        -2.8909933273050377
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 940004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.9129659120949185
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.2498637357135695,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.9129659120949185,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 29.36324898939517,
+      "mean_route_speed_m_s": 0.13326065904723708,
+      "scenario_id": "06935f70973a449311858463437365029b445133dc555dc551bfc2ac5b18f136",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.420134714378559,
+        "encounter_fraction": 0.35088129787245526,
+        "target_time_s": 10.303014915151037,
+        "actual_midpoint_time_s": 10.707558512495822,
+        "timing_jitter_s": 0.40454359734478496,
+        "approach_angle_rad": -2.126639806191913,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 4.901851849061971,
+        "pedestrian_duration_s": 11.611413326867703,
+        "start_xy": [
+          0.495284220439616,
+          -1.232439557484394
+        ],
+        "end_xy": [
+          1.1824641850620699,
+          1.276962614734134
+        ],
+        "side": -1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.5033686927854628,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.4866187315331596,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 940004,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.420134714378559,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -2.853038577826003,
+              "waypoints": [
+                [
+                  0.28819361187826076,
+                  -0.1412018264490863
+                ],
+                [
+                  0.28819361187826076,
+                  -0.1412018264490863
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": -4.979678384017916,
+              "waypoints": [
+                {
+                  "xy": [
+                    0.495284220439616,
+                    -1.232439557484394
+                  ],
+                  "dwell_s": 4.901851849061971
+                },
+                [
+                  1.1824641850620699,
+                  1.276962614734134
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "retained_development_anchor"
+  },
+  {
+    "family": "crossing",
+    "episode_seed": 960008,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "crossing",
+      "seed": 960008,
+      "route_length_m": 3.834864736676368,
+      "peak_speed_limit_m_s": 0.1511998441839239,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.4846280736926375,
+        -0.3852786643588524
+      ],
+      "heading_rad": -1.656308215459862,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.6972952385217959,
+        1.2198728830378962,
+        -1.6809514202517437
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 960008,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.8348647366763675
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1511998441839239,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.834864736676368,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 47.555415285492046,
+      "mean_route_speed_m_s": 0.08063991689809274,
+      "scenario_id": "21baa85a6d8ffe4423e0bd6402b89d3dc9719c82103b527200a6f7e92fe8a667",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.34117972216056786,
+        "encounter_fraction": 0.4352341573560197,
+        "target_time_s": 20.69774109949671,
+        "actual_midpoint_time_s": 20.827265602454997,
+        "timing_jitter_s": 0.1295245029582871,
+        "approach_angle_rad": 1.5707963267948966,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 13.368952909000853,
+        "pedestrian_duration_s": 14.916625386908285,
+        "start_xy": [
+          -0.8638674787134464,
+          -0.22645113415713025
+        ],
+        "end_xy": [
+          1.8404815462763346,
+          -0.458270445346153
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.8578167914740811,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.8455073023154688,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 960008,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.34117972216056786,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -1.656308215459862,
+              "waypoints": [
+                [
+                  0.4846280736926375,
+                  -0.3852786643588524
+                ],
+                [
+                  0.4846280736926375,
+                  -0.3852786643588524
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": -0.08551188866496551,
+              "waypoints": [
+                {
+                  "xy": [
+                    -0.8638674787134464,
+                    -0.22645113415713025
+                  ],
+                  "dwell_s": 13.368952909000853
+                },
+                [
+                  1.8404815462763346,
+                  -0.458270445346153
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "crossing_positive_slow_early"
+  },
+  {
+    "family": "crossing",
+    "episode_seed": 960060,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "crossing",
+      "seed": 960060,
+      "route_length_m": 4.329246302929064,
+      "peak_speed_limit_m_s": 0.1870081356325508,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.1058798402384632,
+        -0.21969058330418356
+      ],
+      "heading_rad": 2.959114824423068,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.5619786454700333,
+        -0.4127190151042738,
+        2.901093698195699
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 960060,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.329246302929064
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1870081356325508,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.329246302929064,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 43.406329839797,
+      "mean_route_speed_m_s": 0.09973767233736043,
+      "scenario_id": "615dbc7f783ff3a06810624a6bd8c26cf26dc48fa7f7da6507254151b4e74914",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.27113082519048226,
+        "encounter_fraction": 0.5299933528835398,
+        "target_time_s": 23.005066288162855,
+        "actual_midpoint_time_s": 23.0552707174645,
+        "timing_jitter_s": 0.05020442930164237,
+        "approach_angle_rad": 1.5707963267948966,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 11.808756227995735,
+        "pedestrian_duration_s": 22.493028978937527,
+        "start_xy": [
+          -0.4914427451467544,
+          1.5442715233791136
+        ],
+        "end_xy": [
+          -1.0816747980293628,
+          -1.6542882850848706
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.7263412590437224,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.7148877850231465,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 960060,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.27113082519048226,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": 2.959114824423068,
+              "waypoints": [
+                [
+                  0.1058798402384632,
+                  -0.21969058330418356
+                ],
+                [
+                  0.1058798402384632,
+                  -0.21969058330418356
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 4.529911151217965,
+              "waypoints": [
+                {
+                  "xy": [
+                    -0.4914427451467544,
+                    1.5442715233791136
+                  ],
+                  "dwell_s": 11.808756227995735
+                },
+                [
+                  -1.0816747980293628,
+                  -1.6542882850848706
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "crossing_positive_slow_late"
+  },
+  {
+    "family": "crossing",
+    "episode_seed": 960004,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "crossing",
+      "seed": 960004,
+      "route_length_m": 3.2757369776209115,
+      "peak_speed_limit_m_s": 0.22308864737111578,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.05330649856441094,
+        -0.05823375765796257
+      ],
+      "heading_rad": -1.5134109991755356,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -0.05166467383966103,
+        1.4529433410533183,
+        -1.5488208774461605
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 960004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            4.2757369776209115
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.22308864737111578,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  3.2757369776209115,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 27.53168709128334,
+      "mean_route_speed_m_s": 0.11898061193126173,
+      "scenario_id": "7234f50bd392748164c27706cb10fb84087a5d2fabb39769589617897c90227f",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.35990888722032116,
+        "encounter_fraction": 0.43578586017929166,
+        "target_time_s": 11.997919941262012,
+        "actual_midpoint_time_s": 11.792103765977147,
+        "timing_jitter_s": -0.20581617528486384,
+        "approach_angle_rad": 1.5707963267948966,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 4.285633074817717,
+        "pedestrian_duration_s": 15.01294138231886,
+        "start_xy": [
+          -1.5062780726840277,
+          0.11093104676704475
+        ],
+        "end_xy": [
+          1.370733524372596,
+          0.2762107658872082
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.7550079298844219,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.7404329915196359,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 960004,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.35990888722032116,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -1.5134109991755356,
+              "waypoints": [
+                [
+                  -0.05330649856441094,
+                  -0.05823375765796257
+                ],
+                [
+                  -0.05330649856441094,
+                  -0.05823375765796257
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 0.05738532761936099,
+              "waypoints": [
+                {
+                  "xy": [
+                    -1.5062780726840277,
+                    0.11093104676704475
+                  ],
+                  "dwell_s": 4.285633074817717
+                },
+                [
+                  1.370733524372596,
+                  0.2762107658872082
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "crossing_positive_fast_early"
+  },
+  {
+    "family": "crossing",
+    "episode_seed": 960076,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "crossing",
+      "seed": 960076,
+      "route_length_m": 4.074654984172045,
+      "peak_speed_limit_m_s": 0.24365362205619695,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.28050461133146565,
+        0.21165653178822685
+      ],
+      "heading_rad": 2.4098503281088606,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.2952275307397572,
+        -0.7765321277622341,
+        2.3831905740667225
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 960076,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.074654984172045
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.24365362205619695,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.074654984172045,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 31.355897896565967,
+      "mean_route_speed_m_s": 0.1299485984299717,
+      "scenario_id": "4322b3262c545ecda50d0e689806c066439553d07543630569ab45d2459ff405",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.3741135451123322,
+        "encounter_fraction": 0.4894921266008336,
+        "target_time_s": 15.34846514286868,
+        "actual_midpoint_time_s": 15.347698651703276,
+        "timing_jitter_s": -0.0007664911654035045,
+        "approach_angle_rad": 1.5707963267948966,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 7.870479962354715,
+        "pedestrian_duration_s": 14.954437378697122,
+        "start_xy": [
+          0.9372825304841651,
+          1.6270534323563997
+        ],
+        "end_xy": [
+          -1.056405651358225,
+          -0.5929406163172852
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.7451373575898903,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.729693178410677,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 960076,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.3741135451123322,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": 2.4098503281088606,
+              "waypoints": [
+                [
+                  0.28050461133146565,
+                  0.21165653178822685
+                ],
+                [
+                  0.28050461133146565,
+                  0.21165653178822685
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 3.980646654903757,
+              "waypoints": [
+                {
+                  "xy": [
+                    0.9372825304841651,
+                    1.6270534323563997
+                  ],
+                  "dwell_s": 7.870479962354715
+                },
+                [
+                  -1.056405651358225,
+                  -0.5929406163172852
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "crossing_positive_fast_late"
+  },
+  {
+    "family": "diagonal",
+    "episode_seed": 980000,
+    "side": -1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "diagonal",
+      "seed": 980000,
+      "route_length_m": 4.875521589915241,
+      "peak_speed_limit_m_s": 0.17563065015222115,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.022945500654508844,
+        0.1268299784168867
+      ],
+      "heading_rad": 0.5697455614962084,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        -1.3392903162319447,
+        -0.5741245983893752,
+        0.5878197961111082
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 980000,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.875521589915241
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.17563065015222115,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.875521589915241,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 52.05015737952312,
+      "mean_route_speed_m_s": 0.0936696800811846,
+      "scenario_id": "36899217ad6f790bb1b608370d7cb4ffddac383e7399f5f8e20b335f96dde9e7",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.43430706269097574,
+        "encounter_fraction": 0.4840774521142164,
+        "target_time_s": 25.19630756642353,
+        "actual_midpoint_time_s": 25.5560614765574,
+        "timing_jitter_s": 0.3597539101338699,
+        "approach_angle_rad": -1.9600133689315582,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 19.50683672217647,
+        "pedestrian_duration_s": 12.098449508761862,
+        "start_xy": [
+          0.3926206943726364,
+          1.9326253691453505
+        ],
+        "end_xy": [
+          0.8957847465489801,
+          -0.8242022514097523
+        ],
+        "side": -1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.6720745391824177,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.6568260963613377,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 980000,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.43430706269097574,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": 0.5697455614962084,
+              "waypoints": [
+                [
+                  -0.022945500654508844,
+                  0.1268299784168867
+                ],
+                [
+                  -0.022945500654508844,
+                  0.1268299784168867
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": -1.3902678074353498,
+              "waypoints": [
+                {
+                  "xy": [
+                    0.3926206943726364,
+                    1.9326253691453505
+                  ],
+                  "dwell_s": 19.50683672217647
+                },
+                [
+                  0.8957847465489801,
+                  -0.8242022514097523
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "diagonal_negative_shallow"
+  },
+  {
+    "family": "diagonal",
+    "episode_seed": 980012,
+    "side": -1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "diagonal",
+      "seed": 980012,
+      "route_length_m": 4.940555977543372,
+      "peak_speed_limit_m_s": 0.1673222507945075,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.42874854585410893,
+        -0.26801656504372484
+      ],
+      "heading_rad": 2.5851881250137856,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        1.7642404286595539,
+        -1.1121027057174797,
+        2.4742808530533034
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 980012,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.940555977543372
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1673222507945075,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.940555977543372,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 55.36348222610634,
+      "mean_route_speed_m_s": 0.08923853375707066,
+      "scenario_id": "cae877a5ab301d37e33a43958b075b85f7adb8b02afd6008b8ed4f8d8b208de7",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.2772858652566208,
+        "encounter_fraction": 0.4592134735873565,
+        "target_time_s": 25.423656982942166,
+        "actual_midpoint_time_s": 25.01352101744805,
+        "timing_jitter_s": -0.4101359654941181,
+        "approach_angle_rad": -2.3931069759571346,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 16.731867452570278,
+        "pedestrian_duration_s": 16.563307129755547,
+        "start_xy": [
+          -1.277971474433957,
+          -0.18804385674820848
+        ],
+        "end_xy": [
+          1.1264581779603051,
+          0.2795668068250382
+        ],
+        "side": -1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.1357542474556287,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.12463904455435049,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 980012,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.2772858652566208,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": 2.5851881250137856,
+              "waypoints": [
+                [
+                  0.42874854585410893,
+                  -0.26801656504372484
+                ],
+                [
+                  0.42874854585410893,
+                  -0.26801656504372484
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 0.19208114905665097,
+              "waypoints": [
+                {
+                  "xy": [
+                    -1.277971474433957,
+                    -0.18804385674820848
+                  ],
+                  "dwell_s": 16.731867452570278
+                },
+                [
+                  1.1264581779603051,
+                  0.2795668068250382
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "diagonal_negative_oblique"
+  },
+  {
+    "family": "diagonal",
+    "episode_seed": 980016,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "diagonal",
+      "seed": 980016,
+      "route_length_m": 4.661875789699456,
+      "peak_speed_limit_m_s": 0.17301632544486142,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        -0.22477411097146016,
+        0.22263299226385658
+      ],
+      "heading_rad": 1.895122529479833,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.1718039683391684,
+        -1.265369202719885,
+        1.9054523066875404
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 980016,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.661875789699456
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.17301632544486142,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.661875789699456,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 50.521342903402235,
+      "mean_route_speed_m_s": 0.09227537357059275,
+      "scenario_id": "5de572022e7e48a9fad11f5a7a0e537edaa412c40d26c025e71a006010113531",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.3757672516972941,
+        "encounter_fraction": 0.3509947523660488,
+        "target_time_s": 17.732726241579904,
+        "actual_midpoint_time_s": 17.88088068892513,
+        "timing_jitter_s": 0.1481544473452261,
+        "approach_angle_rad": 2.08135504401044,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 10.234405760968901,
+        "pedestrian_duration_s": 15.29294985591246,
+        "start_xy": [
+          0.9302252419944651,
+          0.9827045960244838
+        ],
+        "end_xy": [
+          -1.1270936863365195,
+          -1.289019690224604
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.5747442829335123,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.5610246935049584,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 980016,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.3757672516972941,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": 1.895122529479833,
+              "waypoints": [
+                [
+                  -0.22477411097146016,
+                  0.22263299226385658
+                ],
+                [
+                  -0.22477411097146016,
+                  0.22263299226385658
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 3.976477573490273,
+              "waypoints": [
+                {
+                  "xy": [
+                    0.9302252419944651,
+                    0.9827045960244838
+                  ],
+                  "dwell_s": 10.234405760968901
+                },
+                [
+                  -1.1270936863365195,
+                  -1.289019690224604
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "diagonal_positive_shallow"
+  },
+  {
+    "family": "diagonal",
+    "episode_seed": 980004,
+    "side": 1,
+    "metadata": {
+      "schema_version": 1,
+      "adapter_version": "stage1_progress_adapter_v1",
+      "generator_version": "0.1.0",
+      "python_version": "3.12.3",
+      "numpy_version": "2.2.6",
+      "family": "diagonal",
+      "seed": 980004,
+      "route_length_m": 4.865477501306226,
+      "peak_speed_limit_m_s": 0.1879837001325673,
+      "tangential_acceleration_limit_m_s2": 0.16,
+      "speed_semantics": "sampled peak bound; quintic starts/ends at rest, not a constant cruise speed",
+      "start_xy_m": [
+        0.4770564272299991,
+        -0.3642415371605443
+      ],
+      "heading_rad": -1.5384161165674046,
+      "curvature_m_inv": 0.0,
+      "pause_s": 0.0,
+      "stop_fraction": null,
+      "robot_spawn_xy_yaw": [
+        0.4316515685570645,
+        1.1181743496110792,
+        -1.488434081637273
+      ],
+      "pedestrian_count": 1,
+      "client_id": "client",
+      "frame": "mujoco_world",
+      "generator_resolved_config": {
+        "schema_version": 1,
+        "family": "straight",
+        "seed": 980004,
+        "frame_id": "stage1_route_distance",
+        "time_origin_s": 0.0,
+        "sample_dt_s": 0.02,
+        "bounds": {
+          "x": [
+            -1.0,
+            5.865477501306226
+          ],
+          "y": [
+            -1.0,
+            1.0
+          ]
+        },
+        "limits": {
+          "max_speed_mps": 0.1879837001325673,
+          "max_acceleration_mps2": 0.16,
+          "max_turn_rate_rps": 0.06
+        },
+        "pedestrian_count": 0,
+        "actors": [
+          {
+            "id": "client",
+            "role": "client",
+            "z_m": 0.0,
+            "initial_yaw": 0.0,
+            "speed_scale": 1.0,
+            "position_offset_m": [
+              0.0,
+              0.0
+            ],
+            "waypoints": [
+              {
+                "xy": [
+                  0.0,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              },
+              {
+                "xy": [
+                  4.865477501306226,
+                  0.0
+                ],
+                "dwell_s": 0.0,
+                "speed_scale": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "generator_source_sha256": "b15790a5a9166b97b14f3d8cf6209bb8bb804a9dc3b19430e87d47326692ceaa",
+      "config_sha256": "c4c7fd3e705070fe817c6d82d87aff1bcece74a68720e96b9e992138932634fd",
+      "adapter_source_sha256": "e49003b87e43eb8f9d837670bf9bfeec098ee813c88de3777f566718e0a489b1",
+      "evaluator_only": true,
+      "sample_attempt": 0,
+      "duration_s": 48.52958159944579,
+      "mean_route_speed_m_s": 0.1002579734040359,
+      "scenario_id": "58cd0fe04478092198562058b7c4251b2fc314273580665aaf3fc180e5bf7ae5",
+      "stage": "stage2",
+      "client_family": "straight",
+      "pedestrian_id": "pedestrian_1",
+      "encounter": {
+        "adapter_version": "stage2_encounters_v1",
+        "peak_speed_m_s": 0.3420884479287552,
+        "encounter_fraction": 0.3645750535917804,
+        "target_time_s": 17.69267481240463,
+        "actual_midpoint_time_s": 17.623703691308837,
+        "timing_jitter_s": -0.06897112109579273,
+        "approach_angle_rad": 2.3829683033104727,
+        "head_on_lane_offset_m": 0.0,
+        "pedestrian_delay_s": 10.030734564237655,
+        "pedestrian_duration_s": 15.185938254142362,
+        "start_xy": [
+          -0.45077198506842425,
+          -1.1565133601087072
+        ],
+        "end_xy": [
+          1.3891106509079287,
+          0.9150152423706963
+        ],
+        "side": 1,
+        "sample_attempt": 0,
+        "client_pedestrian_min_surface_clearance_m": 0.2376243507916438,
+        "client_pedestrian_continuous_clearance_lower_bound_m": 0.22437254709011073,
+        "client_pedestrian_validation_dt_s": 0.05,
+        "generator_config": {
+          "schema_version": 1,
+          "family": "straight",
+          "seed": 980004,
+          "frame_id": "mujoco_world",
+          "time_origin_s": 0.0,
+          "sample_dt_s": 0.02,
+          "pedestrian_count": 1,
+          "bounds": {
+            "x": [
+              -8.0,
+              8.0
+            ],
+            "y": [
+              -8.0,
+              8.0
+            ]
+          },
+          "limits": {
+            "max_speed_mps": 0.3420884479287552,
+            "max_acceleration_mps2": 0.4,
+            "max_turn_rate_rps": 1.0
+          },
+          "randomization": {
+            "position_jitter_m": 0.0,
+            "speed_scale": [
+              1.0,
+              1.0
+            ]
+          },
+          "actors": [
+            {
+              "id": "unused_generator_carrier_client",
+              "role": "client",
+              "initial_yaw": -1.5384161165674046,
+              "waypoints": [
+                [
+                  0.4770564272299991,
+                  -0.3642415371605443
+                ],
+                [
+                  0.4770564272299991,
+                  -0.3642415371605443
+                ]
+              ]
+            },
+            {
+              "id": "pedestrian_1",
+              "role": "pedestrian",
+              "initial_yaw": 0.8445521867430681,
+              "waypoints": [
+                {
+                  "xy": [
+                    -0.45077198506842425,
+                    -1.1565133601087072
+                  ],
+                  "dwell_s": 10.030734564237655
+                },
+                [
+                  1.3891106509079287,
+                  0.9150152423706963
+                ]
+              ]
+            }
+          ]
+        },
+        "carrier_client": "Required only by generator schema; unused. Actual client is unchanged Stage1Episode.",
+        "evaluator_only": true
+      }
+    },
+    "selection": "new_training_variation",
+    "variation_cell": "diagonal_positive_oblique"
+  }
+]

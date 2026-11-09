@@ -1,0 +1,17 @@
+{
+  "protocol": "stage2_critic_only_preparation_v1",
+  "episodes": 72,
+  "scenario_seed": 73101,
+  "action_seed": 73102,
+  "fit_seed": 73103,
+  "holdout_fraction": 0.2,
+  "updates": 6000,
+  "batch_size": 256,
+  "learning_rate": 0.0003,
+  "max_grad_norm": 0.5,
+  "score_interval": 100,
+  "max_replay_mse_ratio": 1.25,
+  "max_replay_mse_increase_absolute": 1.0,
+  "minimum_near_intrusion_negative_fraction": 0.8,
+  "split_seed": 73104
+}

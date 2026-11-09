@@ -1,0 +1,33 @@
+protocol: frozen_stage1_residual_variation_v3
+parent_checkpoint: research/escort_rl/runs/residual_coverage_v2_20261109/residual_coverage_1.pt
+parent_sha256: 7410ee0ede3e0c69d16dac065928bc9ca7a775915ed5167b7765631c421404de
+iterations: 2
+updates_per_iteration: 4000
+learning_rate: 0.0003
+batch_size: 256
+max_grad_norm: 0.5
+candidate_seed_start: 960000
+family_seed_stride: 10000
+new_cases_per_family_per_side: 1
+retain_cases:
+  - {family: crossing, episode_seed: 904000}
+  - {family: diagonal, episode_seed: 904004}
+  - {family: crossing, episode_seed: 920000}
+  - {family: crossing, episode_seed: 920016}
+  - {family: head_on, episode_seed: 930004}
+  - {family: head_on, episode_seed: 930020}
+  - {family: diagonal, episode_seed: 940000}
+  - {family: diagonal, episode_seed: 940004}
+balance_families: true
+balance_sides: true
+balance_cases: true
+teacher_execution_probability: 0.0
+variation_cells:
+  - {name: crossing_positive_slow_early, family: crossing, side: 1, speed_m_s: [0.25, 0.35], encounter_fraction: [0.35, 0.45]}
+  - {name: crossing_positive_slow_late, family: crossing, side: 1, speed_m_s: [0.25, 0.35], encounter_fraction: [0.45, 0.55]}
+  - {name: crossing_positive_fast_early, family: crossing, side: 1, speed_m_s: [0.35, 0.45], encounter_fraction: [0.35, 0.45]}
+  - {name: crossing_positive_fast_late, family: crossing, side: 1, speed_m_s: [0.35, 0.45], encounter_fraction: [0.45, 0.55]}
+  - {name: diagonal_negative_shallow, family: diagonal, side: -1, angle_degrees: [110.0, 127.5]}
+  - {name: diagonal_negative_oblique, family: diagonal, side: -1, angle_degrees: [127.5, 145.0]}
+  - {name: diagonal_positive_shallow, family: diagonal, side: 1, angle_degrees: [110.0, 127.5]}
+  - {name: diagonal_positive_oblique, family: diagonal, side: 1, angle_degrees: [127.5, 145.0]}

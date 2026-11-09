@@ -1,0 +1,257 @@
+{
+  "initial_mse": 126.748779296875,
+  "final_mse": 8.670348167419434,
+  "constant_mse": 24.071725845336914,
+  "accepted": true,
+  "history": [
+    {
+      "update": 100,
+      "holdout_mse": 32.78339767456055
+    },
+    {
+      "update": 200,
+      "holdout_mse": 15.15550708770752
+    },
+    {
+      "update": 300,
+      "holdout_mse": 13.456567764282227
+    },
+    {
+      "update": 400,
+      "holdout_mse": 12.456209182739258
+    },
+    {
+      "update": 500,
+      "holdout_mse": 11.978239059448242
+    },
+    {
+      "update": 600,
+      "holdout_mse": 11.343216896057129
+    },
+    {
+      "update": 700,
+      "holdout_mse": 11.211559295654297
+    },
+    {
+      "update": 800,
+      "holdout_mse": 10.72681713104248
+    },
+    {
+      "update": 900,
+      "holdout_mse": 10.744122505187988
+    },
+    {
+      "update": 1000,
+      "holdout_mse": 10.014616966247559
+    },
+    {
+      "update": 1100,
+      "holdout_mse": 10.026899337768555
+    },
+    {
+      "update": 1200,
+      "holdout_mse": 9.730813980102539
+    },
+    {
+      "update": 1300,
+      "holdout_mse": 9.904654502868652
+    },
+    {
+      "update": 1400,
+      "holdout_mse": 9.965902328491211
+    },
+    {
+      "update": 1500,
+      "holdout_mse": 9.417373657226562
+    },
+    {
+      "update": 1600,
+      "holdout_mse": 9.45916748046875
+    },
+    {
+      "update": 1700,
+      "holdout_mse": 9.552651405334473
+    },
+    {
+      "update": 1800,
+      "holdout_mse": 9.382871627807617
+    },
+    {
+      "update": 1900,
+      "holdout_mse": 9.3234224319458
+    },
+    {
+      "update": 2000,
+      "holdout_mse": 9.3882417678833
+    },
+    {
+      "update": 2100,
+      "holdout_mse": 9.028000831604004
+    },
+    {
+      "update": 2200,
+      "holdout_mse": 9.563525199890137
+    },
+    {
+      "update": 2300,
+      "holdout_mse": 9.179346084594727
+    },
+    {
+      "update": 2400,
+      "holdout_mse": 9.424809455871582
+    },
+    {
+      "update": 2500,
+      "holdout_mse": 9.82303237915039
+    },
+    {
+      "update": 2600,
+      "holdout_mse": 9.298589706420898
+    },
+    {
+      "update": 2700,
+      "holdout_mse": 9.522889137268066
+    },
+    {
+      "update": 2800,
+      "holdout_mse": 9.571635246276855
+    },
+    {
+      "update": 2900,
+      "holdout_mse": 9.494088172912598
+    },
+    {
+      "update": 3000,
+      "holdout_mse": 9.738289833068848
+    },
+    {
+      "update": 3100,
+      "holdout_mse": 9.23629093170166
+    },
+    {
+      "update": 3200,
+      "holdout_mse": 9.672262191772461
+    },
+    {
+      "update": 3300,
+      "holdout_mse": 9.895164489746094
+    },
+    {
+      "update": 3400,
+      "holdout_mse": 9.314824104309082
+    },
+    {
+      "update": 3500,
+      "holdout_mse": 9.589485168457031
+    },
+    {
+      "update": 3600,
+      "holdout_mse": 9.620736122131348
+    },
+    {
+      "update": 3700,
+      "holdout_mse": 9.62078857421875
+    },
+    {
+      "update": 3800,
+      "holdout_mse": 9.264110565185547
+    },
+    {
+      "update": 3900,
+      "holdout_mse": 9.524888038635254
+    },
+    {
+      "update": 4000,
+      "holdout_mse": 9.500893592834473
+    },
+    {
+      "update": 4100,
+      "holdout_mse": 9.186572074890137
+    },
+    {
+      "update": 4200,
+      "holdout_mse": 9.589123725891113
+    },
+    {
+      "update": 4300,
+      "holdout_mse": 9.446693420410156
+    },
+    {
+      "update": 4400,
+      "holdout_mse": 9.102975845336914
+    },
+    {
+      "update": 4500,
+      "holdout_mse": 9.285009384155273
+    },
+    {
+      "update": 4600,
+      "holdout_mse": 9.213281631469727
+    },
+    {
+      "update": 4700,
+      "holdout_mse": 8.935052871704102
+    },
+    {
+      "update": 4800,
+      "holdout_mse": 8.804749488830566
+    },
+    {
+      "update": 4900,
+      "holdout_mse": 9.38072681427002
+    },
+    {
+      "update": 5000,
+      "holdout_mse": 8.670348167419434
+    },
+    {
+      "update": 5100,
+      "holdout_mse": 9.047111511230469
+    },
+    {
+      "update": 5200,
+      "holdout_mse": 8.765704154968262
+    },
+    {
+      "update": 5300,
+      "holdout_mse": 9.086124420166016
+    },
+    {
+      "update": 5400,
+      "holdout_mse": 9.719268798828125
+    },
+    {
+      "update": 5500,
+      "holdout_mse": 9.22571086883545
+    },
+    {
+      "update": 5600,
+      "holdout_mse": 8.85637378692627
+    },
+    {
+      "update": 5700,
+      "holdout_mse": 9.306866645812988
+    },
+    {
+      "update": 5800,
+      "holdout_mse": 9.040308952331543
+    },
+    {
+      "update": 5900,
+      "holdout_mse": 8.864714622497559
+    },
+    {
+      "update": 6000,
+      "holdout_mse": 9.040766716003418
+    }
+  ],
+  "holdout_episode_ids": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "actor_and_variance_unchanged": true
+}

@@ -1,0 +1,4 @@
+# Raw per-step visualization logs remain local; MP4s and summaries are curated.
+*/trace.jsonl
+*/encoding.log
+*/episode.encoding.log

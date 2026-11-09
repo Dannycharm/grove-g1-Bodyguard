@@ -1,0 +1,18 @@
+protocol: frozen_stage1_residual_coverage_v2
+parent_checkpoint: research/escort_rl/runs/residual_overfit_v1b_20261108/residual_2.pt
+parent_sha256: 2ff02f723de84308674a5b4d9ff656e4b7bac5331b1cf530e00a55f13f08d56c
+iterations: 2
+updates_per_iteration: 4000
+learning_rate: 0.0003
+batch_size: 256
+max_grad_norm: 0.5
+candidate_seed_start: 920000
+family_seed_stride: 10000
+new_cases_per_family_per_side: 1
+retain_cases:
+  - {family: crossing, episode_seed: 904000}
+  - {family: diagonal, episode_seed: 904004}
+balance_families: true
+balance_sides: true
+balance_cases: true
+teacher_execution_probability: 0.0

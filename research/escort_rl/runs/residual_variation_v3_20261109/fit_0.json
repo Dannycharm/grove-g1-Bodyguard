@@ -1,0 +1,108 @@
+{
+  "rows": 7198,
+  "sources": [
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_overfit_v1b_20261108/teacher_development",
+      "sha256": "fbce376a8beb08295cac5e78b50c6e09bdaff40bf512565d1b2bef2876b63585",
+      "summary_sha256": "d09d39545d216072a1881793cc21cfac756c485b0a408a199b23922c43fabcfc"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_overfit_v1b_20261108/dagger_0",
+      "sha256": "a28b0f602421676b29594c951b4614b7fd9d1c2683a29dfd87d63a1ebb37c35b",
+      "summary_sha256": "d8365277c683e71e76bab05bb8341f4be352a19f00d755b6216b09caa212192d"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_overfit_v1b_20261108/dagger_1",
+      "sha256": "32d64b5b77828f4428a6975215e7a6ab4ffcdc5fd233eae09b62f97ee743bec6",
+      "summary_sha256": "3a5470a3b3226b318bc2e411d82525d9c8a935c521491b2fce432e9ca8a6dc0f"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_coverage_v2_20261109/teacher_coverage",
+      "sha256": "5bd542d9a826fed9208c7cdda6c6cd5fe1819b6b1255646706d518616828e919",
+      "summary_sha256": "5d1135dd1843309c11792a781b12a4b5df372308ce7e54a75e8f0c801054d7d7"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_coverage_v2_20261109/dagger_0",
+      "sha256": "c0d515cee09bf874c2f09cbdd9817ec49418fb91b3f70d3399031830646d4499",
+      "summary_sha256": "dd9d6cfe6d0bd9710db288182558c38c04fb7d7e0e12622990381f36f91012a5"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_variation_v3_20261109/teacher_coverage",
+      "sha256": "75ac14163ac261280c2d4cd4c0b0f0defbe0134e330d74b8f90431fa40ce6c88",
+      "summary_sha256": "c9bd1ada2b7f1d2a0242cef5b552e80b4d725d45dc5407c0cd0af92ae82e1b48"
+    }
+  ],
+  "updates": 24000,
+  "new_updates": 4000,
+  "fit_wall_s": 3.8975754499988398,
+  "history": [
+    {
+      "update": 20500,
+      "loss": 0.0082405935972929
+    },
+    {
+      "update": 21000,
+      "loss": 0.006481132935732603
+    },
+    {
+      "update": 21500,
+      "loss": 0.006361957173794508
+    },
+    {
+      "update": 22000,
+      "loss": 0.008683884516358376
+    },
+    {
+      "update": 22500,
+      "loss": 0.006096320226788521
+    },
+    {
+      "update": 23000,
+      "loss": 0.006406229920685291
+    },
+    {
+      "update": 23500,
+      "loss": 0.005898025818169117
+    },
+    {
+      "update": 24000,
+      "loss": 0.0052000354044139385
+    }
+  ],
+  "initial_action_mse": 0.005353325977921486,
+  "final_action_mse": 0.0031436411663889885,
+  "sampling": {
+    "crossing": {
+      "-1": {
+        "rows": 1308,
+        "sampling_mass": 0.16666666666666663
+      },
+      "1": {
+        "rows": 1506,
+        "sampling_mass": 0.16666666666666666
+      }
+    },
+    "head_on": {
+      "-1": {
+        "rows": 630,
+        "sampling_mass": 0.16666666666666669
+      },
+      "1": {
+        "rows": 678,
+        "sampling_mass": 0.16666666666666666
+      }
+    },
+    "diagonal": {
+      "-1": {
+        "rows": 1004,
+        "sampling_mass": 0.16666666666666669
+      },
+      "1": {
+        "rows": 2072,
+        "sampling_mass": 0.16666666666666666
+      }
+    }
+  },
+  "batch_rng_before": "14ff4a4bb7d902a54ee2055d848e27a91518c48353be85c07fac1c90454de715",
+  "batch_rng_after": "086ac0cf920c74ae3171bdafad7c1c13628f39be4385afdf6285aee8629aad19"
+}

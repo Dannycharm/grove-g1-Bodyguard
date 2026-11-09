@@ -1,0 +1,31 @@
+{
+  "status": "pilot_complete",
+  "start_ppo_timesteps": 0,
+  "end_ppo_timesteps": 5000,
+  "new_transitions": 5000,
+  "training_wall_s": 156.38301125599992,
+  "transitions_per_second": 31.972782464298312,
+  "training": {
+    "active_physics_steps": 500000,
+    "active_gait_calls": 50000,
+    "completed_episodes": 23,
+    "outcomes": {
+      "success": 23
+    },
+    "action_saturation_fraction": 0.001,
+    "latent_clip_fraction": 0.0,
+    "optimizer_steps": 200,
+    "optimizer_wall_s": 0.35382691100028296
+  },
+  "best_validation": "final",
+  "selected_residual_ppo_timesteps": 5000,
+  "promotion_gate": {
+    "round_pass": true,
+    "reasons": [],
+    "stage1_mean_error_limit_m": 0.10630953682860855,
+    "promotion_approved": false,
+    "required_consecutive_rounds": 2
+  },
+  "promotion_approved": false,
+  "note": "Research pilot, not stage promotion; two consecutive full passing rounds remain required"
+}

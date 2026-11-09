@@ -1,0 +1,29 @@
+protocol: frozen_stage1_residual_avoidance_v1
+base_checkpoint: research/escort_rl/runs/imitation_guarded_20261106_190724_LioFor/preservation_5k/final.zip
+base_sha256: 470fef05cc1add9ceb1557d863c4b0d5506504d0f915790a5e5271378d323c8d
+hidden_sizes: [128, 128]
+seed: 902001
+learning_rate: 0.0003
+updates_per_iteration: 4000
+iterations: 3
+batch_size: 256
+max_grad_norm: 0.5
+residual_limit: 2.0
+teacher_mode: observable_previous_command_v1
+risk_horizon_s: 4.0
+intervention_threshold: 0.15
+anticipation_separation_m: 1.05
+stopping_speed_m_s: 0.04
+recovery_error_m: 0.25
+phase_weights:
+  ordinary: 1.0
+  anticipation: 4.0
+  avoidance: 8.0
+  recovery: 4.0
+  stopping: 4.0
+residual_target_weight: 0.25
+saturation_excess_weight: 0.01
+development_cases:
+  - {family: crossing, episode_seed: 904000}
+  - {family: diagonal, episode_seed: 904004}
+daggers_teacher_probability: 0.0

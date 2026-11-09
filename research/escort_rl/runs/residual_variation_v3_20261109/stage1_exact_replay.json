@@ -1,0 +1,6 @@
+{
+  "exact": true,
+  "cases": 60,
+  "transitions": 11892,
+  "reference": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/imitation_guarded_20261106_190724_LioFor/preservation_5k/validation_final"
+}

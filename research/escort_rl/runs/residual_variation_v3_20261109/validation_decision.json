@@ -1,0 +1,9 @@
+{
+  "round_pass": false,
+  "reasons": [
+    "geometric_intrusions"
+  ],
+  "stage1_mean_error_limit_m": 0.10630953682860855,
+  "promotion_approved": false,
+  "required_consecutive_rounds": 2
+}

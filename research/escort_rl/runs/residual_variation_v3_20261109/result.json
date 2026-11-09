@@ -1,0 +1,1933 @@
+{
+  "status": "coverage_complete",
+  "parent_updates": 20000,
+  "new_supervised_updates": 8000,
+  "total_supervised_updates": 28000,
+  "initial_coverage": {
+    "episodes": 16,
+    "success_rate": 0.75,
+    "per_family": {
+      "crossing": {
+        "episodes": 7,
+        "success_rate": 0.7142857142857143
+      },
+      "diagonal": {
+        "episodes": 7,
+        "success_rate": 0.7142857142857143
+      },
+      "head_on": {
+        "episodes": 2,
+        "success_rate": 1.0
+      }
+    },
+    "reasons": {
+      "success": 12,
+      "pedestrian_intrusion": 4
+    },
+    "formation_mean_m": 0.12097934948244718,
+    "geometric_intrusions": 4,
+    "episodes_detail": [
+      {
+        "family": "crossing",
+        "episode_seed": 904000,
+        "reason": "success",
+        "success": true,
+        "return_total": 17.911116839637437,
+        "steps": 135,
+        "duration_s": 27.0,
+        "formation_mean_m": 0.15883076188669004,
+        "formation_p95_m": 0.7004290772390579,
+        "accompanied_progress_m": 2.747613915898577,
+        "robot_progress_m": 3.0937263630932317,
+        "mean_body_velocity": [
+          0.11424047789191522,
+          -0.0005979390322111214,
+          -0.005673408087594774
+        ],
+        "mean_abs_command": [
+          0.18409083407475715,
+          0.04495167807693145,
+          0.018483218339948777
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -3.5596938736389423,
+          "progress": 10.990455663594307,
+          "command_change": -0.04214487848671486,
+          "torso_stability": -3.8807872440732366e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -8.197910844625156,
+          "pedestrian_clearance": -1.2795504193336205
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.08521945253364094
+      },
+      {
+        "family": "diagonal",
+        "episode_seed": 904004,
+        "reason": "success",
+        "success": true,
+        "return_total": 21.44719817476307,
+        "steps": 176,
+        "duration_s": 35.2,
+        "formation_mean_m": 0.12128961360214668,
+        "formation_p95_m": 0.5635585148955078,
+        "accompanied_progress_m": 3.341467021514756,
+        "robot_progress_m": 4.05957080594118,
+        "mean_body_velocity": [
+          0.11648583183666948,
+          -0.002877946199976579,
+          -0.0009646405774585355
+        ],
+        "mean_abs_command": [
+          0.17671386116628376,
+          0.07565980331643955,
+          0.020380628528321475
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.005681818181818182,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -2.5434803316370718,
+          "progress": 13.365868086059024,
+          "command_change": -0.1215334805766016,
+          "torso_stability": -5.944572374570358e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -8.842460630571644,
+          "pedestrian_clearance": -0.41113602278689637
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.1576974078021922
+      },
+      {
+        "family": "crossing",
+        "episode_seed": 920000,
+        "reason": "success",
+        "success": true,
+        "return_total": 20.76904426480994,
+        "steps": 166,
+        "duration_s": 33.2,
+        "formation_mean_m": 0.1561217824610317,
+        "formation_p95_m": 0.6572228653485086,
+        "accompanied_progress_m": 3.72724018653324,
+        "robot_progress_m": 4.153314081436702,
+        "mean_body_velocity": [
+          0.12523621846169286,
+          -0.0028908644987321063,
+          -0.011797977438337751
+        ],
+        "mean_abs_command": [
+          0.1965403044932937,
+          0.04494284560610414,
+          0.019957446616417546
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -3.6946296215809715,
+          "progress": 14.90896074613296,
+          "command_change": -0.06696690889649716,
+          "torso_stability": -6.111422651045919e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -8.85921729461844,
+          "pedestrian_clearance": -1.519041542000597
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.08859647769021917
+      },
+      {
+        "family": "crossing",
+        "episode_seed": 920016,
+        "reason": "success",
+        "success": true,
+        "return_total": 18.755747340329602,
+        "steps": 245,
+        "duration_s": 49.0,
+        "formation_mean_m": 0.1015227327615608,
+        "formation_p95_m": 0.4953542474432528,
+        "accompanied_progress_m": 3.7047276279767907,
+        "robot_progress_m": 4.765513669731681,
+        "mean_body_velocity": [
+          0.09851733448269215,
+          -0.0008950633626205329,
+          -0.003306432468556252
+        ],
+        "mean_abs_command": [
+          0.14625426630503782,
+          0.05472093180936526,
+          0.017231851254295254
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.00816326530612245,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -2.8557532915748984,
+          "progress": 14.818910511907163,
+          "command_change": -0.09453943056552483,
+          "torso_stability": -6.664831949211837e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -10.438787319735905,
+          "pedestrian_clearance": -2.6740164813817477
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.011508141692057161
+      },
+      {
+        "family": "head_on",
+        "episode_seed": 930004,
+        "reason": "success",
+        "success": true,
+        "return_total": 29.091450127667322,
+        "steps": 210,
+        "duration_s": 42.0,
+        "formation_mean_m": 0.07801437853691573,
+        "formation_p95_m": 0.21040917742511575,
+        "accompanied_progress_m": 3.8298133625313424,
+        "robot_progress_m": 4.621495836643447,
+        "mean_body_velocity": [
+          0.10856552959400013,
+          0.0021720200076910745,
+          -0.0006703780791776379
+        ],
+        "mean_abs_command": [
+          0.15947390520734536,
+          0.04139751710948379,
+          0.017577401918346627
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -0.6838040459248427,
+          "progress": 15.31925345012537,
+          "command_change": -0.058587730327018445,
+          "torso_stability": -6.941427806459138e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -5.4852872386605,
+          "pedestrian_clearance": -5.4893267615101335e-05
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.2964856031508383
+      },
+      {
+        "family": "head_on",
+        "episode_seed": 930020,
+        "reason": "success",
+        "success": true,
+        "return_total": 27.30455768757008,
+        "steps": 222,
+        "duration_s": 44.4,
+        "formation_mean_m": 0.051341216871155025,
+        "formation_p95_m": 0.10536354106389755,
+        "accompanied_progress_m": 2.797705858577343,
+        "robot_progress_m": 3.3905924533117484,
+        "mean_body_velocity": [
+          0.07636428844543347,
+          0.0015518966445564038,
+          -0.0038969314915409605
+        ],
+        "mean_abs_command": [
+          0.1380650909540982,
+          0.028191543934406434,
+          0.015191039676636563
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -0.27291241653838083,
+          "progress": 11.190823434309372,
+          "command_change": -0.02755050576886311,
+          "torso_stability": -7.712699295528312e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -3.5857205906419485,
+          "pedestrian_clearance": -5.10679714613306e-06
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.29892807213028116
+      },
+      {
+        "family": "diagonal",
+        "episode_seed": 940000,
+        "reason": "success",
+        "success": true,
+        "return_total": 18.32612418431079,
+        "steps": 170,
+        "duration_s": 34.0,
+        "formation_mean_m": 0.11406353920684831,
+        "formation_p95_m": 0.6170958275640794,
+        "accompanied_progress_m": 2.8853255415363623,
+        "robot_progress_m": 3.2413788020915395,
+        "mean_body_velocity": [
+          0.09670790727762535,
+          -0.0012933458259675448,
+          0.005417232340564999
+        ],
+        "mean_abs_command": [
+          0.1542787901208024,
+          0.05372772012239747,
+          0.024033965724725825
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -2.895092944182014,
+          "progress": 11.54130216614545,
+          "command_change": -0.08460518774526239,
+          "torso_stability": -6.637452173860001e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -9.146168976427276,
+          "pedestrian_clearance": -1.089244498958369
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.091692882327983
+      },
+      {
+        "family": "diagonal",
+        "episode_seed": 940004,
+        "reason": "success",
+        "success": true,
+        "return_total": 13.552030209495172,
+        "steps": 152,
+        "duration_s": 30.400000000000002,
+        "formation_mean_m": 0.22509304148286877,
+        "formation_p95_m": 0.9266192616800397,
+        "accompanied_progress_m": 3.562034697130515,
+        "robot_progress_m": 3.8052271773137942,
+        "mean_body_velocity": [
+          0.12597914424153533,
+          -0.002604714429974673,
+          0.0005889582604179682
+        ],
+        "mean_abs_command": [
+          0.23234573253935914,
+          0.05704029456261962,
+          0.015523536954500932
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -7.410892178452317,
+          "progress": 14.24813878852206,
+          "command_change": -0.09218106045221187,
+          "torso_stability": -7.248594670869357e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -12.072155028875505,
+          "pedestrian_clearance": -1.1208078253001583
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.08322506310467548
+      },
+      {
+        "family": "crossing",
+        "episode_seed": 960008,
+        "reason": "pedestrian_intrusion",
+        "success": false,
+        "return_total": -100.45419285504816,
+        "steps": 104,
+        "duration_s": 20.8,
+        "formation_mean_m": 0.07655237036385719,
+        "formation_p95_m": 0.321512400144868,
+        "accompanied_progress_m": 1.4401521090655969,
+        "robot_progress_m": 1.6692337264698467,
+        "mean_body_velocity": [
+          0.08198923670096897,
+          0.019990922870195667,
+          -0.00705654379963908
+        ],
+        "mean_abs_command": [
+          0.1473530271412948,
+          0.06941535576837711,
+          0.01814659424808969
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -0.5730239319788263,
+          "progress": 5.7606084362623875,
+          "command_change": -0.062332282600864916,
+          "torso_stability": -3.7934385511390734e-05,
+          "terminal_success": 0.0,
+          "terminal_failure": -100.0,
+          "velocity_tracking": -3.775037101336434,
+          "pedestrian_clearance": -1.8043700410089083
+        },
+        "geometric_intrusion": true,
+        "minimum_surface_clearance_m": -0.023684232889102597
+      },
+      {
+        "family": "crossing",
+        "episode_seed": 960060,
+        "reason": "pedestrian_intrusion",
+        "success": false,
+        "return_total": -99.60931361992125,
+        "steps": 118,
+        "duration_s": 23.6,
+        "formation_mean_m": 0.12788511976208194,
+        "formation_p95_m": 0.6047120196861364,
+        "accompanied_progress_m": 2.1635833767846453,
+        "robot_progress_m": 2.845719276891506,
+        "mean_body_velocity": [
+          0.1200078511844746,
+          0.0219538455926644,
+          -0.002737519267373234
+        ],
+        "mean_abs_command": [
+          0.16451740537186044,
+          0.07846059151027368,
+          0.02346284748134583
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -2.01482558767778,
+          "progress": 8.654333507138581,
+          "command_change": -0.13021272425540312,
+          "torso_stability": -4.2007775486257776e-05,
+          "terminal_success": 0.0,
+          "terminal_failure": -100.0,
+          "velocity_tracking": -4.863019430728259,
+          "pedestrian_clearance": -1.255547376622899
+        },
+        "geometric_intrusion": true,
+        "minimum_surface_clearance_m": -0.009716381428446774
+      },
+      {
+        "family": "crossing",
+        "episode_seed": 960004,
+        "reason": "success",
+        "success": true,
+        "return_total": 15.908981377256948,
+        "steps": 143,
+        "duration_s": 28.6,
+        "formation_mean_m": 0.15153006249085804,
+        "formation_p95_m": 0.6598349646962796,
+        "accompanied_progress_m": 2.6590027641912917,
+        "robot_progress_m": 3.2824530619030456,
+        "mean_body_velocity": [
+          0.11679060933767571,
+          -0.0017886799523290356,
+          -0.008108284494139906
+        ],
+        "mean_abs_command": [
+          0.1574946285219447,
+          0.08681377220061978,
+          0.027398774659317737
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.006993006993006993,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -3.025172704507424,
+          "progress": 10.636011056765167,
+          "command_change": -0.10075353797599154,
+          "torso_stability": -5.484168305470935e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -8.908959729417699,
+          "pedestrian_clearance": -2.692088865924058
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.015053973860136627
+      },
+      {
+        "family": "crossing",
+        "episode_seed": 960076,
+        "reason": "success",
+        "success": true,
+        "return_total": 19.269834890109273,
+        "steps": 162,
+        "duration_s": 32.4,
+        "formation_mean_m": 0.15922122919533263,
+        "formation_p95_m": 0.7087506129060644,
+        "accompanied_progress_m": 3.318983792993534,
+        "robot_progress_m": 3.962353203687352,
+        "mean_body_velocity": [
+          0.1222427687096232,
+          -0.0008502148962888843,
+          0.0009640665360355043
+        ],
+        "mean_abs_command": [
+          0.18471968077974002,
+          0.08405785740893564,
+          0.020223080107286847
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -3.924716095061222,
+          "progress": 13.275935171974137,
+          "command_change": -0.09686836569028627,
+          "torso_stability": -5.8805037540122124e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -9.125495887355083,
+          "pedestrian_clearance": -0.858961128720738
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.13021011011318617
+      },
+      {
+        "family": "diagonal",
+        "episode_seed": 980000,
+        "reason": "success",
+        "success": true,
+        "return_total": 17.59125580046305,
+        "steps": 266,
+        "duration_s": 53.2,
+        "formation_mean_m": 0.12349479542383651,
+        "formation_p95_m": 0.6575408257409153,
+        "accompanied_progress_m": 4.144900214715564,
+        "robot_progress_m": 4.83568528042481,
+        "mean_body_velocity": [
+          0.09183253116398968,
+          -0.0024495294811201435,
+          -0.00449536356376331
+        ],
+        "mean_abs_command": [
+          0.1698874992790732,
+          0.04659314299274947,
+          0.016309109406475022
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -4.90360949717126,
+          "progress": 16.579600858862257,
+          "command_change": -0.0655119296982649,
+          "torso_stability": -9.723940141666307e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -13.086369010535693,
+          "pedestrian_clearance": -0.9327573815925724
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.11304051119879888
+      },
+      {
+        "family": "diagonal",
+        "episode_seed": 980012,
+        "reason": "pedestrian_intrusion",
+        "success": false,
+        "return_total": -100.71635786690854,
+        "steps": 122,
+        "duration_s": 24.400000000000002,
+        "formation_mean_m": 0.07194204347350347,
+        "formation_p95_m": 0.40288809152237076,
+        "accompanied_progress_m": 1.5968940061661632,
+        "robot_progress_m": 1.8443981889701937,
+        "mean_body_velocity": [
+          0.07927818177935374,
+          0.01378454995423792,
+          -0.006133594038712483
+        ],
+        "mean_abs_command": [
+          0.15895526228686335,
+          0.04698449296272168,
+          0.020478498184558224
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.0,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -0.7372259835504226,
+          "progress": 6.387576024664653,
+          "command_change": -0.03931620198567496,
+          "torso_stability": -4.04043849659006e-05,
+          "terminal_success": 0.0,
+          "terminal_failure": -100.0,
+          "velocity_tracking": -5.657724965718368,
+          "pedestrian_clearance": -0.6696263359337586
+        },
+        "geometric_intrusion": true,
+        "minimum_surface_clearance_m": -0.01913178263210802
+      },
+      {
+        "family": "diagonal",
+        "episode_seed": 980016,
+        "reason": "pedestrian_intrusion",
+        "success": false,
+        "return_total": -103.9530751693088,
+        "steps": 92,
+        "duration_s": 18.400000000000002,
+        "formation_mean_m": 0.11474580085378987,
+        "formation_p95_m": 0.5378665641785753,
+        "accompanied_progress_m": 1.102297980310519,
+        "robot_progress_m": 1.5214941197053407,
+        "mean_body_velocity": [
+          0.08518285263261899,
+          0.017024511304295893,
+          -0.005449906634549442
+        ],
+        "mean_abs_command": [
+          0.13754329568979776,
+          0.10030812174385495,
+          0.023974715427713185
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.010869565217391304,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -1.1924258812865383,
+          "progress": 4.409191921242076,
+          "command_change": -0.08692882276324294,
+          "torso_stability": -3.0023853951479666e-05,
+          "terminal_success": 0.0,
+          "terminal_failure": -100.0,
+          "velocity_tracking": -5.633566533959,
+          "pedestrian_clearance": -1.4493158286881385
+        },
+        "geometric_intrusion": true,
+        "minimum_surface_clearance_m": -0.003075645773532365
+      },
+      {
+        "family": "diagonal",
+        "episode_seed": 980004,
+        "reason": "success",
+        "success": true,
+        "return_total": 21.844924750587445,
+        "steps": 248,
+        "duration_s": 49.6,
+        "formation_mean_m": 0.1040211033466782,
+        "formation_p95_m": 0.5905662330409093,
+        "accompanied_progress_m": 4.240237777899763,
+        "robot_progress_m": 4.840450686097442,
+        "mean_body_velocity": [
+          0.09788657111920716,
+          -0.0016681580340559882,
+          -0.003037971544406781
+        ],
+        "mean_abs_command": [
+          0.16071044648302749,
+          0.03919434412109108,
+          0.0177232105514474
+        ],
+        "action_clipped_fraction": 0.0,
+        "command_saturation_fraction": 0.004032258064516129,
+        "observation_clipped_features": 0,
+        "reward_components": {
+          "formation": -3.462064469813509,
+          "progress": 16.96095111159905,
+          "command_change": -0.09846992396697152,
+          "torso_stability": -7.562776253968599e-05,
+          "terminal_success": 20.0,
+          "terminal_failure": 0.0,
+          "velocity_tracking": -9.957590519298597,
+          "pedestrian_clearance": -1.5978258201699647
+        },
+        "geometric_intrusion": false,
+        "minimum_surface_clearance_m": 0.08472629973994883
+      }
+    ],
+    "active_physics_steps": 273100,
+    "active_gait_calls": 27310,
+    "teacher_executed_steps": 0,
+    "student_executed_steps": 2731,
+    "teacher_probability": 0.0,
+    "teacher_mode": "observable_previous_command_v1"
+  },
+  "rounds": [
+    {
+      "episodes": 16,
+      "success_rate": 0.875,
+      "per_family": {
+        "crossing": {
+          "episodes": 7,
+          "success_rate": 0.7142857142857143
+        },
+        "diagonal": {
+          "episodes": 7,
+          "success_rate": 1.0
+        },
+        "head_on": {
+          "episodes": 2,
+          "success_rate": 1.0
+        }
+      },
+      "reasons": {
+        "success": 14,
+        "pedestrian_intrusion": 2
+      },
+      "formation_mean_m": 0.1381361349858321,
+      "geometric_intrusions": 2,
+      "episodes_detail": [
+        {
+          "family": "crossing",
+          "episode_seed": 904000,
+          "reason": "success",
+          "success": true,
+          "return_total": 19.419669099864954,
+          "steps": 135,
+          "duration_s": 27.0,
+          "formation_mean_m": 0.13557210226845062,
+          "formation_p95_m": 0.6148278411407889,
+          "accompanied_progress_m": 2.7741482167510862,
+          "robot_progress_m": 3.0320471597107264,
+          "mean_body_velocity": [
+            0.11076278874647587,
+            0.000632924798601642,
+            -0.0008342883199160945
+          ],
+          "mean_abs_command": [
+            0.17719064489291567,
+            0.05352133098174953,
+            0.020326402113790176
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -2.5601274328816546,
+            "progress": 11.096592867004345,
+            "command_change": -0.04807133759789622,
+            "torso_stability": -4.8321809141978355e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -7.817422783427124,
+            "pedestrian_clearance": -1.2512538914235751
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.11529664707649934
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 904004,
+          "reason": "success",
+          "success": true,
+          "return_total": 18.51532077500075,
+          "steps": 176,
+          "duration_s": 35.2,
+          "formation_mean_m": 0.12512936953042747,
+          "formation_p95_m": 0.5933352970771705,
+          "accompanied_progress_m": 3.5606501740428276,
+          "robot_progress_m": 4.063877990957762,
+          "mean_body_velocity": [
+            0.11607129713386177,
+            -0.0008880298948010709,
+            -0.005666352450611856
+          ],
+          "mean_abs_command": [
+            0.17482999776918653,
+            0.09385738489345385,
+            0.0211489526670696
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.011363636363636364,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -2.7192600529489503,
+            "progress": 14.24260069617131,
+            "command_change": -0.18733870803970112,
+            "torso_stability": -6.793034175289005e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -9.998381108458894,
+            "pedestrian_clearance": -2.8222321213812522
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.003978283226576673
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 920000,
+          "reason": "success",
+          "success": true,
+          "return_total": 19.320536391381687,
+          "steps": 166,
+          "duration_s": 33.2,
+          "formation_mean_m": 0.16747383741356114,
+          "formation_p95_m": 0.7193590753647113,
+          "accompanied_progress_m": 3.6724256386199587,
+          "robot_progress_m": 4.133425419099083,
+          "mean_body_velocity": [
+            0.12584231757744563,
+            -0.002756186060671955,
+            -0.006694193593920356
+          ],
+          "mean_abs_command": [
+            0.20055463694278655,
+            0.04525054349523341,
+            0.020386733615051056
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.467613996429626,
+            "progress": 14.689702554479835,
+            "command_change": -0.059718780675956255,
+            "torso_stability": -6.843140068871586e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.186412344725976,
+            "pedestrian_clearance": -0.6553526098658977
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.14948262649607624
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 920016,
+          "reason": "success",
+          "success": true,
+          "return_total": 14.041329249706635,
+          "steps": 245,
+          "duration_s": 49.0,
+          "formation_mean_m": 0.13445793247623597,
+          "formation_p95_m": 0.7726141493810786,
+          "accompanied_progress_m": 3.681758480736935,
+          "robot_progress_m": 4.746449918601564,
+          "mean_body_velocity": [
+            0.09731106498312224,
+            -0.000614908817933116,
+            -0.0009477500540652858
+          ],
+          "mean_abs_command": [
+            0.1465048702167613,
+            0.07500064138348905,
+            0.02207111015200748
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.004081632653061225,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -5.936243262859259,
+            "progress": 14.72703392294774,
+            "command_change": -0.12873530079725362,
+            "torso_stability": -7.083219469942392e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -13.655566158303785,
+            "pedestrian_clearance": -0.9650891190861124
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.1193858453249611
+        },
+        {
+          "family": "head_on",
+          "episode_seed": 930004,
+          "reason": "success",
+          "success": true,
+          "return_total": 31.072870190050004,
+          "steps": 210,
+          "duration_s": 42.0,
+          "formation_mean_m": 0.07141679904944986,
+          "formation_p95_m": 0.17703924161644763,
+          "accompanied_progress_m": 3.981381781849369,
+          "robot_progress_m": 4.609897927394876,
+          "mean_body_velocity": [
+            0.10929683314040627,
+            8.587946925354956e-05,
+            -0.010426067866133452
+          ],
+          "mean_abs_command": [
+            0.16883718812882545,
+            0.032491435781065815,
+            0.015500659617447083
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -0.5478373105351064,
+            "progress": 15.925527127397476,
+            "command_change": -0.04496424618137507,
+            "torso_stability": -7.241814264821046e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -4.259782962488347,
+            "pedestrian_clearance": -0.0
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.31343482751683616
+        },
+        {
+          "family": "head_on",
+          "episode_seed": 930020,
+          "reason": "success",
+          "success": true,
+          "return_total": 26.923367706100123,
+          "steps": 222,
+          "duration_s": 44.4,
+          "formation_mean_m": 0.05829355730221272,
+          "formation_p95_m": 0.1057021114759524,
+          "accompanied_progress_m": 2.6934765119950224,
+          "robot_progress_m": 3.3884908166930017,
+          "mean_body_velocity": [
+            0.07570225834108961,
+            0.00022579447116419365,
+            0.0028273686890478112
+          ],
+          "mean_abs_command": [
+            0.13593573981124135,
+            0.03291076022003278,
+            0.015223954262543336
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -0.31729468381009635,
+            "progress": 10.77390604798009,
+            "command_change": -0.028311897158922635,
+            "torso_stability": -6.110088274913752e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -3.5048706600281982,
+            "pedestrian_clearance": -0.0
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.31351689589131637
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 940000,
+          "reason": "success",
+          "success": true,
+          "return_total": 16.136032520654396,
+          "steps": 170,
+          "duration_s": 34.0,
+          "formation_mean_m": 0.13895277364550318,
+          "formation_p95_m": 0.7668353351559086,
+          "accompanied_progress_m": 2.831903935077439,
+          "robot_progress_m": 3.2248921908980495,
+          "mean_body_velocity": [
+            0.0941437096427081,
+            -0.002716398321550169,
+            -0.004971460994222138
+          ],
+          "mean_abs_command": [
+            0.1595080132110685,
+            0.05626639484030688,
+            0.02326025467431036
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.332799007371112,
+            "progress": 11.327615740309756,
+            "command_change": -0.07845879027496411,
+            "torso_stability": -6.191040087186474e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.187093951542357,
+            "pedestrian_clearance": -0.5931695600660625
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.14064689324436397
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 940004,
+          "reason": "success",
+          "success": true,
+          "return_total": 15.993562367678521,
+          "steps": 152,
+          "duration_s": 30.400000000000002,
+          "formation_mean_m": 0.19964878179202566,
+          "formation_p95_m": 0.8345136235290107,
+          "accompanied_progress_m": 3.485459266199692,
+          "robot_progress_m": 3.7922352280722906,
+          "mean_body_velocity": [
+            0.12535894051427815,
+            -0.0024974498064965936,
+            -0.00101755877845798
+          ],
+          "mean_abs_command": [
+            0.20837089388729318,
+            0.07484269625753145,
+            0.02143693233933606
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.006578947368421052,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -5.747122684140416,
+            "progress": 13.941837064798769,
+            "command_change": -0.07700202443129016,
+            "torso_stability": -6.587256778960258e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -11.511900331348034,
+            "pedestrian_clearance": -0.6121837846327128
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.1416138870432897
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960008,
+          "reason": "pedestrian_intrusion",
+          "success": false,
+          "return_total": -104.63829377423873,
+          "steps": 109,
+          "duration_s": 21.8,
+          "formation_mean_m": 0.14157267513701224,
+          "formation_p95_m": 0.6969888906508118,
+          "accompanied_progress_m": 1.175571687009891,
+          "robot_progress_m": 1.3904134786640852,
+          "mean_body_velocity": [
+            0.06209201350950828,
+            0.03342941409624489,
+            0.004548728134869986
+          ],
+          "mean_abs_command": [
+            0.11796602582689289,
+            0.0868234373901441,
+            0.015032973612948116
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -2.5539997884005015,
+            "progress": 4.702286748039564,
+            "command_change": -0.10487832329345186,
+            "torso_stability": -3.8066344167135374e-05,
+            "terminal_success": 0.0,
+            "terminal_failure": -100.0,
+            "velocity_tracking": -5.204922235867149,
+            "pedestrian_clearance": -1.4767421083730246
+          },
+          "geometric_intrusion": true,
+          "minimum_surface_clearance_m": -0.029225334683203763
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960060,
+          "reason": "success",
+          "success": true,
+          "return_total": 16.792604496065135,
+          "steps": 223,
+          "duration_s": 44.6,
+          "formation_mean_m": 0.1263888581107535,
+          "formation_p95_m": 0.6473673676162153,
+          "accompanied_progress_m": 3.5311460170791116,
+          "robot_progress_m": 4.272839507917945,
+          "mean_body_velocity": [
+            0.09715934486669262,
+            0.0020787231733511925,
+            -0.0018160536431558647
+          ],
+          "mean_abs_command": [
+            0.15034534230268656,
+            0.07507220856483082,
+            0.021210566649557068
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.004484304932735426,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.110833060834225,
+            "progress": 14.124584068316446,
+            "command_change": -0.12576415816972697,
+            "torso_stability": -8.810423615936535e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.738562865760612,
+            "pedestrian_clearance": -2.356731383250578
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.054070351087086466
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960004,
+          "reason": "pedestrian_intrusion",
+          "success": false,
+          "return_total": -104.03779703275943,
+          "steps": 63,
+          "duration_s": 12.6,
+          "formation_mean_m": 0.20283945491131894,
+          "formation_p95_m": 0.7559595384835865,
+          "accompanied_progress_m": 0.9059967658187742,
+          "robot_progress_m": 0.9919704559450051,
+          "mean_body_velocity": [
+            0.07669396061189279,
+            0.053451517426360624,
+            0.0020015315934899473
+          ],
+          "mean_abs_command": [
+            0.12925501504824274,
+            0.1277322506971864,
+            0.016431956771402693
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.015873015873015872,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -2.3086614829113414,
+            "progress": 3.623987063275097,
+            "command_change": -0.11644960990126907,
+            "torso_stability": -2.1350801591429214e-05,
+            "terminal_success": 0.0,
+            "terminal_failure": -100.0,
+            "velocity_tracking": -4.0751938941195744,
+            "pedestrian_clearance": -1.161457758300754
+          },
+          "geometric_intrusion": true,
+          "minimum_surface_clearance_m": -0.028666085197883495
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960076,
+          "reason": "success",
+          "success": true,
+          "return_total": 19.391331389151194,
+          "steps": 162,
+          "duration_s": 32.4,
+          "formation_mean_m": 0.15388611821063303,
+          "formation_p95_m": 0.7284072856006761,
+          "accompanied_progress_m": 3.332505767927205,
+          "robot_progress_m": 4.000262059592917,
+          "mean_body_velocity": [
+            0.12418799075805806,
+            -0.00020791452606928898,
+            -0.0022398725232164085
+          ],
+          "mean_abs_command": [
+            0.1718417879773942,
+            0.08856356859571603,
+            0.022831882905185563
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -3.9043033490495955,
+            "progress": 13.33002307170882,
+            "command_change": -0.08911905122532113,
+            "torso_stability": -5.333668566660865e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -9.202825124577176,
+            "pedestrian_clearance": -0.7423908210198742
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.13494620971242044
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980000,
+          "reason": "success",
+          "success": true,
+          "return_total": 17.420935935287247,
+          "steps": 266,
+          "duration_s": 53.2,
+          "formation_mean_m": 0.12379404582587884,
+          "formation_p95_m": 0.6926607113510084,
+          "accompanied_progress_m": 4.137758255336049,
+          "robot_progress_m": 4.839361599418951,
+          "mean_body_velocity": [
+            0.0908341057116679,
+            -0.002789716107680186,
+            -0.003544767726606349
+          ],
+          "mean_abs_command": [
+            0.16696778060850875,
+            0.04582179014722302,
+            0.015208295674560383
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -5.205737473906678,
+            "progress": 16.551033021344196,
+            "command_change": -0.06417500197568722,
+            "torso_stability": -8.17224935658465e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -13.113631506094405,
+            "pedestrian_clearance": -0.746471381586606
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.12055984539400688
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980012,
+          "reason": "success",
+          "success": true,
+          "return_total": 4.284013655805998,
+          "steps": 282,
+          "duration_s": 56.4,
+          "formation_mean_m": 0.20267271886524563,
+          "formation_p95_m": 1.1739162263642813,
+          "accompanied_progress_m": 4.406628809024178,
+          "robot_progress_m": 4.987948538396634,
+          "mean_body_velocity": [
+            0.0894595317414931,
+            -0.0009679944868031722,
+            0.0058904209845307195
+          ],
+          "mean_abs_command": [
+            0.17260768901926618,
+            0.03772692804946244,
+            0.015706337353355807
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -14.756632630190186,
+            "progress": 17.62651523609671,
+            "command_change": -0.13080616444999604,
+            "torso_stability": -0.00010594397491210878,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -16.5568533880946,
+            "pedestrian_clearance": -1.8981034535810344
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.04594406847954813
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980016,
+          "reason": "success",
+          "success": true,
+          "return_total": 20.723993272932994,
+          "steps": 258,
+          "duration_s": 51.6,
+          "formation_mean_m": 0.11535791013256208,
+          "formation_p95_m": 0.6178087343989117,
+          "accompanied_progress_m": 4.022162957861699,
+          "robot_progress_m": 4.695781501537358,
+          "mean_body_velocity": [
+            0.0910233265171131,
+            -0.0021888334570246922,
+            -0.0016322443045159684
+          ],
+          "mean_abs_command": [
+            0.1568169943348603,
+            0.044990141052899835,
+            0.017592548446521316
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.151613364698371,
+            "progress": 16.088651831446796,
+            "command_change": -0.065923711708472,
+            "torso_stability": -8.187873840844473e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.226286918411839,
+            "pedestrian_clearance": -0.9207526849567245
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.11599777001480582
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980004,
+          "reason": "success",
+          "success": true,
+          "return_total": 21.078143974279953,
+          "steps": 248,
+          "duration_s": 49.6,
+          "formation_mean_m": 0.11272122510204297,
+          "formation_p95_m": 0.6785318425037465,
+          "accompanied_progress_m": 4.302370420771814,
+          "robot_progress_m": 4.842389714659422,
+          "mean_body_velocity": [
+            0.09881435332229214,
+            -0.0028761271065590698,
+            0.0024936152360446368
+          ],
+          "mean_abs_command": [
+            0.1633149014514563,
+            0.04004683458638723,
+            0.018442792356865773
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.483417728235804,
+            "progress": 17.209481683087255,
+            "command_change": -0.09360182496922782,
+            "torso_stability": -0.00010078817319956233,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.74345349387562,
+            "pedestrian_clearance": -0.8107638735534587
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.1164637614842996
+        }
+      ],
+      "active_physics_steps": 308700,
+      "active_gait_calls": 30870,
+      "teacher_executed_steps": 0,
+      "student_executed_steps": 3087,
+      "teacher_probability": 0.0,
+      "teacher_mode": "observable_previous_command_v1"
+    },
+    {
+      "episodes": 16,
+      "success_rate": 1.0,
+      "per_family": {
+        "crossing": {
+          "episodes": 7,
+          "success_rate": 1.0
+        },
+        "diagonal": {
+          "episodes": 7,
+          "success_rate": 1.0
+        },
+        "head_on": {
+          "episodes": 2,
+          "success_rate": 1.0
+        }
+      },
+      "reasons": {
+        "success": 16
+      },
+      "formation_mean_m": 0.13977203007961422,
+      "geometric_intrusions": 0,
+      "episodes_detail": [
+        {
+          "family": "crossing",
+          "episode_seed": 904000,
+          "reason": "success",
+          "success": true,
+          "return_total": 17.63383087034528,
+          "steps": 135,
+          "duration_s": 27.0,
+          "formation_mean_m": 0.16473102915031246,
+          "formation_p95_m": 0.7469497081127284,
+          "accompanied_progress_m": 2.7794966703725694,
+          "robot_progress_m": 3.0796605940987023,
+          "mean_body_velocity": [
+            0.11322592520981563,
+            0.0012717316031754182,
+            -0.0035480913591294824
+          ],
+          "mean_abs_command": [
+            0.1753264675244551,
+            0.0409790117123285,
+            0.015784001806767062
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -3.946351335249914,
+            "progress": 11.117986681490278,
+            "command_change": -0.034247062186705146,
+            "torso_stability": -3.970132520480085e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -8.395783113569316,
+            "pedestrian_clearance": -1.1077345988138554
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.09558644897489044
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 904004,
+          "reason": "success",
+          "success": true,
+          "return_total": 15.968755758394,
+          "steps": 176,
+          "duration_s": 35.2,
+          "formation_mean_m": 0.16629431510784412,
+          "formation_p95_m": 0.8064698478057886,
+          "accompanied_progress_m": 3.6596641964163776,
+          "robot_progress_m": 4.0759928178080775,
+          "mean_body_velocity": [
+            0.11747233302283377,
+            -0.0019998493080658755,
+            1.1758144769570494e-05
+          ],
+          "mean_abs_command": [
+            0.1960532951396255,
+            0.05455503617114035,
+            0.017581291264832544
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -5.361350493856212,
+            "progress": 14.63865678566551,
+            "command_change": -0.06029732691004696,
+            "torso_stability": -7.061696361532381e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -12.51602799285764,
+            "pedestrian_clearance": -0.7321545966839966
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.12323337638596898
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 920000,
+          "reason": "success",
+          "success": true,
+          "return_total": 19.231342256467713,
+          "steps": 166,
+          "duration_s": 33.2,
+          "formation_mean_m": 0.15716707125106974,
+          "formation_p95_m": 0.6927288406763492,
+          "accompanied_progress_m": 3.6835221995464322,
+          "robot_progress_m": 4.126487561597486,
+          "mean_body_velocity": [
+            0.1232207363987657,
+            -0.003674789131834662,
+            0.0027046183387032887
+          ],
+          "mean_abs_command": [
+            0.195190656688962,
+            0.04812263040656101,
+            0.018833255772941735
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.002201209227288,
+            "progress": 14.734088798185729,
+            "command_change": -0.06823933461670385,
+            "torso_stability": -6.91321067677513e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.041090051071581,
+            "pedestrian_clearance": -1.3911468146956798
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.07876834122763265
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 920016,
+          "reason": "success",
+          "success": true,
+          "return_total": 20.161603886540473,
+          "steps": 245,
+          "duration_s": 49.0,
+          "formation_mean_m": 0.11520572557345785,
+          "formation_p95_m": 0.6222833965727381,
+          "accompanied_progress_m": 4.0001555645307665,
+          "robot_progress_m": 4.741984998981434,
+          "mean_body_velocity": [
+            0.09765389067945188,
+            -0.0007136559251504012,
+            -0.011088823415173369
+          ],
+          "mean_abs_command": [
+            0.16193007324009714,
+            0.03410307014256636,
+            0.017500666367488187
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -3.9884085421939206,
+            "progress": 16.000622258123066,
+            "command_change": -0.05137316635331327,
+            "torso_stability": -8.761367487467362e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -11.490887455585899,
+            "pedestrian_clearance": -0.30826159377458195
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.2023835405283757
+        },
+        {
+          "family": "head_on",
+          "episode_seed": 930004,
+          "reason": "success",
+          "success": true,
+          "return_total": 29.621995682388118,
+          "steps": 210,
+          "duration_s": 42.0,
+          "formation_mean_m": 0.07651353041070928,
+          "formation_p95_m": 0.19956170208487203,
+          "accompanied_progress_m": 3.844383962431655,
+          "robot_progress_m": 4.62237429142986,
+          "mean_body_velocity": [
+            0.11027504513179427,
+            0.0003386684963622802,
+            0.010632634724332386
+          ],
+          "mean_abs_command": [
+            0.16028090855550198,
+            0.036426521426723674,
+            0.014660052548476545
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -0.6093672534682697,
+            "progress": 15.37753584972662,
+            "command_change": -0.04111735360320249,
+            "torso_stability": -6.014101778252767e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -5.05908623291324,
+            "pedestrian_clearance": -0.04590918633600093
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.24190182116507275
+        },
+        {
+          "family": "head_on",
+          "episode_seed": 930020,
+          "reason": "success",
+          "success": true,
+          "return_total": 26.923178851938967,
+          "steps": 222,
+          "duration_s": 44.4,
+          "formation_mean_m": 0.05094222141852836,
+          "formation_p95_m": 0.10818315068871845,
+          "accompanied_progress_m": 2.7303535096156644,
+          "robot_progress_m": 3.3819726461151784,
+          "mean_body_velocity": [
+            0.0760742247182393,
+            0.0021426456634014773,
+            -0.0054204589052375815
+          ],
+          "mean_abs_command": [
+            0.141732728133148,
+            0.025239270963284727,
+            0.014652199318997855
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -0.2717259093258078,
+            "progress": 10.921414038462657,
+            "command_change": -0.034591363303954833,
+            "torso_stability": -7.62908351110601e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -3.689653258342776,
+            "pedestrian_clearance": -0.0021883647160310634
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.2812821685311052
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 940000,
+          "reason": "success",
+          "success": true,
+          "return_total": 15.564477141948236,
+          "steps": 170,
+          "duration_s": 34.0,
+          "formation_mean_m": 0.13153427225212372,
+          "formation_p95_m": 0.7158678872036893,
+          "accompanied_progress_m": 2.86509821470251,
+          "robot_progress_m": 3.2416589101932116,
+          "mean_body_velocity": [
+            0.0959987211060306,
+            -0.003227824976593531,
+            0.006922440437700715
+          ],
+          "mean_abs_command": [
+            0.1632948507917771,
+            0.0616213794445417,
+            0.027965684693395707
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -3.8716990342750215,
+            "progress": 11.46039285881004,
+            "command_change": -0.0836942160364614,
+            "torso_stability": -5.2569951740004214e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -11.181867821924794,
+            "pedestrian_clearance": -0.7586020746737876
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.1297765937128338
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 940004,
+          "reason": "success",
+          "success": true,
+          "return_total": 15.724729163903943,
+          "steps": 152,
+          "duration_s": 30.400000000000002,
+          "formation_mean_m": 0.20732454619119087,
+          "formation_p95_m": 0.864547688278735,
+          "accompanied_progress_m": 3.453723040978,
+          "robot_progress_m": 3.791641211584377,
+          "mean_body_velocity": [
+            0.12481307277046473,
+            -0.0033882710229696327,
+            0.014689821116909226
+          ],
+          "mean_abs_command": [
+            0.21825296607934624,
+            0.05049536369633164,
+            0.016358847381573133
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -6.186341289262333,
+            "progress": 13.814892163912,
+            "command_change": -0.07204481880390728,
+            "torso_stability": -6.229040788749976e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.816391454311935,
+            "pedestrian_clearance": -1.0153231472219952
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.09856044470675496
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960008,
+          "reason": "success",
+          "success": true,
+          "return_total": 16.81639946016721,
+          "steps": 243,
+          "duration_s": 48.6,
+          "formation_mean_m": 0.1193067055991757,
+          "formation_p95_m": 0.6653925567103993,
+          "accompanied_progress_m": 3.348568555525269,
+          "robot_progress_m": 3.9273153975569404,
+          "mean_body_velocity": [
+            0.08146775120717603,
+            -0.0011586230436423932,
+            0.004039265142808917
+          ],
+          "mean_abs_command": [
+            0.15418212668809259,
+            0.04785358128612171,
+            0.015353348550054128
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.263979240177494,
+            "progress": 13.394274222101076,
+            "command_change": -0.05890269729628644,
+            "torso_stability": -7.267680678194346e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -11.296554324377068,
+            "pedestrian_clearance": -0.9583658232762402
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.1368689799859013
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960060,
+          "reason": "success",
+          "success": true,
+          "return_total": 12.994927089681713,
+          "steps": 223,
+          "duration_s": 44.6,
+          "formation_mean_m": 0.15603523527321736,
+          "formation_p95_m": 0.7765738898567452,
+          "accompanied_progress_m": 3.6072421427585497,
+          "robot_progress_m": 4.2879811300440425,
+          "mean_body_velocity": [
+            0.09646613247502461,
+            0.0014259301296226825,
+            0.0029485222069708084
+          ],
+          "mean_abs_command": [
+            0.17184916096024275,
+            0.05444375044184027,
+            0.020553831576526054
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.004484304932735426,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -6.073849034961224,
+            "progress": 14.428968571034199,
+            "command_change": -0.13056067567217267,
+            "torso_stability": -8.188105196242645e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -14.460526365206599,
+            "pedestrian_clearance": -0.7690235244605119
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.1599594527611431
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960004,
+          "reason": "success",
+          "success": true,
+          "return_total": 13.040952104175359,
+          "steps": 143,
+          "duration_s": 28.6,
+          "formation_mean_m": 0.16023646835217395,
+          "formation_p95_m": 0.8337126416265459,
+          "accompanied_progress_m": 2.385062982192869,
+          "robot_progress_m": 3.284371273120424,
+          "mean_body_velocity": [
+            0.115464204540584,
+            -0.005014155689406807,
+            -0.0029531626988730107
+          ],
+          "mean_abs_command": [
+            0.16915245935112447,
+            0.10200672134450943,
+            0.028800509290112724
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.03496503496503497,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.099656733473963,
+            "progress": 9.540251928771475,
+            "command_change": -0.09578999922427887,
+            "torso_stability": -6.010477832733982e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -11.955666494630348,
+            "pedestrian_clearance": -0.34812649248919025
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.1555224948096472
+        },
+        {
+          "family": "crossing",
+          "episode_seed": 960076,
+          "reason": "success",
+          "success": true,
+          "return_total": 18.081231837671545,
+          "steps": 162,
+          "duration_s": 32.4,
+          "formation_mean_m": 0.18288406561291962,
+          "formation_p95_m": 0.7793083433416624,
+          "accompanied_progress_m": 3.59137715605781,
+          "robot_progress_m": 3.9709054023444135,
+          "mean_body_velocity": [
+            0.12328773293970047,
+            -0.004082831998637802,
+            -0.0036142655941024567
+          ],
+          "mean_abs_command": [
+            0.194926999906009,
+            0.05153695372760405,
+            0.01744024111870619
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -5.222867212179496,
+            "progress": 14.36550862423124,
+            "command_change": -0.060696937500726265,
+            "torso_stability": -7.214869680767094e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -10.356988300126105,
+            "pedestrian_clearance": -0.6436521880565712
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.15364259219015453
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980000,
+          "reason": "success",
+          "success": true,
+          "return_total": 18.432921112453123,
+          "steps": 266,
+          "duration_s": 53.2,
+          "formation_mean_m": 0.10685808276763469,
+          "formation_p95_m": 0.5849892424478642,
+          "accompanied_progress_m": 4.152600765560948,
+          "robot_progress_m": 4.846098510279153,
+          "mean_body_velocity": [
+            0.09130913778604373,
+            -0.001480144664492567,
+            0.0037957691228241094
+          ],
+          "mean_abs_command": [
+            0.1643211153533688,
+            0.04916210430208156,
+            0.016430897929021193
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -3.9225253954860717,
+            "progress": 16.61040306224379,
+            "command_change": -0.06438128186163439,
+            "torso_stability": -0.00010737759334991725,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -12.676316835284261,
+            "pedestrian_clearance": -1.5141510595653633
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.06835930315543537
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980012,
+          "reason": "success",
+          "success": true,
+          "return_total": 19.580205046935635,
+          "steps": 282,
+          "duration_s": 56.4,
+          "formation_mean_m": 0.10604402849200842,
+          "formation_p95_m": 0.6138016035659195,
+          "accompanied_progress_m": 4.237149651612254,
+          "robot_progress_m": 5.013405005221062,
+          "mean_body_velocity": [
+            0.08869580403664254,
+            0.00013175874246582997,
+            0.005181187829271063
+          ],
+          "mean_abs_command": [
+            0.15253197337723262,
+            0.04264193675493168,
+            0.018946708480801502
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0035460992907801418,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.4092246257502286,
+            "progress": 16.948598606449018,
+            "command_change": -0.09741621337212039,
+            "torso_stability": -9.859688511182708e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -11.484631112359432,
+            "pedestrian_clearance": -1.377023011146499
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.10201510076103315
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980016,
+          "reason": "success",
+          "success": true,
+          "return_total": 17.76745608264227,
+          "steps": 258,
+          "duration_s": 51.6,
+          "formation_mean_m": 0.1153710310604811,
+          "formation_p95_m": 0.6178203270846276,
+          "accompanied_progress_m": 3.998191439021899,
+          "robot_progress_m": 4.664536236785982,
+          "mean_body_velocity": [
+            0.09105633997612209,
+            -0.0037497619670096545,
+            0.0017253337298318286
+          ],
+          "mean_abs_command": [
+            0.16523153650711558,
+            0.047334513269511935,
+            0.01574912833580164
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.0,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -4.008883075318681,
+            "progress": 15.992765756087596,
+            "command_change": -0.07614320524273321,
+            "torso_stability": -7.893640381459871e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -12.721458631635041,
+            "pedestrian_clearance": -1.4187458248450748
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.05966541266276626
+        },
+        {
+          "family": "diagonal",
+          "episode_seed": 980004,
+          "reason": "success",
+          "success": true,
+          "return_total": 4.240730291392271,
+          "steps": 248,
+          "duration_s": 49.6,
+          "formation_mean_m": 0.21990415276098044,
+          "formation_p95_m": 1.174993620441461,
+          "accompanied_progress_m": 4.305610529832638,
+          "robot_progress_m": 4.831232963311208,
+          "mean_body_velocity": [
+            0.09806681080450567,
+            -0.001039942541926819,
+            0.004521534663262371
+          ],
+          "mean_abs_command": [
+            0.18647982018756598,
+            0.04084453583486573,
+            0.01565766661975255
+          ],
+          "action_clipped_fraction": 0.0,
+          "command_saturation_fraction": 0.020161290322580645,
+          "observation_clipped_features": 0,
+          "reward_components": {
+            "formation": -14.13342055602688,
+            "progress": 17.22244211933055,
+            "command_change": -0.06458708382243224,
+            "torso_stability": -9.803098631615193e-05,
+            "terminal_success": 20.0,
+            "terminal_failure": 0.0,
+            "velocity_tracking": -16.320301644058155,
+            "pedestrian_clearance": -2.463304513044487
+          },
+          "geometric_intrusion": false,
+          "minimum_surface_clearance_m": 0.07491184226702308
+        }
+      ],
+      "active_physics_steps": 330100,
+      "active_gait_calls": 33010,
+      "teacher_executed_steps": 0,
+      "student_executed_steps": 3301,
+      "teacher_probability": 0.0,
+      "teacher_mode": "observable_previous_command_v1"
+    }
+  ],
+  "final_checkpoint": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_variation_v3_20261109/residual_coverage_1.pt",
+  "wall_s": 516.5591431680004,
+  "fit_wall_s": 7.859583039993595,
+  "base_frozen": true,
+  "ppo_updates": 0,
+  "validation_status": "Not automatically promoted; evaluate unchanged fixed suites next"
+}

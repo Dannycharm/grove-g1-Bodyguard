@@ -1,0 +1,6 @@
+docs/media/stage2_selected_5k_20261109/crossing/episode.mp4: decoded=488 dimensions=768x512 duration=19.520
+docs/media/stage2_selected_5k_20261109/diagonal/episode.mp4: decoded=380 dimensions=768x512 duration=15.200
+docs/media/stage2_selected_5k_20261109/gentle_turn/episode.mp4: decoded=290 dimensions=768x512 duration=11.600
+docs/media/stage2_selected_5k_20261109/head_on/episode.mp4: decoded=488 dimensions=768x512 duration=19.520
+docs/media/stage2_selected_5k_20261109/stop_start/episode.mp4: decoded=310 dimensions=768x512 duration=12.400
+docs/media/stage2_selected_5k_20261109/straight/episode.mp4: decoded=290 dimensions=768x512 duration=11.600

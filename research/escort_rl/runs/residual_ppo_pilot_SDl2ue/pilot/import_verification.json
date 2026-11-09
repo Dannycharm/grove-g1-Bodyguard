@@ -1,0 +1,73 @@
+{
+  "probes": 23399,
+  "max_abs_error": 0.0,
+  "all_exact": true,
+  "inactive_exact": true,
+  "baseline": {
+    "pedestrian": {
+      "summary_sha256": "06fc8e246c69af0f11c60189b3166f9b958d789f1e1f0e233f177aef31597504",
+      "summary": {
+        "episodes": 60,
+        "success_rate": 0.95,
+        "per_family": {
+          "crossing": {
+            "episodes": 20,
+            "success_rate": 1.0
+          },
+          "diagonal": {
+            "episodes": 20,
+            "success_rate": 0.85
+          },
+          "head_on": {
+            "episodes": 20,
+            "success_rate": 1.0
+          }
+        },
+        "reasons": {
+          "success": 57,
+          "client_lost": 2,
+          "pedestrian_intrusion": 1
+        },
+        "formation_mean_m": 0.13531212266923057,
+        "geometric_intrusions": 1,
+        "suite": "pedestrian",
+        "full_suite": true,
+        "final_test": "Not evaluated",
+        "reward_version": "stage2_tracking_clearance_v1",
+        "clearance_metric": "Swept pelvis footprint disc vs pedestrian disc; not physical collision"
+      }
+    },
+    "stage1": {
+      "summary_sha256": "a29b5af61329b72adc734596ee8d6c92fa7b43d20a0ba900efc4b44befb7909d",
+      "summary": {
+        "episodes": 60,
+        "success_rate": 1.0,
+        "per_family": {
+          "gentle_turn": {
+            "episodes": 20,
+            "success_rate": 1.0
+          },
+          "stop_start": {
+            "episodes": 20,
+            "success_rate": 1.0
+          },
+          "straight": {
+            "episodes": 20,
+            "success_rate": 1.0
+          }
+        },
+        "reasons": {
+          "success": 60
+        },
+        "formation_mean_m": 0.05630953682860855,
+        "geometric_intrusions": 0,
+        "suite": "stage1",
+        "full_suite": true,
+        "final_test": "Not evaluated",
+        "reward_version": "stage2_tracking_clearance_v1",
+        "clearance_metric": "Swept pelvis footprint disc vs pedestrian disc; not physical collision"
+      }
+    }
+  },
+  "evidence": "Read-only same-observation import check; no fresh initial full-dynamics rollout"
+}

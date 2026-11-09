@@ -1,0 +1,20 @@
+{
+  "family": "gentle_turn",
+  "seed": 1000001,
+  "status": "success",
+  "simulation_duration_s": 29.0,
+  "frames": 291,
+  "playback_speed": 2.5,
+  "active_physics_steps": 14500,
+  "active_gait_calls": 1450,
+  "minimum_surface_clearance_m": null,
+  "clip": "docs/media/stage2_selected_5k_20261109/gentle_turn/episode.mp4",
+  "checkpoint": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_ppo_recovered_9htyqV/pilot/final.zip",
+  "checkpoint_sha256": "67692f7d7586093290a9ae49d952b2e2012e4135214db5079713f28c49f0695b",
+  "residual_ppo_transitions": 5000,
+  "new_training_updates": 0,
+  "semantics": "Full-G1 rollout; render-only human figures; no physical person contacts; fixed validation example, not an independent test",
+  "intermediate_gif": "tmp/stage2_media/source_gifs/gentle_turn.gif",
+  "format": "H.264 MP4, 768x512, 25 fps",
+  "postprocessing": "PIL GIF intermediate converted by local libavcodec encoder; duplicate still GIF frames may merge"
+}

@@ -1,0 +1,113 @@
+{
+  "rows": 10285,
+  "sources": [
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_overfit_v1b_20261108/teacher_development",
+      "sha256": "fbce376a8beb08295cac5e78b50c6e09bdaff40bf512565d1b2bef2876b63585",
+      "summary_sha256": "d09d39545d216072a1881793cc21cfac756c485b0a408a199b23922c43fabcfc"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_overfit_v1b_20261108/dagger_0",
+      "sha256": "a28b0f602421676b29594c951b4614b7fd9d1c2683a29dfd87d63a1ebb37c35b",
+      "summary_sha256": "d8365277c683e71e76bab05bb8341f4be352a19f00d755b6216b09caa212192d"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_overfit_v1b_20261108/dagger_1",
+      "sha256": "32d64b5b77828f4428a6975215e7a6ab4ffcdc5fd233eae09b62f97ee743bec6",
+      "summary_sha256": "3a5470a3b3226b318bc2e411d82525d9c8a935c521491b2fce432e9ca8a6dc0f"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_coverage_v2_20261109/teacher_coverage",
+      "sha256": "5bd542d9a826fed9208c7cdda6c6cd5fe1819b6b1255646706d518616828e919",
+      "summary_sha256": "5d1135dd1843309c11792a781b12a4b5df372308ce7e54a75e8f0c801054d7d7"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_coverage_v2_20261109/dagger_0",
+      "sha256": "c0d515cee09bf874c2f09cbdd9817ec49418fb91b3f70d3399031830646d4499",
+      "summary_sha256": "dd9d6cfe6d0bd9710db288182558c38c04fb7d7e0e12622990381f36f91012a5"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_variation_v3_20261109/teacher_coverage",
+      "sha256": "75ac14163ac261280c2d4cd4c0b0f0defbe0134e330d74b8f90431fa40ce6c88",
+      "summary_sha256": "c9bd1ada2b7f1d2a0242cef5b552e80b4d725d45dc5407c0cd0af92ae82e1b48"
+    },
+    {
+      "path": "/home/praise/ECE598_Bodyguard/grove-g1/research/escort_rl/runs/residual_variation_v3_20261109/dagger_0",
+      "sha256": "deaed4f4836e0a0a05ff155dcaa7e9aec7ca8f7733264a50adacb98709e9b6fc",
+      "summary_sha256": "85a4f0091c89ef35b3fc97d289f990f8e997c7329d2e60e88d4e59edfc3f58bf"
+    }
+  ],
+  "updates": 28000,
+  "new_updates": 4000,
+  "fit_wall_s": 3.962007589994755,
+  "history": [
+    {
+      "update": 24500,
+      "loss": 0.012590578757226467
+    },
+    {
+      "update": 25000,
+      "loss": 0.008051860146224499
+    },
+    {
+      "update": 25500,
+      "loss": 0.008015512488782406
+    },
+    {
+      "update": 26000,
+      "loss": 0.010281256400048733
+    },
+    {
+      "update": 26500,
+      "loss": 0.007945352233946323
+    },
+    {
+      "update": 27000,
+      "loss": 0.012438721023499966
+    },
+    {
+      "update": 27500,
+      "loss": 0.010399463586509228
+    },
+    {
+      "update": 28000,
+      "loss": 0.01005567517131567
+    }
+  ],
+  "initial_action_mse": 0.006754883099347353,
+  "final_action_mse": 0.00439847307279706,
+  "sampling": {
+    "crossing": {
+      "-1": {
+        "rows": 1609,
+        "sampling_mass": 0.16666666666666666
+      },
+      "1": {
+        "rows": 2308,
+        "sampling_mass": 0.16666666666666669
+      }
+    },
+    "head_on": {
+      "-1": {
+        "rows": 840,
+        "sampling_mass": 0.16666666666666669
+      },
+      "1": {
+        "rows": 900,
+        "sampling_mass": 0.16666666666666669
+      }
+    },
+    "diagonal": {
+      "-1": {
+        "rows": 1704,
+        "sampling_mass": 0.16666666666666666
+      },
+      "1": {
+        "rows": 2924,
+        "sampling_mass": 0.16666666666666663
+      }
+    }
+  },
+  "batch_rng_before": "086ac0cf920c74ae3171bdafad7c1c13628f39be4385afdf6285aee8629aad19",
+  "batch_rng_after": "f349667799fa8f3a0bd68e8e1b5cac16623c7f99e1734c7abfbd14c180e770a2"
+}
